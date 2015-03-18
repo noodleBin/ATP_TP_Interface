@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--根节点为 AnalysisVars-->
+<!--包括变量 Constants 和 Variants,定义了自动分析所需的常量和变量信息-->
+<!--常量有三种类型：int,float,str-->
+<AnalysisVars>
+	<Constants>
+		<Const Id = "const1"	Val = "100"	Type = "int" Des="1" />
+		<Const Id = "const2"	Val = "0.11"	Type = "float"  Des ="2"/>
+		<Const Id = "const3"	Val = "1"	Type = "int" Des = "3"/>
+	</Constants>
+	<Variants>
+		<Var Id = "Var1" Type = "BOP" Value = "OR" Des ="4">
+			<lexp Type="BOP" Value="EQ">
+				<lexp Type="Variant" Value="OUT_EBRD11"/>
+				<rexp Type="ConstInt" Value="0"/>
+			</lexp>
+			<rexp Type="UOP" Value="NOT">
+				<exp Type="Variant" Value="OUT_EBRD12"/>
+			</rexp>
+		</Var>		
+	</Variants>
+</AnalysisVars>

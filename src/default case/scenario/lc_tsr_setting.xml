@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+该脚本定义了TSR的参数
+<Index> TSR的索引 整数 从1开始
+<TSR_Speed> TSR速度 整数 单位km/h
+<First_Block_ID_Of_TSR> 开始Block ID
+<Start_Abscissa_On_First_Block_Of_TSR> 开始坐标 整数 单位 米 quantum:0.5 
+<Number_Of_Intermediate_Blocks_Of_TSR> TSR跨越的Block 整数
+<Intermediate_Block_ID_Of_TSR> 跨越的block id list 用“，”隔开
+<Last_Block_ID_Of_TSR> 结束Block ID
+<End_Abscissa_On_Last_Block_Of_TSR> 终点坐标 整数 单位 米 quantum:0.5 
+
+TSR的方向说明：
+1）若TSR只在一个Block上面，根据坐标的大小确定方向，起点<终点 UP
+2）跨越多个Block，Block Id的排列顺序确定了方向
+-->
+
+
+<TSR>
+    <!--UP-->
+    <TSR_PARA>
+        <Index Value="1" />
+        <TSR_Speed Value="50" />
+        <First_Block_ID_Of_TSR Value="247" />
+        <Start_Abscissa_On_First_Block_Of_TSR Value="10" />
+        <Number_Of_Intermediate_Blocks_Of_TSR Value="0" />
+        <Intermediate_Block_ID_Of_TSR Value="" />
+        <Last_Block_ID_Of_TSR Value="247" />
+        <End_Abscissa_On_Last_Block_Of_TSR Value="100" />
+    </TSR_PARA>
+    
+    <!--DOWN-->
+    <TSR_PARA>
+        <Index Value="2" />
+        <TSR_Speed Value="60" />
+        <First_Block_ID_Of_TSR Value="247" />
+        <Start_Abscissa_On_First_Block_Of_TSR Value="100" />
+        <Number_Of_Intermediate_Blocks_Of_TSR Value="0" />
+        <Intermediate_Block_ID_Of_TSR Value="" />
+        <Last_Block_ID_Of_TSR Value="247" />
+        <End_Abscissa_On_Last_Block_Of_TSR Value="10" />
+    </TSR_PARA>
+
+    <!--UP-->
+    <TSR_PARA>
+        <Index Value="3" />
+        <TSR_Speed Value="70" />
+        <First_Block_ID_Of_TSR Value="91" />
+        <Start_Abscissa_On_First_Block_Of_TSR Value="10" />
+        <Number_Of_Intermediate_Blocks_Of_TSR Value="8" />
+        <Intermediate_Block_ID_Of_TSR Value="92,93,94,95,96,97,98,99" />
+        <Last_Block_ID_Of_TSR Value="100" />
+        <End_Abscissa_On_Last_Block_Of_TSR Value="10" />
+    </TSR_PARA>
+    
+    <!--DOWN-->
+    <TSR_PARA>
+        <Index Value="4" />
+        <TSR_Speed Value="80" />
+        <First_Block_ID_Of_TSR Value="100" />
+        <Start_Abscissa_On_First_Block_Of_TSR Value="10" />
+        <Number_Of_Intermediate_Blocks_Of_TSR Value="9" />
+        <Intermediate_Block_ID_Of_TSR Value="99,98,97,96,95,94,93,92,91" />
+        <Last_Block_ID_Of_TSR Value="247" />
+        <End_Abscissa_On_Last_Block_Of_TSR Value="10" />
+    </TSR_PARA>
+
+</TSR>

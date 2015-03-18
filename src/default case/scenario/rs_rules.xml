@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Start_Speed:本周期开始时的速度：m/s-->
+<!--End_Speed:本周期结束时的速度：m/s-->
+<!--Delay:以周期为单位1表示一周期也即100ms-->
+<!--EB_accel:EB减速度，-1表示速度以此值减到0，该值不能为正数，单位为m/s2-->
+
+<Rules>
+  <!--紧急制动-->
+  <Rule id="rule_EB" type="exp" operator="OR">
+    <lexp type="exp" value="==">
+        <lexp type="Variant" value="OUT_EBRD11"/>
+        <rexp type="Const" value="0"/>
+    </lexp>
+    <rexp type="exp" value="==">
+        <lexp type="Variant" value="OUT_EBRD12"/>
+        <rexp type="Const" value="0"/>
+    </rexp>
+    <Reaction name="EB_accel" value="-1"  delay="0"/>
+  </Rule>
+  
+  <Rule id="rule_EB_EBNA1" type="exp" operator="OR">
+    <lexp type="exp" value="OR">
+	    <lexp type="exp" value="==">
+	        <lexp type="Variant" value="OUT_EBRD11"/>
+	        <rexp type="Const" value="0"/>
+	    </lexp>
+	    <rexp type="exp" value="==">
+	        <lexp type="Variant" value="OUT_EBRD21"/>
+	        <rexp type="Const" value="0"/>
+	    </rexp> 
+    </lexp>
+    <rexp type="exp" value="==">
+        <lexp type="Variant" value="RSEBFlag"/>
+        <rexp type="Const" value="1"/>
+    </rexp>  
+    <Reaction name="IN_EBNA1" value="0"  delay="0"/>
+  </Rule>
+  
+  <Rule id="rule_EB_EBNA2" type="exp" operator="AND">
+    <lexp type="exp" value="AND">
+	    <lexp type="exp" value="==">
+	        <lexp type="Variant" value="OUT_EBRD11"/>
+	        <rexp type="Const" value="1"/>
+	    </lexp>
+	    <rexp type="exp" value="==">
+	        <lexp type="Variant" value="OUT_EBRD21"/>
+	        <rexp type="Const" value="1"/>
+	    </rexp> 
+    </lexp>
+    <rexp type="exp" value="==">
+        <lexp type="Variant" value="RSEBFlag"/>
+        <rexp type="Const" value="0"/>
+    </rexp>  
+    <Reaction name="IN_EBNA1" value="1"  delay="0"/>
+  </Rule>
+  
+  <Rule id="rule_EB_EBNA3" type="exp" operator="OR">
+    <lexp type="exp" value="OR">
+	    <lexp type="exp" value="==">
+	        <lexp type="Variant" value="OUT_EBRD12"/>
+	        <rexp type="Const" value="0"/>
+	    </lexp>
+	    <rexp type="exp" value="==">
+	        <lexp type="Variant" value="OUT_EBRD22"/>
+	        <rexp type="Const" value="0"/>
+	    </rexp> 
+    </lexp>
+    <rexp type="exp" value="==">
+        <lexp type="Variant" value="RSEBFlag"/>
+        <rexp type="Const" value="1"/>
+    </rexp>    
+    <Reaction name="IN_EBNA2" value="0"  delay="0"/>
+  </Rule>
+  <Rule id="rule_EB_EBNA4" type="exp" operator="AND">
+    <lexp type="exp" value="AND">
+	    <lexp type="exp" value="==">
+	        <lexp type="Variant" value="OUT_EBRD12"/>
+	        <rexp type="Const" value="1"/>
+	    </lexp>
+	    <rexp type="exp" value="==">
+	        <lexp type="Variant" value="OUT_EBRD22"/>
+	        <rexp type="Const" value="1"/>
+	    </rexp> 
+    </lexp>
+    <rexp type="exp" value="==">
+        <lexp type="Variant" value="RSEBFlag"/>
+        <rexp type="Const" value="0"/>
+    </rexp>   
+    <Reaction name="IN_EBNA2" value="1"  delay="0"/>
+  </Rule>
+  <!--紧急制动-->
+  <Rule id="rule_EB_REV" type="exp" operator="AND">
+    <lexp type="exp" value="==">
+        <lexp type="Variant" value="EBRDEnable"/>
+        <rexp type="Const" value="1"/>      
+    </lexp> 
+    <rexp type="exp" value="AND">      
+		  <lexp type="exp" value="OR">
+			    <lexp type="exp" value="==">
+			        <lexp type="Variant" value="OUT_EBRD11"/>
+			        <rexp type="Const" value="0"/>
+			    </lexp>
+			    <rexp type="exp" value="==">
+			        <lexp type="Variant" value="OUT_EBRD12"/>
+			        <rexp type="Const" value="0"/>
+			    </rexp>
+		   </lexp>
+	      <rexp type="exp" value="OR">
+		        <lexp type="exp" value="==">
+		            <lexp type="Variant" value="IN_REV1"/>
+		            <rexp type="Const" value="1"/>
+		        </lexp>
+		        <rexp type="exp" value="==">
+		            <lexp type="Variant" value="IN_REV2"/>
+		            <rexp type="Const" value="1"/>
+		        </rexp>
+	       </rexp> 
+	</rexp>  
+    <Reaction name="IN_REV1" value="0"  delay="0"/>
+    <Reaction name="IN_REV2" value="0"  delay="0"/>
+  </Rule>
+
+  <!--OUT_ZVRD控制ZVBA-->  
+  <Rule id="rule_stop0" type="exp" operator="AND">
+    <lexp type="exp" value="==">
+        <lexp type="Variant" value="OUT_ZVRD11"/>
+        <rexp type="Const" value="0"/>
+    </lexp>
+    <rexp type="exp" value="==">
+        <lexp type="Variant" value="OUT_ZVRD21"/>
+        <rexp type="Const" value="0"/>
+    </rexp>
+    <Reaction name="IN_ZVBA11" value="1"  delay="0"/>
+    <Reaction name="IN_ZVBA21" value="1"  delay="0"/>
+  </Rule>
+  
+  <!--OUT_ZVRD控制ZVBA-->  
+  <Rule id="rule_stop1" type="exp" operator="AND">
+    <lexp type="exp" value="==">
+        <lexp type="Variant" value="OUT_ZVRD12"/>
+        <rexp type="Const" value="0"/>
+    </lexp>
+    <rexp type="exp" value="==">
+        <lexp type="Variant" value="OUT_ZVRD22"/>
+        <rexp type="Const" value="0"/>
+    </rexp>
+    <Reaction name="IN_ZVBA12" value="1"  delay="0"/>
+    <Reaction name="IN_ZVBA22" value="1"  delay="0"/>
+  </Rule>
+
+  <!--当前速度控制ZVBA-->
+  <Rule id="rule_ZVBAto0" type="exp" operator="OR">
+    <lexp type="exp" value="AND">
+        <lexp type="exp" value="LT">
+            <lexp type="Variant" value="Start_Speed"/>
+            <rexp type="Const" value="0.2777778"/>
+        </lexp>
+        <rexp type="exp" value="GE">
+            <lexp type="Variant" value="End_Speed"/>
+            <rexp type="Const" value="0.2777778"/>
+        </rexp>
+    </lexp>
+    <rexp type="exp" value="AND">
+        <lexp type="exp" value="GT">
+            <lexp type="Variant" value="Start_Speed"/>
+            <rexp type="Const" value="-0.2777778"/>
+        </lexp>
+        <rexp type="exp" value="LE">
+            <lexp type="Variant" value="End_Speed"/>
+            <rexp type="Const" value="-0.2777778"/>
+        </rexp>
+    </rexp>
+    <Reaction name="IN_ZVBA11" value="0"  delay="0"/>
+    <Reaction name="IN_ZVBA21" value="0"  delay="0"/>
+    <Reaction name="IN_ZVBA12" value="0"  delay="0"/>
+    <Reaction name="IN_ZVBA22" value="0"  delay="0"/>	
+  </Rule>
+  
+  <!--当前速度控制ZVBA-->  
+  <Rule id="rule_ZVBAto1" type="exp" operator="OR">
+    <lexp type="exp" value="AND">
+        <lexp type="exp" value="GT">
+            <lexp type="Variant" value="Start_Speed"/>
+            <rexp type="Const" value="0.2777778"/>
+        </lexp>
+        <rexp type="exp" value="LE">
+            <lexp type="Variant" value="End_Speed"/>
+            <rexp type="Const" value="0.2777778"/>
+        </rexp>
+    </lexp>
+    <rexp type="exp" value="AND">
+        <lexp type="exp" value="LT">
+            <lexp type="Variant" value="Start_Speed"/>
+            <rexp type="Const" value="-0.2777778"/>
+        </lexp>
+        <rexp type="exp" value="GE">
+            <lexp type="Variant" value="End_Speed"/>
+            <rexp type="Const" value="-0.2777778"/>
+        </rexp>
+    </rexp>
+    <Reaction name="IN_ZVBA11" value="1"  delay="0"/>
+    <Reaction name="IN_ZVBA21" value="1"  delay="0"/>
+	<Reaction name="IN_ZVBA12" value="1"  delay="0"/>
+    <Reaction name="IN_ZVBA22" value="1"  delay="0"/>
+  </Rule>
+  <!-- 关门操作 -->
+  <Rule id="rule_Door0" type="exp" operator="AND">
+    <lexp type="Mexp" value="OR">
+	    <exp type="exp" value="==">
+	        <lexp type="Variant" value="OUT_DE_A1"/>
+	        <rexp type="Const" value="1"/>
+	    </exp>
+        <exp type="exp" value="==">
+            <lexp type="Variant" value="OUT_DE_A2"/>
+            <rexp type="Const" value="1"/>
+        </exp>
+        <exp type="exp" value="==">
+            <lexp type="Variant" value="OUT_DE_B1"/>
+            <rexp type="Const" value="1"/>
+        </exp>        	    
+        <exp type="exp" value="==">
+            <lexp type="Variant" value="OUT_DE_B2"/>
+            <rexp type="Const" value="1"/>
+        </exp>
+    </lexp>
+    <rexp type="exp" value="OR">
+        <lexp type="exp" value="==">
+            <lexp type="Variant" value="DOC_A"/>
+            <rexp type="Const" value="1"/>
+        </lexp>              
+        <rexp type="exp" value="==">
+            <lexp type="Variant" value="DOC_B"/>
+            <rexp type="Const" value="1"/>
+        </rexp>
+    </rexp>
+    <Reaction name="IN_TDCL1" value="0"  delay="0"/>
+    <Reaction name="IN_TDCL2" value="0"  delay="0"/>
+  </Rule>
+
+  <!-- 关门操作 -->   
+  <Rule id="rule_Door1" type="exp" operator="AND">
+    <lexp type="Mexp" value="OR">
+        <exp type="exp" value="==">
+            <lexp type="Variant" value="OUT_DE_A1"/>
+            <rexp type="Const" value="1"/>
+        </exp>
+        <exp type="exp" value="==">
+            <lexp type="Variant" value="OUT_DE_A2"/>
+            <rexp type="Const" value="1"/>
+        </exp>
+        <exp type="exp" value="==">
+            <lexp type="Variant" value="OUT_DE_B1"/>
+            <rexp type="Const" value="1"/>
+        </exp>              
+        <exp type="exp" value="==">
+            <lexp type="Variant" value="OUT_DE_B2"/>
+            <rexp type="Const" value="1"/>
+        </exp>
+    </lexp>
+    <rexp type="exp" value="OR">
+        <lexp type="exp" value="==">
+            <lexp type="Variant" value="DCC_A"/>
+            <rexp type="Const" value="1"/>
+        </lexp>              
+        <rexp type="exp" value="==">
+            <lexp type="Variant" value="DCC_B"/>
+            <rexp type="Const" value="1"/>
+        </rexp>
+    </rexp>
+    <Reaction name="IN_TDCL1" value="1"  delay="0"/>
+    <Reaction name="IN_TDCL2" value="1"  delay="0"/>
+  </Rule>
+
+  <!-- CBTC与BM之间的切换操作 -->    
+  <Rule id="rule_BM_CBTC" type="exp" operator="AND">
+    <lexp type="exp" value="==">
+        <lexp type="Variant" value="BMR"/>
+        <rexp type="Const" value="1"/>
+    </lexp>
+    <rexp type="exp" value="==">
+        <lexp type="Variant" value="BM_PB"/>
+        <rexp type="Const" value="1"/>
+    </rexp>
+    <Reaction name="IN_CBTC1" value="0"  delay="0"/>
+    <Reaction name="IN_CBTC2" value="0"  delay="0"/>
+    <Reaction name="IN_BM1" value="1"  delay="0"/>
+    <Reaction name="IN_BM2" value="1"  delay="0"/>         
+  </Rule>
+
+  <!-- CBTC与BM之间的切换操作 -->
+  <Rule id="BMR" type="exp" operator="==">
+    <lexp type="Variant" value="BMR"/>
+    <rexp type="Const" value="0"/>
+    <Reaction name="IN_CBTC1" value="1"  delay="0"/>
+    <Reaction name="IN_CBTC2" value="1"  delay="0"/>
+    <Reaction name="IN_BM1" value="0"  delay="0"/>
+    <Reaction name="IN_BM2" value="0"  delay="0"/>         
+  </Rule>
+
+<!--  <Rule id="rule_BM_RMF0" type="Mexp" operator="AND">-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="IN_KSON1"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="IN_KSON2"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="OUT_FWD1"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="OUT_FWD2"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="RM_IND"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>            -->
+<!--    <Reaction name="IN_RM_PB1" value="1"  delay="0"/>-->
+<!--    <Reaction name="IN_RM_PB2" value="1"  delay="0"/>-->
+<!--    <Reaction name="IN_BM1" value="0"  delay="0"/>-->
+<!--    <Reaction name="IN_BM2" value="0"  delay="0"/>         -->
+<!--  </Rule>-->
+<!---->
+<!--  <Rule id="rule_BM_RMF1" type="Mexp" operator="AND">-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="IN_KSON1"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="IN_KSON2"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="OUT_FWD1"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="OUT_FWD2"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="IN_RM_PB1"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>   -->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="IN_RM_PB2"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>          -->
+<!--    <Reaction name="IN_RMF1" value="1"  delay="0"/>-->
+<!--    <Reaction name="IN_RMF2" value="1"  delay="0"/>-->
+<!--    <Reaction name="MCS" value="0"  delay="0"/>      -->
+<!--  </Rule>-->
+<!---->
+<!--  <Rule id="rule_BM_RMF2" type="Mexp" operator="AND">-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="IN_KSON1"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="IN_KSON2"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="OUT_FWD1"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="OUT_FWD2"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>-->
+<!--    <exp type="exp" value="==">-->
+<!--        <lexp type="Variant" value="RM_IND"/>-->
+<!--        <rexp type="Const" value="1"/>-->
+<!--    </exp>           -->
+<!--    <Reaction name="IN_RMF1" value="0"  delay="0"/>-->
+<!--    <Reaction name="IN_RMF2" value="0"  delay="0"/>-->
+<!--    <Reaction name="MCS" value="1"  delay="0"/>      -->
+<!--  </Rule>-->
+
+</Rules>

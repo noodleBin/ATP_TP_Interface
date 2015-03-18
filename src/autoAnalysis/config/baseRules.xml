@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--根节点为 Rules-->
+<!--本文件用于存储通用的规则库，每条规则实际为一条运算表达式-->
+<!-- 支持双目 “BOP”和 单目“UOP”运算-->
+<!-- 支持的双目操作符 包括 OR AND GE GT LE LT EQ XOR XNOR ADD SUB MUL DIV POW MOD -->
+<!-- 支持的单目操作符 包括 NOT FLOOR CEIL-->
+<!-- 最终节点有四种形式：Variant:"变量",ConstInt："整型",ConstFloat:"浮点型",ConstStr:"字符型"-->
+<Rules>
+	<Rule Name = "ID0001" Type = "UOP" Value = "NOT" Des ="a">
+		<exp Type="UOP" Value="NOT">
+			<exp Type="Variant" Value="OUT_EBRD12"/>
+		</exp>		
+	</Rule>
+	<Rule Name = "ID0002" Type = "BOP" Value = "OR" Des ="b">
+		<lexp Type="BOP" Value="EQ">
+			<lexp Type="Variant" Value="OUT_EBRD11"/>
+			<rexp Type="ConstInt" Value="1"/>
+		</lexp>
+		<rexp Type="UOP" Value="NOT">
+			<exp Type="Variant" Value="OUT_EBRD12"/>
+		</rexp>		
+	</Rule>
+</Rules>
+
+
+

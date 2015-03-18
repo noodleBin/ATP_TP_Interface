@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，具体待定-->
+<!--其中长度相关数据的单位为毫米-->
+<Variables>
+  <Var Name="EOAMesID" Type="int"  IO="Log" Value="20" Description="EOA report Message ID"/>
+  <Var Name="EOAMesLen" Type="int"  IO="Log" Value="31" Description="EOA Message length in bytes"/>
+  <Var Name="TrainFE" Type="int"  IO="Log" Value="0" Description="Train front end"/>
+  <Var Name="EOAtype" Type="int"  IO="Log" Value="2" Description="EOA type"/>
+  <Var Name="EOABID" Type="int"  IO="Log" Value="0" Description="EOA location block ID"/>
+  <Var Name="EOAAbs" Type="int"  IO="Log" Value="0" Description="EOA location abscissa on the block"/>
+  <Var Name="WOSEOAtype" Type="int"  IO="Log" Value="2" Description="Without_Spacing_EOA_Type"/>
+  <Var Name="WOSEOABID" Type="int"  IO="Log" Value="0" Description="Without_Spacing_EOA_Block_ID"/>
+  <Var Name="WOSEOAAbs" Type="int"  IO="Log" Value="0" Description="Without_Spacing_EOA_Abscissa"/>
+  <Var Name="CCloophour" Type="int"  IO="Log" Value="0" Description="CC Loop Hour of the location report used"/>
+  <Var Name="ZCLHEOAV" Type="int"  IO="Log" Value="0" Description="Zc Loop Hour of (EOA + Variants) container creation"/>
+  <Var Name="ZCLHEOA" Type="int"  IO="Log" Value="0" Description="Zc Loop Hour of EOA data creation "/>
+  <Var Name="ZCLHWOSEOA" Type="int"  IO="Log" Value="0" Description="Zc Loop Hour of Without_Spacing EOA data creation"/>
+  <Var Name="EOACheckS1" Type="int"  IO="Log" Value="0" Description="EOA Vital checksum S1"/>
+  <Var Name="EOACheckS2" Type="int"  IO="Log" Value="0" Description="EOA Vital checksum S2"/>
+  <Var Name="VarMesID" Type="int"  IO="Log" Value="30" Description="Variant report Message ID"/>
+  <Var Name="VarMesLen" Type="int"  IO="Log" Value="17" Description="Variant Message length in bytes"/>
+  <Var Name="ZCLHVar" Type="int"  IO="Log" Value="31" Description="Zc Loop Hour of Variants data creation"/>
+  <Var Name="ZCCheckS1" Type="int"  IO="Log" Value="0" Description="ZC Vital checksum S1"/>
+  <Var Name="ZCCheckS2" Type="int"  IO="Log" Value="0" Description="ZC Vital checksum S2"/>
+  <Var Name="TrainID" Type="int"  IO="Log" Value="1" Description="Train ID"/>
+  <Var Name="HCID" Type="int"  IO="Log" Value="0" Description="Train unit head cab ID"/>
+  <Var Name="HCO" Type="int" IO="Log" Value="0" Description="Train unit head cab orientation"/>
+  <Var Name="HLBID" Type="int" IO="Log" Value="0" Description="Train unit head location block ID"/>
+  <Var Name="HLMAbs" Type="int"  IO="Log" Value="1" Description="Train unit head location min abscissa on the block"/>
+  <Var Name="HCS" Type="int"  IO="Log" Value="0" Description="Train unit head coupled status"/>
+  <Var Name="TCID" Type="int" IO="Log" Value="0" Description="Train unit tail cab ID"/>
+  <Var Name="TCO" Type="int" IO="Log" Value="0" Description="Train unit tail cab orientation"/>
+  <Var Name="TLBID" Type="int"  IO="Log" Value="1" Description="Train unit tail location block ID"/>
+  <Var Name="TLMAbs" Type="int"  IO="Print" Value="0" Description="Train unit tail location min abscissa on the block"/>
+  <Var Name="TCS" Type="int" IO="Print" Value="0" Description="Train unit tail coupled status"/>
+  <Var Name="LocaError" Type="int" IO="Print" Value="0" Description="Train unit location error"/>
+  <Var Name="LocaStatus" Type="int"  IO="Log" Value="1" Description="Train unit localized status"/>
+  <Var Name="ConfLoca" Type="int"  IO="Log" Value="0" Description="Train unit confirmed localization"/>
+  <Var Name="ImmStatus" Type="int" IO="Log" Value="0" Description="Train unit immobility status"/>
+  <Var Name="RSNNS" Type="int" IO="Log" Value="0" Description="Train unit Route_Set_Not_Needed status"/>
+  <Var Name="CorrDocking" Type="int" IO="Log" Value="0" Description="Train unit Correct_Docking"/>
+  <Var Name="Trainspeed" Type="int" IO="Log" Value="0" Description="Train unit speed"/>
+  <Var Name="MoniMode" Type="int" IO="Log" Value="0" Description="Train unit monitoring mode"/>
+  <Var Name="SigOverride" Type="int" IO="Log" Value="0" Description="Signals_Override"/>
+  <!-- 191基线添加变量：ATCControlledTrain -->
+  <Var Name="ATCControlledTrain" Type="int" IO="Log" Value="0" Description="ATC_Controlled_Train"/>
+  <Var Name="ZC_Vital_Author" Type="int" IO="Log" Value="0" Description="ZC_Vital_Authorization"/>
+  <!-- 191基线添加变量：Boolean -->
+  <Var Name="Boolean" Type="int" IO="Log" Value="0" Description="Boolean1:16"/>
+  <Var Name="CC_loophour" Type="int" IO="Log" Value="0" Description="CC Loop Hour"/>
+  <Var Name="Synchordate" Type="int" IO="Log" Value="0" Description="Synchor_date"/>
+  <Var Name="checksum1" Type="int" IO="Log" Value="0" Description="checksum1"/>
+  <Var Name="checksum2" Type="int" IO="Log" Value="0" Description="checksum2"/>
+  <Var Name="EOAdistance" Type="int" IO="Log" Value="100000" Description="EOAdistance：单位mm"/>
+  <Var Name="StartCoor" Type="int" IO="Log" Value="0" Description="本周期开始时的位置：单位ms"/>
+  <Var Name="EndCoor" Type="int" IO="Log" Value="0" Description="本周期结束时的位置：单位ms"/>  
+  <Var Name="detaccloophour" Type="int" IO="Input" Value="0" Description="deta ccloophour"/>
+  <Var Name="SendMesENABLE" Type="int" IO="Input" Value="1" Description="是否发送数据"/>
+  <Var Name="CheckSumENABLE_EOA" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <Var Name="CheckSumENABLE_Var" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <Var Name="ResponseEND" Type="int" IO="Input" Value="1" Description="1：发送本端，2：发送远端"/>
+  <Var Name="EOAModifyEnable" Type="int" IO="Input" Value="0" Description="开启修改EOA变量标志,0不开启,1开启,此变量为1时的修改才有效(只能修改blockid abs和 train front end)"/>
+  <Var Name="LineSecList" Type="string" IO="Input" Value="1,2,3" Description="控制发送的line section数，在其中的linesection的变量都会发送"/>
+  <Var Name="SendZCMsgRepeatly" Type="int" IO="Input" Value="0" Description="1，每次发送两包ZC消息，0：发送一包，也即不重复发送"/>
+  <Var Name="detaCreateVariantTime" Type="int" IO="Input" Value="0" Description="detaCreateVariantTime"/>
+  <Var Name="detaCreateZCLHEOAVTime" Type="int" IO="Input" Value="0" Description="detaCreateZCLHEOAVTime"/>
+  <Var Name="detaCreateZCLHEOATime" Type="int" IO="Input" Value="0" Description="detaCreateZCLHEOATime"/>
+  <Var Name="detaCreateZCLHWOSEOATime" Type="int" IO="Input" Value="0" Description="detaCreateZCLHWOSEOATime"/>
+</Variables>
+    

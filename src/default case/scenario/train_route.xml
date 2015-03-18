@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--该脚本定义了车辆运行路径，运行方向，开始位置（车尾-->
+<!--路径中间必须用“，”隔开-->
+<!-- 1-up -1-down -->
+<!-- Block_List应该与Direction方向一致 -->
+<!-- trainLen单位:毫米 -->
+<!--<trainLen  Value="2526"/>-->
+<Train>
+	<Route Block_List="247,91,92,93,94,95,96,97,98,99,100" />
+    <Start Block_id="247" Abscissa="0" />
+    <Cog_dir Value ='1'/>
+    <trainLen  Value="116066"/>
+    <Direction Value="1" />	
+</Train>
+

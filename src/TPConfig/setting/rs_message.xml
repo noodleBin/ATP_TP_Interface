@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<!--Co_Config_REPORT,Fault_Config_REPORT,Without_Spinodal_REPORT,With_Spinodal_REPORT,Status_REPORT-->
+<!--VIOM_IN_REPORT,VIOM_OUT_REPORT,Simulator_Mes-->
+<!--direct:1表示坐标由小到大（正向），-1表示坐标由大到小（反向）-->
+<!--其中单位为毫米-->
+<Msg_Settings>
+    
+    <Msg Name="Simulator_Mes" Id="99" Pack="!">
+      <Item Index="0" Format="B" Name="Command_type" Description="91启动命令，92周期更新命令，93运行结束命令"/>
+    </Msg> 
+    
+     <Msg Name="GPS1" Id="1001" Pack="!">
+      <Item Index="0" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="1" Format="9s" Name="UTCTime" Description="UTCTime"/>
+      <Item Index="2" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="3" Format="10s" Name="Latitude" Description="Latitude"/>
+      <Item Index="4" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="5" Format="s" Name="Lat_Hemi" Description="Lat_Hemi"/>
+      <Item Index="6" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="7" Format="11s" Name="Longitude" Description="Longitude"/>      
+      <Item Index="8" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="9" Format="s" Name="Long_Hemi" Description="Long_Hemi"/>
+      <Item Index="10" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="11" Format="s" Name="GPSState" Description="GPSState"/>
+      <Item Index="12" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="13" Format="2s" Name="Satelite_Num" Description="Satelite_Num"/>   
+      <Item Index="14" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="15" Format="3s" Name="Precision_Factor" Description="Precision_Factor"/>     
+      <Item Index="16" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="17" Format="2s" Name="Antenna_Long" Description="Antenna_Long"/>  
+      <Item Index="18" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="19" Format="s" Name="Antenna_Long_unit" Description="Antenna_Long_unit"/>     
+      <Item Index="20" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="21" Format="5s" Name="SeaLevel_Degree" Description="SeaLevel_Degree"/>    
+      <Item Index="22" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="23" Format="s" Name="SeaLevel_Degree_unit" Description="SeaLevel_Degree"/>    
+      <Item Index="24" Format="s" Name="Comma" Description="Comma"/>  
+      <Item Index="25" Format="3s" Name="Differece_Correct" Description="Differece_Correct"/>
+      <Item Index="26" Format="s" Name="Comma" Description="Comma"/> 
+      <Item Index="27" Format="9s" Name="StationId" Description="StationId"/> 
+    </Msg>
+    
+    <Msg Name="GPS2" Id="1002" Pack="!">
+      <Item Index="0" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="1" Format="9s" Name="UTCTime" Description="UTCTime"/>
+      <Item Index="2" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="3" Format="s" Name="PosState" Description="Comma"/>
+      <Item Index="4" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="5" Format="10s" Name="Latitude" Description="Latitude"/>
+      <Item Index="6" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="7" Format="s" Name="Lat_Hemi" Description="Lat_Hemi"/>
+      <Item Index="8" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="9" Format="11s" Name="Longitude"  Description="Longitude"/>      
+      <Item Index="10" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="11" Format="s" Name="Long_Hemi" Description="Long_Hemi"/>
+      <Item Index="12" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="13" Format="3s" Name="Ground_Speed" Description="Ground_Speed"/>
+      <Item Index="14" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="15" Format="3s" Name="Ground_course" Description="Ground_course"/>   
+      <Item Index="16" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="17" Format="6s" Name="UTCTimeYMD" Description="UTCTimeYMD"/>     
+      <Item Index="18" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="19" Format="2s" Name="Declination" Description="Declination"/>  
+      <Item Index="20" Format="s" Name="Comma" Description="Comma"/>
+      <Item Index="21" Format="6s" Name="Declination_Dir" Description="Declination_Dir"/>
+    </Msg>
+    
+    <Msg Name="LOOP4" Id="1003" Pack="!">
+   		<Item Index="0" Format="B" Name="IsOver_Loop" defValue = "0" RepeatFlag="1" Description="IsOver_Loop"/>
+    	<Item Index="1" Format="B" Name="Lastloop_Nr" defValue = "0" RepeatFlag="1" Description="Lastloop_Nr"/>
+    	<Item Index="2" Format="H" Name="LoopZone_Nr" defValue = "0" RepeatFlag="1" Description="LoopZone_Nr"/>
+    	<Item Index="3" Format="B" Name="Series_Nr" defValue = "0" RepeatFlag="1" Description="Series_Nr"/>
+    	<Item Index="4" Format="B" Name="Input_1" defValue = "0" RepeatFlag="1" Description="Input_1"/>
+    	<Item Index="5" Format="B" Name="Input_2" defValue = "0" RepeatFlag="1" Description="Input_2"/>
+    	<Item Index="6" Format="B" Name="Input_3" defValue = "0" RepeatFlag="1" Description="Input_3"/>
+    	<Item Index="7" Format="B" Name="Input_4" defValue = "0" RepeatFlag="1" Description="Input_4"/>
+    	<Item Index="8" Format="B" Name="CRC" defValue = "0" RepeatFlag="1" Description="CRC"/>
+    	<Item Index="9" Format="B" Name="TAIL" defValue = "3" RepeatFlag="1" Description="TAIL"/>
+    </Msg>
+    <Msg Name="LOOP1" Id="1007" Pack="!">
+    	<Item Index="0" Format="B" Name="Position" Description="Position of userdata"/>
+    	<Item Index="1" Format="B" Name="Userdata" Description="Userdata"/>
+    	<Item Index="2" Format="B" Name="CRC" Description="CRC"/>
+    	<Item Index="3" Format="B" Name="TAIL" Description="TAIL"/>
+    </Msg>
+    <Msg Name="LOOP2" Id="1008" Pack="!">
+    	<Item Index="0" Format="B" Name="CRC" Description="CRC"/>
+    	<Item Index="1" Format="B" Name="TAIL" Description="TAIL"/>
+    </Msg>
+    <Msg Name="LOOP3" Id="1006" Pack="!">
+      <Item Index="0" Format="B" Name="data1" Description="data1"/>
+      <Item Index="1" Format="B" Name="data2" Description="data2"/>
+      <Item Index="2" Format="B" Name="data3" Description="data3"/>
+      <Item Index="3" Format="B" Name="data4" Description="data4"/>
+      <Item Index="4" Format="B" Name="data5" Description="data5"/>
+      <Item Index="5" Format="B" Name="data6" Description="data6"/>
+      <Item Index="6" Format="B" Name="data7" Description="data7"/>
+      <Item Index="7" Format="B" Name="data8" Description="data8"/>
+      <Item Index="8" Format="B" Name="data9" Description="data9"/>
+      <Item Index="9" Format="B" Name="data10" Description="data10"/>
+      <Item Index="10" Format="B" Name="data11" Description="data11"/>
+      <Item Index="11" Format="B" Name="data12" Description="data12"/>
+      <Item Index="12" Format="B" Name="data13" Description="data13"/>
+      <Item Index="13" Format="B" Name="CRC" Description="CRC"/>
+      <Item Index="14" Format="B" Name="TAIL" Description="TAIL"/>
+    </Msg>
+    
+    
+    <Msg Name="ODM" Id="1004" Pack="!">
+      <Item Index="0" Format="I" Name="gearArray" Description="gearArray"/>
+    </Msg>  
+    
+    <Msg Name="CycleCmd" Id = "1005" Pack="!">
+    	<Item Index="1" Format="I" Name="CycleNum" defValue = "0" RepeatFlag="1" Description="CycleNum"/>
+    </Msg>     
+</Msg_Settings>

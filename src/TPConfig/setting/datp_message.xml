@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<!-- Item Format：I是UINT32， 16I是UINT32的数组，其他表示参考Pythonv2.6.6 documentation -->
+<Msg_Settings>
+	<Msg Name="Simulator_Message" Id="99" Pack="!">
+		<Item Index="0" Format="B" Name="Command_type" Description="91启动命令，92周期更新命令，93运行结束命令"/>
+	</Msg>
+    <Msg Name="Status_REPORT" Id="258" Pack="!">
+      <Item Index="0" Format="B" Name="subType" Description="位置更新消息"/>
+      <Item Index="1" Format="i" Name="Coordinates_1" Description="本周期开始时的车辆位置 毫米"/>
+      <Item Index="2" Format="i" Name="Coordinates_2" Description="本周期结束时的车辆位置 毫米"/>
+    </Msg> 
+	<Msg Name="DATP_Syn_Report" Id="1793" Pack="!">
+		<Item Index="0" Format="I" Name="CurrentTime" Description="CurrentTime"></Item>
+		<Item Index="1" Format="I" Name="LatestTimeOtherCore" Description="LatestTimeOtherCore"/>
+		<Item Index="2" Format="I" Name="CoreId" Description="CoreId"></Item>
+		<Item Index="3" Format="I" Name="BeaconId" Description="BeaconId"></Item>
+		<!-- 191基线修改 start -->
+		<Item Index="4" Format="I" Name="EnableDoorOpeningA" Description="EnableDoorOpeningA"/>
+		<Item Index="5" Format="I" Name="EnableDoorOpeningB" Description="EnableDoorOpeningB"/>
+		<!-- 191基线修改 end -->
+		<Item Index="6" Format="I" Name="PSDmanagerOpeningOrder" Description="PSDmanagerOpeningOrder"></Item>
+		<Item Index="7" Format="I" Name="PSDidSideA" Description="PSDidSideA"></Item>
+		<Item Index="8" Format="I" Name="PSDvaliditySideA" Description="PSDvaliditySideA"></Item>
+		<Item Index="9" Format="I" Name="PSDclosedSideA" Description="PSDclosedSideA"></Item>
+		<Item Index="10" Format="I" Name="PSDidSideB" Description="PSDidSideB"></Item>
+		<Item Index="11" Format="I" Name="PSDvaliditySideB" Description="PSDvaliditySideB"></Item>
+		<Item Index="12" Format="I" Name="PSDclosedSideB" Description="PSDclosedSideB"></Item>
+		<Item Index="13" Format="16I" Name="ZCVersion" Description="ZCVersion"/>
+		<!-- 191基线修改 start -->
+		<Item Index="29" Format="I" Name="LocatedOnKnownPath" Description="LocatedOnKnownPath"/>
+		<Item Index="30" Format="I" Name="LocatedWithMemLocation" Description="LocatedWithMemLocation"/>
+		<Item Index="31" Format="I" Name="LocationExt2Abscissa" Description="LocationExt2Abscissa"/>
+		<Item Index="32" Format="I" Name="LocationExt2Block" Description="LocationExt2Block"/>
+		<Item Index="33" Format="I" Name="LocationEnd2Orientation" Description="LocationEnd2Orientation"/>
+		<Item Index="34" Format="i" Name="LocationUncertainty" Description="LocationUncertainty"/>
+		<Item Index="35" Format="I" Name="LocationExt1Abscissa" Description="LocationExt1Abscissa"/>
+		<Item Index="36" Format="I" Name="LocationExt1Block" Description="LocationExt1Block"/>
+		<Item Index="37" Format="I" Name="LocationEnd1Orientation" Description="LocationEnd1Orientation"/>
+		<Item Index="38" Format="I" Name="SleepZoneId" Description="SleepZoneId"/>
+		<Item Index="39" Format="I" Name="SleepZoneVersion" Description="SleepZoneVersion"/>
+		<Item Index="40" Format="I" Name="MotionSinceLastRelocated" Description="MotionSinceLastRelocated"/>
+		<Item Index="41" Format="I" Name="MotionSinceMemoryLocated" Description="MotionSinceMemoryLocated"/>
+		<Item Index="42" Format="I" Name="TrainFilteredStopped" Description="TrainFilteredStopped"/>
+		<!-- 191基线修改 end -->		
+		<Item Index="43" Format="I" Name="SafetyParameterVersion" Description="SafetyParameterVersion"></Item>
+		<Item Index="44" Format="I" Name="SafetyApplicationVersion" Description="SafetyApplicationVersion"></Item>
+		<Item Index="45" Format="I" Name="CC_SSID" Description="CC SSID"></Item>
+		<Item Index="46" Format="I" Name="OverlapExpired" Description="OverlapExpired"></Item>
+       	<!-- 191基线修改 start -->
+<!--        	<Item Index="30" Format="I" Name="EnableDoorOpenningA" Description="EnableDoorOpenningA"></Item> -->
+<!--         <Item Index="31" Format="I" Name="EnableDoorOpenningB" Description="EnableDoorOpenningB"></Item> -->
+		<!-- 191基线修改 end -->
+		<Item Index="47" Format="I" Name="RadarRawSpeed" Description="RadarRawSpeed"></Item>
+		<Item Index="48" Format="3B" Name="Vital checksum S1" Description="Vital checksum S1"></Item>
+		<Item Index="51" Format="3B" Name="Vital checksum S2" Description="Vital checksum S2"></Item>	
+	</Msg>
+	
+    <Msg Name="HMI2datp" Id="51236" Pack="!">
+        <Item Index="0" Format="I" Name="CurrentTime" Description="CurrentTime"></Item>
+        <Item Index="1" Format="I" Name="LatestTimeOtherCore" Description="LatestTimeOtherCore"/>
+        <Item Index="2" Format="I" Name="CoreId" Description="CoreId"></Item>
+        <Item Index="3" Format="I" Name="BeaconId" Description="BeaconId"></Item>
+        <Item Index="4" Format="I" Name="PSDmanagerOpeningOrder" Description="PSDmanagerOpeningOrder"></Item>
+        <Item Index="5" Format="I" Name="PSDidSideA" Description="PSDidSideA"></Item>
+        <Item Index="6" Format="I" Name="PSDvaliditySideA" Description="PSDvaliditySideA"></Item>
+        <Item Index="7" Format="I" Name="PSDclosedSideA" Description="PSDclosedSideA"></Item>
+        <Item Index="8" Format="I" Name="PSDidSideB" Description="PSDidSideB"></Item>
+        <Item Index="9" Format="I" Name="PSDvaliditySideB" Description="PSDvaliditySideB"></Item>
+        <Item Index="10" Format="I" Name="PSDclosedSideB" Description="PSDclosedSideB"></Item>
+        <Item Index="11" Format="16I" Name="ZCVersion" Description="ZCVersion"/>
+        <Item Index="27" Format="I" Name="SafetyParameterVersion" Description="SafetyParameterVersion"></Item>
+        <Item Index="28" Format="I" Name="SafetyApplicationVersion" Description="SafetyApplicationVersion"></Item>
+    </Msg>
+	
+	<Msg Name="ATP_Syn_Report" Id="9220" Pack="!">
+		<Item Index="0" Format="I" Name="CurrentTime" Description="CurrentTime"></Item>
+		<Item Index="1" Format="I" Name="LatestTimeOtherCore" Description="LatestTimeOtherCore"/>
+		<Item Index="2" Format="I" Name="CoreId" Description="CoreId"></Item>
+		<Item Index="3" Format="I" Name="BeaconId" Description="BeaconId"></Item>
+		<!-- 191基线修改 start -->
+		<Item Index="4" Format="I" Name="EnableDoorOpeningA" Description="EnableDoorOpeningA"/>
+		<Item Index="5" Format="I" Name="EnableDoorOpeningB" Description="EnableDoorOpeningB"/>
+		<!-- 191基线修改 end -->
+		<Item Index="6" Format="I" Name="PSDmanagerOpeningOrder" Description="PSDmanagerOpeningOrder"></Item>
+		<Item Index="7" Format="I" Name="PSDidSideA" Description="PSDidSideA"></Item>
+		<Item Index="8" Format="I" Name="PSDvaliditySideA" Description="PSDvaliditySideA"></Item>
+		<Item Index="9" Format="I" Name="PSDclosedSideA" Description="PSDclosedSideA"></Item>
+		<Item Index="10" Format="I" Name="PSDidSideB" Description="PSDidSideB"></Item>
+		<Item Index="11" Format="I" Name="PSDvaliditySideB" Description="PSDvaliditySideB"></Item>
+		<Item Index="12" Format="I" Name="PSDclosedSideB" Description="PSDclosedSideB"></Item>
+		<Item Index="13" Format="16I" Name="ZCVersion" Description="ZCVersion"/>
+		<!-- 191基线修改 start -->
+		<Item Index="29" Format="I" Name="LocatedOnKnownPath" Description="LocatedOnKnownPath"/>
+		<Item Index="30" Format="I" Name="LocatedWithMemLocation" Description="LocatedWithMemLocation"/>
+		<Item Index="31" Format="I" Name="LocationExt2Abscissa" Description="LocationExt2Abscissa"/>
+		<Item Index="32" Format="I" Name="LocationExt2Block" Description="LocationExt2Block"/>
+		<Item Index="33" Format="I" Name="LocationEnd2Orientation" Description="LocationEnd2Orientation"/>
+		<Item Index="34" Format="I" Name="LocationUncertainty" Description="LocationUncertainty"/>
+		<Item Index="35" Format="I" Name="LocationExt1Abscissa" Description="LocationExt1Abscissa"/>
+		<Item Index="36" Format="I" Name="LocationExt1Block" Description="LocationExt1Block"/>
+		<Item Index="37" Format="I" Name="LocationEnd1Orientation" Description="LocationEnd1Orientation"/>
+		<Item Index="38" Format="I" Name="SleepZoneId" Description="SleepZoneId"/>
+		<Item Index="39" Format="I" Name="SleepZoneVersion" Description="SleepZoneVersion"/>
+		<Item Index="40" Format="I" Name="MotionSinceLastRelocated" Description="MotionSinceLastRelocated"/>
+		<Item Index="41" Format="I" Name="MotionSinceMemoryLocated" Description="MotionSinceMemoryLocated"/>
+		<Item Index="42" Format="I" Name="TrainFilteredStopped" Description="TrainFilteredStopped"/>
+		<!-- 191基线修改 end -->		
+		<Item Index="43" Format="I" Name="SafetyParameterVersion" Description="SafetyParameterVersion"></Item>
+		<Item Index="44" Format="I" Name="SafetyApplicationVersion" Description="SafetyApplicationVersion"></Item>
+		<Item Index="45" Format="I" Name="CC_SSID" Description="CC SSID"></Item>
+		<Item Index="46" Format="I" Name="OverlapExpired" Description="OverlapExpired"></Item>
+       	<!-- 191基线修改 start -->
+<!--        	<Item Index="30" Format="I" Name="EnableDoorOpenningA" Description="EnableDoorOpenningA"></Item> -->
+<!--         <Item Index="31" Format="I" Name="EnableDoorOpenningB" Description="EnableDoorOpenningB"></Item> -->
+		<!-- 191基线修改 end -->
+		<Item Index="47" Format="I" Name="RadarRawSpeed" Description="RadarRawSpeed"></Item>
+		<Item Index="48" Format="3B" Name="Vital checksum S1" Description="Vital checksum S1"></Item>
+		<Item Index="51" Format="3B" Name="Vital checksum S2" Description="Vital checksum S2"></Item>	
+	</Msg>
+	
+    <Msg Name="TS2DATP_BEACON_ID" Id="514" Pack="!">
+        <Item Index="0" Format="B" Name="SubType" Description="subType" />
+        <Item Index="1" Format="I" Name="BeaconID" Description="BeaconID" />
+    </Msg>
+</Msg_Settings>

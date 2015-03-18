@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--本文件用于记录当前用户的-->
+<LineInformation>
+  <LineInfo Line_Id="11" Direction="1" SSA_List="5,7,9,11,3,14" Block_List="25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44" />
+  <LineInfo Line_Id="12" Direction="1" SSA_List="5,7,9,11,4,13" Block_List="25,26,27,28,29,30,31,32,33,34,35,36,37,38,53,54,18,19,20,21" />
+  <LineInfo Line_Id="13" Direction="1" SSA_List="6,7,9,11,3,14" Block_List=" 2, 3,47,48,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44" />
+  <LineInfo Line_Id="14" Direction="1" SSA_List="6,7,9,11,4,13" Block_List=" 2, 3,47,48,29,30,31,32,33,34,35,36,37,38,53,54,18,19,20,21" />
+  <LineInfo Line_Id="21" Direction="2" SSA_List="13,4,12,10,8,6" Block_List="21,20,19,18,17,16,15,14,13,12,11,10, 9, 8, 7, 6, 5, 4, 3, 2" />
+  <LineInfo Line_Id="22" Direction="2" SSA_List="13,4,12,10,8,5" Block_List="21,20,19,18,17,16,15,14,13,12,11,10, 9, 8, 7, 6,50,49,26,25" />
+  <LineInfo Line_Id="23" Direction="2" SSA_List="14,3,12,10,8,6" Block_List="44,43,42,41,52,51,15,14,13,12,11,10, 9, 8, 7, 6, 5, 4, 3, 2" />
+  <LineInfo Line_Id="24" Direction="2" SSA_List="14,3,12,10,8,5" Block_List="44,43,42,41,52,51,15,14,13,12,11,10, 9, 8, 7, 6,50,49,26,25" />
+</LineInformation>

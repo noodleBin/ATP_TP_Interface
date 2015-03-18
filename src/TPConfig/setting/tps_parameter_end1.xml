@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设备参数定义 SSTY LogID SSID-->
+<PARA>
+    <DEVICE>
+		<Dev Name="rs"  SSTY="1" LogID="1" SSID="1" Description="parameter of rs"/>
+		<Dev Name="ts"  SSTY="2" LogID="1" SSID="1" Description="parameter of ts"/>
+		<Dev Name="cbk"  SSTY="3" LogID="1" SSID="1" Description="parameter of cbk"/>
+		<Dev Name="atp"  SSTY="24" LogID="1" SSID="1" Description="parameter of atp"/>
+		<Dev Name="ccnv"  SSTY="20" LogID="1" SSID="1" Description="parameter of ccnv"/>
+		<Dev Name="viom_1_A"  SSTY="23" LogID="1" SSID="1" Description="parameter of viom_1_A"/>
+		<Dev Name="viom_1_B"  SSTY="23" LogID="2" SSID="2" Description="parameter of viom_1_B"/>
+		<Dev Name="viom_2_A"  SSTY="23" LogID="3" SSID="3" Description="parameter of viom_2_A"/>
+		<Dev Name="viom_2_B"  SSTY="23" LogID="4" SSID="4" Description="parameter of viom_2_B"/>
+		<Dev Name="zc"  SSTY="30" LogID="1" SSID="1" Description="parameter of zc"/>
+		<Dev Name="lc"  SSTY="40" LogID="1" SSID="1" Description="parameter of lc"/>
+		<Dev Name="ats"  SSTY="10" LogID="1" SSID="1" Description="parameter of ats"/>
+		<Dev Name="tims"  SSTY="6" LogID="1" SSID="1" Description="parameter of tims"/>
+		<Dev Name="sdts"  SSTY="5" LogID="1" SSID="1" Description="parameter of sdts"/>
+		<Dev Name="datp"  SSTY="24" LogID="2" SSID="2" Description="parameter of datp"/>
+		<Dev Name="ci"  SSTY="60" LogID="1" SSID="1" Description="parameter of ci1"/>
+		<Dev Name="hmi"  SSTY="200" LogID="1" SSID="1" Description="parameter of hmi"/>
+    </DEVICE>
+
+<!-- 冗余层和信号层参数定义ID-平台内部msgID SRC源设备 DST目的设备 RMSV冗余层版本 SIGV信号层版 MSGID 信号层MSGID-->
+    <MESSAGE>
+        <MsgID Name="rs2cbk"  ID="257" SRC="rs" DST="cbk" RMSV="1" SIGV="3" APPT="3" MSGID ="11" Description="rs to cbk"/>
+        <MsgID Name="rs2cbkreset"  ID="260" SRC="rs" DST="cbk" RMSV="1" SIGV="3" APPT="3" MSGID ="1" Description="rs to cbk to control reset the atp"/>
+        <MsgID Name="rs2cbkstart"  ID="261" SRC="rs" DST="cbk" RMSV="1" SIGV="3" APPT="3" MSGID ="2" Description="rs to cbk to control reset the atp"/>
+        <MsgID Name="ts2cbk"  ID="513" SRC="ts" DST="cbk" RMSV="1" SIGV="3" APPT="3" MSGID ="1" Description="ts to cbk"/>
+        <MsgID Name="viom1a2atp"  ID="5889" SRC="viom_1_A" DST="atp" RMSV="1" SIGV="3" APPT="1" MSGID ="11" Description="viom1a to cbk"/>
+        <MsgID Name="viom1b2tp"  ID="5890" SRC="viom_1_B" DST="atp" RMSV="1" SIGV="3" APPT="1" MSGID ="11" Description="viom1b to cbk"/>
+        <MsgID Name="viom2a2atp"  ID="5891" SRC="viom_2_A" DST="atp" RMSV="1" SIGV="3" APPT="1" MSGID ="11" Description="viom2a to cbk"/>
+        <MsgID Name="viom2b2atp"  ID="5892" SRC="viom_2_B" DST="atp" RMSV="1" SIGV="3" APPT="1" MSGID ="11" Description="viom2b to cbk"/>
+        <MsgID Name="ccnv2atp"  ID="5121" SRC="ccnv" DST="atp" RMSV="1" SIGV="3" APPT="3" MSGID ="201" Description="ccnv to cbk"/>
+        <MsgID Name="datp2atp"  ID ="1793" SRC="datp" DST="atp" RMSV="1" SIGV="3" APPT="1" MSGID ="21" Description="datp to cbk"/>
+        <MsgID Name="lc2ccnv"  ID ="10241" SRC="lc" DST="ccnv" RMSV="1" SIGV="3" APPT="1" MSGID ="1" Description="lc to ccnv"/>
+        <MsgID Name="zc2ccnv"  ID ="7681" SRC="zc" DST="ccnv" RMSV="1" SIGV="9" APPT="1" MSGID ="20" Description="zc to ccnv"/>
+        <MsgID Name="atp2ccnvinit"  ID ="9217" SRC="atp" DST="ccnv" RMSV="1" SIGV="3" APPT="3" MSGID ="241" Description="atp to ccnv when init"/>
+        <MsgID Name="atp2ccnv"  ID ="9218" SRC="atp" DST="ccnv" RMSV="1" SIGV="3" APPT="3" MSGID ="242" Description="atp to ccnv when init"/>
+        <MsgID Name="atp2viom"  ID ="9219" SRC="atp" DST="viom" RMSV="1" SIGV="3" APPT="3" MSGID ="12" Description="atp to viom"/>
+        <MsgID Name="atp2datp"  ID ="9220" SRC="atp" DST="datp" RMSV="1" SIGV="3" APPT="3" MSGID ="21" Description="atp to datp"/>
+        <MsgID Name="ccnv2zc"  ID ="9221" SRC="ccnv" DST="zc" RMSV="1" SIGV="7" APPT="3" MSGID ="64" Description="ccnv to zc"/>
+        <MsgID Name="ccnv2lc"  ID ="9222" SRC="ccnv" DST="lc" RMSV="1" SIGV="3" APPT="3" MSGID ="101" Description="ccnv to lc"/>
+        <MsgID Name="hmi2rs_acc"  ID ="51233" SRC="hmi" DST="rs" RMSV="1" SIGV="3" APPT="3" MSGID ="33" Description="hmi to rs"/>
+        <MsgID Name="hmi2viom"  ID ="51234" SRC="hmi" DST="viom" RMSV="1" SIGV="3" APPT="3" MSGID ="34" Description="hmi to viom"/>
+        <MsgID Name="hmi2ccnv"  ID ="51235" SRC="hmi" DST="ccnv" RMSV="1" SIGV="3" APPT="3" MSGID ="35" Description="hmi to ccnv"/>
+        <MsgID Name="hmi2datp"  ID ="51236" SRC="hmi" DST="datp" RMSV="1" SIGV="3" APPT="3" MSGID ="36" Description="hmi to datp"/>
+        <MsgID Name="rs2hmi"  ID ="293" SRC="rs" DST="hmi" RMSV="1" SIGV="3" APPT="3" MSGID ="37" Description="rs to hmi"/>
+        <MsgID Name="cileftsidetoccnv"  ID ="15361" SRC="ci" DST="ccnv" RMSV="1" SIGV="3" APPT="2" MSGID ="101" Description="ci left side to ccnv"/>
+        <MsgID Name="cirightsidetoccnv"  ID ="15362" SRC="ci" DST="ccnv" RMSV="1" SIGV="3" APPT="2" MSGID ="101" Description="ci right side to ccnv"/>
+        <MsgID Name="ci2ccvariantcontainer"  ID ="15363" SRC="ci" DST="ccnv" RMSV="1" SIGV="2" APPT="1" MSGID ="1" Description="ci to cc variant container"/>
+<!--         <MsgID Name="ci2ccvariantrequest"  ID ="15364" SRC="ci" DST="ccnv" RMSV="1" SIGV="2" APPT="1" MSGID ="3" Description="ci to cc variant request"/> -->
+        <MsgID Name="ccnv2cipsd"  ID ="2310" SRC="ccnv" DST="ci" RMSV="1" SIGV="3" APPT="2" MSGID ="1" Description="ccnv to ci psd"/>
+        <MsgID Name="cc2civariantcontainer"  ID ="2313" SRC="ccnv" DST="ci" RMSV="1" SIGV="3" APPT="1" MSGID ="2" Description="cc to ci variant container"/>
+<!--         <MsgID Name="cc2civariantrequest"  ID ="2314" SRC="ccnv" DST="ci" RMSV="1" SIGV="3" APPT="1" MSGID ="3" Description="cc to ci variant request"/> -->
+        <MsgID Name="rs2atp"  ID ="300" SRC="rs" DST="atp" RMSV="1" SIGV="3" APPT="3" MSGID ="1" Description="rs to atp"/>
+    </MESSAGE>
+</PARA>

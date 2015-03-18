@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--根节点为 ResultAnalysis-->
+<!--包括变量 Variables 和 规则 Rules-->
+<!--变量 Varibales 包括 类型 Type Id Id  属性 Attr 描述 Des-->
+<!--变量 Variables 类型 Type 包括 Format 来自Omap 对应 0-->
+<!--变量 Variables 类型 Type 包括 Constant 来自程序中的宏 对应 1-->
+<!--变量 Variables 类型 Type 包括 Setting 来自地图中的配置数据 对应 2-->
+<!--变量 Variables 类型 Type 包括 用户自定义 对应 3 -->
+<!--变量 Variables 类型 Type 后续可以酌情增加-->
+<!--变量 Variables Id 标示标量且唯一 -->
+<!--变量 Variables 属性 Attr 随类型而改变 可为空 -->
+
+<!--规则 Rules 支持同一个Omap记录对应的多个步骤的结果分析 -->
+<!--规则 Rules 包括 地点 Position 时间 Time 操作 Op -->
+<!--规则 Rules 地点 Pos 单位为毫米 包括 起始 Start 和 结束 End 不填为第一帧和最后一帧 -->
+<!--规则 Rules 时间 Time 单位为100毫秒 包括 起始 Begin 和 结束 End 不填为第一帧和最后一帧 -->
+<!--规则 Rules 操作 Op 中出现的变量应在 Variables中定义 若不能找到，则默认为Omap Format中的变量-->
+<!--规则 Rules 操作 Op 中出现的变量应在 Variables中定义 若不能找到，则默认为Omap Format中的变量-->
+
+<!--Op 包括 Precondition 和 Result -->
+<!-- Precondition 和 Result 支持双目 “BOP”和 单目“UOP”运算-->
+<!-- Precondition 和 Result 支持的双目操作符 包括 OR AND GE GT LE LT EQ XOR XNOR ADD SUB MUL DIV POW MOD -->
+<!-- Precondition 和 Result 支持的单目操作符 包括 NOT FLOOR CEIL-->
+<!-- Op的Type有两种，UserDef的为脚本中定义，CommDef则需要到用户的需求规则库中寻找"-->
+<!-- 最终节点有三种形式：Variant:"变量",ConstInt："整型",ConstFloat:"浮点型"-->
+
+
+<ResultAnalysis>
+	<Variables>
+		<Var Type="0" Id="ValidTrainKinematic" Attr="" Des="ValidTrainKinematic"/>
+		<Var Type="0" Id="LocalizationState" Attr="" Des="LocalizationState"/>
+		<Var Type="0" Id="LocalizationFault" Attr="" Des="LocalizationFault"/>		
+		<Var Type="0" Id="PointCrossed" Attr="" Des="PointCrossed"/>		
+	</Variables>
+	<Rules TC = "TC0001" Des = "">
+		<Time Begin = "140" End = "152" Des = ""/>
+		
+		<Op Type = "UserDef" Value = "">
+			<Precondition Type = "BOP" Value="AND" Des = "">
+				<lexp Type="BOP" Value="EQ">
+					<lexp Type="Variant" Value="ValidTrainKinematic"/>
+					<rexp Type="ConstStr" Value="False"/>
+				</lexp>
+				<rexp Type="BOP" Value="EQ">
+					<lexp Type="Variant" Value="LocalizationState#-1"/>
+					<rexp Type="ConstStr" Value="LOCALIZED"/>
+				</rexp>
+			</Precondition>
+			
+			<Result Type = "BOP" Value="EQ"  Des = "">
+				<lexp Type="Variant" Value="LocalizationFault"/>
+				<rexp Type="ConstStr" Value="True"/>
+			</Result>
+			<Result Type = "BOP" Value="EQ"  Des = "">
+				<lexp Type="Variant" Value="LocalizationState"/>
+				<rexp Type="ConstStr" Value="NOT_LOCALIZED"/>
+			</Result>
+			<Result Type = "BOP" Value="EQ"  Des = "">
+				<lexp Type="Variant" Value="PointCrossed#1"/>
+				<rexp Type="ConstStr" Value="False"/>
+			</Result>
+		</Op>
+	</Rules>
+</ResultAnalysis>
+
+
+

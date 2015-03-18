@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Block_List应该与Direction方向一致 -->
+<!-- trainLen单位:毫米 -->
+<!-- train mode == auto自动/manual -->
+<Train>
+  <Mode Value="auto"/>
+  <Stop_time Value="2"/>
+  <Cog_dir Value="0.012"/>
+  <trainLen Value="116066"/>
+  <Accel Positive="1" Negative="-1"/>
+  <V_max Value="10"/>
+  <Timer Big="0.5" Small="0.01"/>
+  <Radio Outer="1" Inner="1"/>
+</Train>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，Log 为每周期记录到日志-->
+<Variables>
+  <Var Name="loophour" Type="int" IO="Input" Value="1" Description="本地loophour，每周期自增1"/>
+  <Var Name="Src" Type="int" IO="Input" Value="1847" Description="源子系统类型为7和ID为55(DATP)"/>
+  <Var Name="Dest" Type="int" IO="Input" Value="6199" Description="目的子系统类型为24和ID为55(ATP)"/>
+  <Var Name="ATP_MAX_TIME" Type="int" IO="Input" Value="536870912" Description="ATP_MAX_TIME最大时间常数,为回转loophour:2**29"/>
+  <Var Name="Command_type" Type="int" IO="Log" Value="100" Description="91启动命令，92周期更新命令，93运行结束命令"/>
+  <Var Name="Active_ATP" Type="int" IO="Input" Value="2" Description="远端atp属于哪个端，1表示end1,2表示end2"/>
+  <Var Name="subType" Type="int" IO="Log" Value="0" Description="扩展用"/>
+  <Var Name="Coordinates_1" Type="int" IO="Log" Value="0" Description="周期起始坐标"/>
+  <Var Name="Coordinates_2" Type="int" IO="Log" Value="0" Description="周期结束坐标"/>
+  <Var Name="CurrentTime" Type="int"  IO="Log" Value="0" Description="CurrentTime"/>
+  <Var Name="LatestTimeOtherCore" Type="int" IO="Log" Value="0" Description="LatestTimeOtherCore"/>
+  <Var Name="CoreId" Type="int" IO="Log" Value="0" Description="CoreId"/>
+  <Var Name="BeaconId" Type="int" IO="Log" Value="0" Description="BeaconId"/>
+  <!-- 191基线修改 start -->
+  <Var Name="EnableDoorOpeningA" Type="int" IO="Log" Value="0" Description="EnableDoorOpeningA"/>
+  <Var Name="EnableDoorOpeningB" Type="int" IO="Log" Value="0" Description="EnableDoorOpeningB"/>
+  <!-- 191基线修改 end -->
+  <Var Name="PSDmanagerOpeningOrder" Type="int" IO="Log" Value="0" Description="PSDmanagerOpeningOrder"/>
+  <Var Name="PSDidSideA" Type="int" IO="Log" Value="0" Description="PSDidSideA"/>
+  <Var Name="PSDvaliditySideA" Type="int" IO="Log" Value="0" Description="PSDvaliditySideA"/>
+  <Var Name="PSDclosedSideA" Type="int" IO="Log" Value="0" Description="PSDclosedSideA"/>
+  <Var Name="PSDidSideB" Type="int" IO="Log" Value="0" Description="PSDidSideB"/>
+  <Var Name="PSDvaliditySideB" Type="int" IO="Log" Value="0" Description="PSDvaliditySideB"/>
+  <Var Name="PSDclosedSideB" Type="int" IO="Log" Value="0" Description="PSDclosedSideB"/>
+  <Var Name="ZCVersion[0]" Type="int" IO="Log" Value="0" Description="ZCVersion[0]"/>
+  <Var Name="ZCVersion[1]" Type="int" IO="Log" Value="0" Description="ZCVersion[1]"/>
+  <Var Name="ZCVersion[2]" Type="int" IO="Log" Value="0" Description="ZCVersion[2]"/>
+  <Var Name="ZCVersion[3]" Type="int" IO="Log" Value="0" Description="ZCVersion[3]"/>
+  <Var Name="ZCVersion[4]" Type="int" IO="Log" Value="0" Description="ZCVersion[4]"/>
+  <Var Name="ZCVersion[5]" Type="int" IO="Log" Value="0" Description="ZCVersion[5]"/>
+  <Var Name="ZCVersion[6]" Type="int" IO="Log" Value="0" Description="ZCVersion[6]"/>
+  <Var Name="ZCVersion[7]" Type="int" IO="Log" Value="0" Description="ZCVersion[7]"/>
+  <Var Name="ZCVersion[8]" Type="int" IO="Log" Value="0" Description="ZCVersion[8]"/>
+  <Var Name="ZCVersion[9]" Type="int" IO="Log" Value="0" Description="ZCVersion[9]"/>
+  <Var Name="ZCVersion[10]" Type="int" IO="Log" Value="0" Description="ZCVersion[10]"/>
+  <Var Name="ZCVersion[11]" Type="int" IO="Log" Value="0" Description="ZCVersion[11]"/>
+  <Var Name="ZCVersion[12]" Type="int" IO="Log" Value="0" Description="ZCVersion[12]"/>
+  <Var Name="ZCVersion[13]" Type="int" IO="Log" Value="0" Description="ZCVersion[13]"/>
+  <Var Name="ZCVersion[14]" Type="int" IO="Log" Value="0" Description="ZCVersion[14]"/>
+  <Var Name="ZCVersion[15]" Type="int" IO="Log" Value="0" Description="ZCVersion[15]"/>
+  <!-- 191基线修改 start -->
+  <Var Name="LocatedOnKnownPath" Type="int" IO="Log" Value="0" Description="LocatedOnKnownPath"/>
+  <Var Name="LocatedWithMemLocation" Type="int" IO="Log" Value="0" Description="LocatedWithMemLocation"/>
+  <Var Name="LocationExt2Abscissa" Type="int" IO="Log" Value="0" Description="LocationExt2Abscissa"/>
+  <Var Name="LocationExt2Block" Type="int" IO="Log" Value="0" Description="LocationExt2Block"/>
+  <Var Name="LocationEnd2Orientation" Type="int" IO="Log" Value="0" Description="LocationEnd2Orientation"/>
+  <Var Name="LocationUncertainty" Type="int" IO="Log" Value="0" Description="LocationUncertainty"/>
+  <Var Name="LocationExt1Abscissa" Type="int" IO="Log" Value="0" Description="LocationExt1Abscissa"/>
+  <Var Name="LocationExt1Block" Type="int" IO="Log" Value="0" Description="LocationExt1Block"/>
+  <Var Name="LocationEnd1Orientation" Type="int" IO="Log" Value="0" Description="LocationEnd1Orientation"/>
+  <Var Name="SleepZoneId" Type="int" IO="Log" Value="0" Description="SleepZoneId"/>
+  <Var Name="SleepZoneVersion" Type="int" IO="Log" Value="0" Description="SleepZoneVersion"/>
+  <Var Name="MotionSinceLastRelocated" Type="int" IO="Log" Value="0" Description="MotionSinceLastRelocated"/>
+  <Var Name="MotionSinceMemoryLocated" Type="int" IO="Log" Value="0" Description="MotionSinceMemoryLocated"/>
+  <Var Name="TrainFilteredStopped" Type="int" IO="Log" Value="0" Description="TrainFilteredStopped"/>
+  <!-- 191基线修改 end -->
+  <Var Name="SafetyParameterVersion" Type="int" IO="Log" Value="0" Description="SafetyParameterVersion"/>
+  <Var Name="SafetyApplicationVersion" Type="int" IO="Log" Value="0" Description="SafetyApplicationVersion"/>
+  <Var Name="CC_SSID" Type="int" IO="Log" Value="1" Description="CC_SSID,与datplug中的值保持一致"/>
+  <Var Name="OverlapExpired" Type="int" IO="Log" Value="0" Description="OverlapExpired"/>
+  <Var Name="RadarRawSpeed" Type="int" IO="Log" Value="0" Description="RadarRawSpeed"/>
+  <Var Name="Vital checksum S1[0]" Type="int" IO="Log" Value="0" Description="Vital checksum S1[0]"/>
+  <Var Name="Vital checksum S1[1]" Type="int" IO="Log" Value="0" Description="Vital checksum S1[1]"/>
+  <Var Name="Vital checksum S1[2]" Type="int" IO="Log" Value="0" Description="Vital checksum S1[2]"/>
+  <Var Name="Vital checksum S2[0]" Type="int" IO="Log" Value="0" Description="Vital checksum S2[0]"/>
+  <Var Name="Vital checksum S2[1]" Type="int" IO="Log" Value="0" Description="Vital checksum S2[1]"/>
+  <Var Name="Vital checksum S2[2]" Type="int" IO="Log" Value="0" Description="Vital checksum S2[2]"/>
+  <Var Name="SendMesENABLE" Type="int" IO="Input" Value="1" Description="是否发送数据"/>
+  <Var Name="CheckSumENABLE" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <Var Name="deta_CurrentTime" Type="int" IO="Input" Value="0" Description="deta_CurrentTime:用于修改CurrentTime的值"/>
+  <Var Name="deta_LatestTimeOtherCore" Type="int" IO="Input" Value="0" Description="deta_LatestTimeOtherCore,修改LatestTimeOtherCore的值"/>
+  <Var Name="SafetyAppVersion_Modify" Type="int" IO="Input" Value="0" Description="SafetyApplicationVersion可修改标识,1可修改，0则采用atp本端发送过来的值覆盖"/>
+  <Var Name="SafetyParVersion_Modify" Type="int" IO="Input" Value="0" Description="SafetyParameterVersion可修改标识,1可修改，0则采用atp本端发送过来的值覆盖"/>
+  <Var Name="RadarRawSpeed_Modify" Type="int" IO="Input" Value="0" Description="RadarRawSpeed可修改标识,1可修改，0则采用atp本端发送过来的值覆盖"/>
+</Variables>

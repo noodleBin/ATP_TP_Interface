@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<!--SYNCHRO_REPORT,VERSION_REPORT,TSR_CONTENT 在simulator中打在一个container-->
+<Msg_Settings>
+    <Msg Name="Train_Position" Id="258" Pack="!">
+      <Item Index="0" Format="B" Name="Subtype" Description="Subtype"/>
+      <Item Index="1" Format="i" Name="Coordinates_S" Description="Coordinates Start"/>
+      <Item Index="2" Format="i" Name="Coordinates_E" Description="Coordinates End"/>
+    </Msg>
+    
+    <Msg Name="Sim_Command" Id="99" Pack="!">
+      <Item Index="0" Format="B" Name="Command_Type" Description="Command_Type"/>
+    </Msg>
+
+    <Msg Name="Beacon_Message" Id="513" Pack="!">
+      <Item Index="0" Format="B" Name="subType" Description="subType"/>
+      <Item Index="1" Format="f" Name="Coordinates_offset" Description="Coordinates_offset unit m"/>
+      <Item Index="2" Format="29s" Name="Message" Description="Message"/>
+    </Msg>
+    
+    <Msg Name="TS2DATP_BEACON_ID" Id="514" Pack="!">
+      <Item Index="0" Format="B" Name="SubType" Description="subType" />
+      <Item Index="1" Format="I" Name="BeaconID" Description="BeaconID" />
+    </Msg>    
+</Msg_Settings>

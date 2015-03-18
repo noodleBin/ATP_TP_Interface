@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 模拟器网络配置-->
+<!-- simulator使用的socket是单向的，需要一对socket才能与外界通信-->
+<Network_Setting>
+  <!-- IP_Addresses配置网络通信中使用到的IP和端口号-->
+  <Serial_Addresses>
+  	<Serial_Address ID="1" Name="loop485" COM="5" Rate="19200"/>
+  	<Serial_Address ID="2" Name="gps232" COM="4" Rate="19200"/>
+  	<Serial_Address ID="3" Name="odm232" COM="3" Rate="19200"/>
+  </Serial_Addresses>
+  
+  <!--IP连接关系channel Protocol保留字段未使用-->
+  <Channels>
+    <Channel ID="1" Name="loop485" Local_Addr_ID="1" Protocol="protocol" />
+    <Channel ID="2" Name="gps232" Local_Addr_ID="2" Protocol="protocol" />
+    <Channel ID="3" Name="odm232" Local_Addr_ID="3" Protocol="protocol" />
+  </Channels>
+  
+  <!-- listening配置监听消息,以及消息处理的回调函数-->
+  <Listenings>
+    <Listening ID="1" Local_Addr_ID="1" Handle="loop"/> 
+    <Listening ID="2" Local_Addr_ID="2" Handle="gps"/>  
+    <Listening ID="3" Local_Addr_ID="3" Handle="odm"/>  
+  </Listenings>
+  
+</Network_Setting>
+

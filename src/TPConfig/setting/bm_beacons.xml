@@ -1,0 +1,1586 @@
+<BM_Beacon>
+  <Beacon ID="2000" direction="up" VARnumber="15">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="0"/>
+    <Variant Index="14" Value="0"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2001" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2002" direction="down" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2003" direction="up" VARnumber="4">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2004" direction="up" VARnumber="16">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="0"/>
+    <Variant Index="14" Value="0"/>
+    <Variant Index="15" Value="0"/>
+  </Beacon>
+  <Beacon ID="2005" direction="down" VARnumber="4">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2006" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2007" direction="up" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2008" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2011" direction="down" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2015" direction="up" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2017" direction="down" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2019" direction="up" VARnumber="13">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2023" direction="down" VARnumber="15">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="0"/>
+    <Variant Index="14" Value="0"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2025" direction="up" VARnumber="4">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2031" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2033" direction="up" VARnumber="7">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2037" direction="up" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2047" direction="up" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2075" direction="down" VARnumber="10">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2081" direction="up" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2083" direction="up" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2085" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2087" direction="up" VARnumber="4">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2093" direction="up" VARnumber="4">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2095" direction="up" VARnumber="14">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="0"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2097" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2101" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2103" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2105" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2109" direction="up" VARnumber="7">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2111" direction="down" VARnumber="4">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2113" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2115" direction="up" VARnumber="3">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2117" direction="up" VARnumber="3">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2119" direction="up" VARnumber="9">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2125" direction="down" VARnumber="13">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2127" direction="up" VARnumber="15">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="0"/>
+    <Variant Index="14" Value="0"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2131" direction="down" VARnumber="9">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2133" direction="down" VARnumber="9">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2135" direction="down" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2139" direction="down" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2143" direction="down" VARnumber="4">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2151" direction="down" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2153" direction="down" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2155" direction="down" VARnumber="13">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2157" direction="down" VARnumber="4">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2159" direction="down" VARnumber="4">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2169" direction="down" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2171" direction="up" VARnumber="10">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2173" direction="down" VARnumber="13">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2175" direction="down" VARnumber="13">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2177" direction="down" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2185" direction="down" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2187" direction="down" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2189" direction="down" VARnumber="6">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2191" direction="down" VARnumber="3">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2195" direction="up" VARnumber="3">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2197" direction="up" VARnumber="9">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2199" direction="up" VARnumber="7">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2201" direction="down" VARnumber="13">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2203" direction="up" VARnumber="8">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2205" direction="down" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2213" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2215" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2217" direction="down" VARnumber="6">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2219" direction="up" VARnumber="9">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2223" direction="down" VARnumber="11">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2225" direction="up" VARnumber="7">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2227" direction="up" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2229" direction="up" VARnumber="7">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2231" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2233" direction="up" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2235" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2237" direction="up" VARnumber="13">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2239" direction="up" VARnumber="13">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="0"/>
+    <Variant Index="11" Value="0"/>
+    <Variant Index="12" Value="0"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2241" direction="up" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2245" direction="up" VARnumber="7">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2247" direction="up" VARnumber="7">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2253" direction="down" VARnumber="10">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="0"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2255" direction="down" VARnumber="7">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2257" direction="down" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2259" direction="down" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2261" direction="down" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2263" direction="down" VARnumber="2">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2267" direction="down" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2269" direction="down" VARnumber="1">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="-1"/>
+    <Variant Index="2" Value="-1"/>
+    <Variant Index="3" Value="-1"/>
+    <Variant Index="4" Value="-1"/>
+    <Variant Index="5" Value="-1"/>
+    <Variant Index="6" Value="-1"/>
+    <Variant Index="7" Value="-1"/>
+    <Variant Index="8" Value="-1"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+  <Beacon ID="2273" direction="up" VARnumber="9">
+    <Variant Index="0" Value="0"/>
+    <Variant Index="1" Value="0"/>
+    <Variant Index="2" Value="0"/>
+    <Variant Index="3" Value="0"/>
+    <Variant Index="4" Value="0"/>
+    <Variant Index="5" Value="0"/>
+    <Variant Index="6" Value="0"/>
+    <Variant Index="7" Value="0"/>
+    <Variant Index="8" Value="0"/>
+    <Variant Index="9" Value="-1"/>
+    <Variant Index="10" Value="-1"/>
+    <Variant Index="11" Value="-1"/>
+    <Variant Index="12" Value="-1"/>
+    <Variant Index="13" Value="-1"/>
+    <Variant Index="14" Value="-1"/>
+    <Variant Index="15" Value="-1"/>
+  </Beacon>
+</BM_Beacon>

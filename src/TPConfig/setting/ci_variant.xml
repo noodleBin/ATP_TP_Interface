@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，具体待定-->
+<Variables>
+  <Var Name="loophour" Type="int"  IO="Log" Value="0" Description="ci loophour"/>
+  <Var Name="Cur_PSD_Status_Left" Type="int"  IO="Log" Value="1" Description="当前PSD状态，1:状态为关闭，0：状态为开启，2：为常开，3：为常闭"/>
+  <Var Name="Cur_PSD_Status_Right" Type="int"  IO="Log" Value="1" Description="当前PSD状态，1:状态为关闭，0：状态为开启，2：为常开，3：为常闭"/>
+  <Var Name="Cur_PSD_ID" Type="int"  IO="Log" Value="0" Description="当前PSDid,为0时使用通讯的psdid，大于零时则强制将psdid改为该值进行通讯"/>
+  <Var Name="SENDMsgEnable_Left" Type="int"  IO="Log" Value="1" Description="1:发送左侧屏蔽门消息，0不发送"/>
+  <Var Name="SENDMsgEnable_Right" Type="int"  IO="Log" Value="1" Description="1:发送右侧屏蔽门消息，0不发送"/>
+  <Var Name="CCLoopHourForCCReq" Type="int"  IO="Log" Value="0" Description="记录CC发送过来的变量消息请求时的CCLoophour"/>
+  <Var Name="detaCILoopHour" Type="int"  IO="Log" Value="0" Description="联锁loophour的delta值，用于改变联锁loophour时使用"/>
+  <Var Name="detaCCLoopHourForCCReq" Type="int"  IO="Log" Value="0" Description="CCLoopHourForCCReq的delta值，用于改变CCLoopHourForCCReq时使用"/>
+  <Var Name="CheckSumENABLE_Var" Type="int"  IO="Log" Value="1" Description="是否计算由CI发送给CC的变量消息的CheckSum"/>
+  <Var Name="CheckSumENABLE_Req" Type="int"  IO="Log" Value="1" Description="是否计算由CI发送给CC的变量请求消息的CheckSum"/>
+  <Var Name="SENDMsgENABLE_Var" Type="int"  IO="Log" Value="1" Description="是否发送由CI发送给CC的变量消息"/>
+  <Var Name="SENDMsgENABLE_Req" Type="int"  IO="Log" Value="1" Description="是否发送由CI发送给CC的变量请求消息"/>
+  <Var Name="ModifyCIList" Type="string"  IO="Log" Value="1,2,3,4,5,6" Description="用于控制修改CBI的checksum信息"/>
+  <Var Name="DefaultResponseEND" Type="int"  IO="Log" Value="1" Description="ModifyCIList没有该CBIID的时候用来判断相应远端还是本端，1：本端，2远端"/>
+  <Var Name="ModifyResponseEND" Type="int"  IO="Log" Value="1" Description="ModifyCIList有该CBIID的时候用来判断相应远端还是本端，1：本端，2远端"/>
+  <Var Name="CRCMErrorFlag" Type="int"  IO="Log" Value="0" Description="CRCMErrorFlag,控制FSFB2通信时CRCM是否错误，为1的时候错误"/>
+</Variables>
+    

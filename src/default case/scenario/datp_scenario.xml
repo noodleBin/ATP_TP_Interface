@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--该脚本定义了车辆位置和消息值的定义关系-->
+<!--block中的abscissa的单位是毫米-->
+<!--delay定义了该值过多少时间后变化,delay的刻度是100ms，既delay 1 代表100ms-->
+<!--var必须是在var.xml中定义过的-->
+<Scenario>
+    <!--  初始码位设置 -->
+    <Position Block_id="247" Abscissa="116066" Delay="0">     <!-- 0m -->    
+      <Set Name="Active_ATP"  Value="2"/>
+      <Set Name="CoreId"  Value="2"/>     
+      <Set Name="ZCVersion[0]"  Value="18"/>
+      <Set Name="ZCVersion[1]"  Value="18"/>
+      <Set Name="ZCVersion[2]"  Value="18"/>
+      <Set Name="SafetyParameterVersion"  Value="215"/>
+      <!-- <Set Name="ZCVersion[4]"  Value="1"/>
+      <Set Name="ZCVersion[5]"  Value="1"/>
+      <Set Name="ZCVersion[6]"  Value="1"/>
+      <Set Name="ZCVersion[7]"  Value="1"/>
+      <Set Name="ZCVersion[8]"  Value="1"/>
+      <Set Name="ZCVersion[9]"  Value="1"/>
+      <Set Name="ZCVersion[10]"  Value="1"/>
+      <Set Name="ZCVersion[11]"  Value="1"/>
+      <Set Name="ZCVersion[12]"  Value="1"/>
+      <Set Name="ZCVersion[13]"  Value="1"/>
+      <Set Name="ZCVersion[14]"  Value="1"/>
+      <Set Name="ZCVersion[15]"  Value="1"/>
+      <Set Name="Active_ATP"  Value="2"/>	-->   
+    </Position> 
+</Scenario>	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

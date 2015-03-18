@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--用于存储平台最后一次配置的相关设置-->
+<!--用于配置系统的脚本库，地图库以及工作路劲-->
+<!--用于记录上次上传的文件的相关信息，主要是地图信息，其他配置文件还是第一次运行全部上传-->
+<TPS_Settings>
+  <MapLib Path="\Bcode_CC_OFFLINE_VN_Build20111223"/>
+  <CaseLib Path=""/>
+  <CaseVersion Path="\被测版本标签号"/>
+  <LastMap Path="E:\Bcode_CC_OFFLINE_V2.0.1_Build20141016\ATP_TMP_XHG-0200\Up"/>
+  <LastConfig ENDType="End1"/>
+</TPS_Settings>

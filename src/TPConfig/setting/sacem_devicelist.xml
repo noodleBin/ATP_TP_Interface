@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--SACEM支持的设备列表-->
+<Devices>
+	<Device name="ci" mode="NoVital">
+		<DllFile path="./dll/SACEM_DLL_CI2CC.dll"/>
+		<CnfFile path="./cnf/SACEM_CNF_CI2CC.bin"/>
+     	<Msg name="CCVariant_Request" id="3" varNum="3" Description="CCVariant_Request_CI2CC"/>
+		<Msg name="CIVariant_Report" id="104" varNum="516" Description="CIVariant_Report_CI2CC"/>
+		<Msg name="CIVariant_Request" id="4" varNum="3" Description="CIVariant_Request_CC2CI"/>
+		<Msg name="CCVariant_Report" id="103" varNum="132" Description="CCVariant_Report_CC2CI"/>
+	</Device>
+	<Device name="lc" mode="NoVital">
+		<DllFile path="./dll/SACEM_DLL_LC2CC.dll"/>
+		<CnfFile path="./cnf/SACEM_CNF_LC2CC.bin"/>
+		<Msg name="CCVersion_Report" id="101" varNum="20" Description="CCVersion_Report_CC2LC"/>
+		<Msg name="DateSynReport" id="45" varNum="4" Description="DateSynReport_LC2CC"/>
+		<Msg name="CCVersion_Authorization" id="58" varNum="19" Description="CCVersion_Authorization_LC2CC"/>
+		<Msg name="TSR1" id="136" varNum="12003" Description="TSR_LC2CC"/>
+		<Msg name="TSR2" id="137" varNum="12003" Description="TSR_LC2CC"/>
+	</Device>
+    <Device name="zc" mode="NoVital">
+        <DllFile path="./dll/SACEM_DLL_ZC2CC.dll"/>
+        <CnfFile path="./cnf/SACEM_CNF_ZC2CC.bin"/>
+        <Msg name="LocReport" id="64" varNum="57" Description="LocReport_CC2ZC"/>
+        <Msg name="EOA" id="20" varNum="13" Description="EOA_ZC2CC"/>
+		<Msg name="Variants" id="30" varNum="227" Description="Variants_ZC2CC"/>
+    </Device>
+    <Device name="viom" mode="NoVital">
+		<DllFile path="./dll/SACEM_DLL_VIOM2CC.dll"/>
+		<CnfFile path="./cnf/SACEM_CNF_VIOM2CC.bin"/>
+		<Msg name="VitalInput" id="11" varNum="70" Description="STDReturnCode_VIOM2CC"/>
+		<Msg name="VitalOutput" id="12" varNum="31" Description="STDConfirmation_CC2VIOM"/>
+	</Device>
+	<Device name="datp" mode="NoVital">
+		<DllFile path="./dll/SACEM_DLL_DATP2CC.dll"/>
+		<CnfFile path="./cnf/SACEM_CNF_DATP2CC.bin"/>
+		<Msg name="Msg_DATP2ATP" id="21" varNum="50" Description="Msg_DATP2ATP2DATP"/>		
+	</Device>	
+</Devices>

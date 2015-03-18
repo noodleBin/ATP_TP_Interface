@@ -1,0 +1,4 @@
+iTC_ATP_UP 1 VIOM1_ZVBA11 
+iTC_ATP_UP 1 VIOM1_TI 
+iTC_ATP_UP 2 IdenticalInputs_CC2_VIOMInputs[1..8] 
+iTC_ATP_UP 2 IdenticalInputs_CC2_VIOMInputs[9..16] 

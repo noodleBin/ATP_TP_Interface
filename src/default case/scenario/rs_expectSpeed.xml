@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--coordinate的单位是 m ，accelerated的单位是 m/s^2 ，expectSpeed的单位是 m/s-->
+<!--每条value的顺序按照coordinate增加的顺序，否则可能会导致解析错误-->
+<!--每条初始坐标与上条结束坐标相比，要留有一定裕量(expectSpeed=0除外)，这段路程默认匀速，否则也可能导致错误-->
+<!--倒车数据示例：<value type='1' coordinate='当前位置坐标' expectCoor='当前位置坐标-x' expectSpeed='5'>-->
+<!--dewelltime:以周期为单位，1表示100毫秒-->
+<!--Endcoordinate:紧急制动之后的车辆的运行目的地-->  
+<speed>
+  <value type="1" coordinate="0.0" expectCoor="0.0" expectSpeed="0.0" dewelltime="30.0" description=""/>
+  <value type="0" coordinate="0.0" accelerated="1.0" expectSpeed="6.0" description=""/>
+  <value type="1" coordinate="250.084" expectCoor="350.084" expectSpeed="0.0" dewelltime="0.0" description=""/>
+  <EB Endcoordinate="2000"/>
+</speed>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--FSFB2支持的设备列表-->
+<Devices>
+	<Device name="ci" mode="NoVital">
+		<DllFile path="./dll/fsfb2dll.dll"/>
+		<Msg name="SendMsg" id="101" varNum="1" Description="SendMsg"/>
+		<Msg name="RevMsg" id="1" varNum="2" Description="RevMsg"/>
+        <Var name="SYSCHECK_1" value="2922974042" Description="SYSCHECK_1"/>
+        <Var name="SYSCHECK_2" value="3238221980" Description="SYSCHECK_2"/>
+        <Var name="NodeNum" value="20" Description="NodeNum"/>
+        <Node Dev_ID = "4" GM_NodeID = "13" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "5" GM_NodeID = "14" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "6" GM_NodeID = "20" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "7" GM_NodeID = "21" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "8" GM_NodeID = "22" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "9" GM_NodeID = "29" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "10" GM_NodeID = "30" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "11" GM_NodeID = "36" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "12" GM_NodeID = "37" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "13" GM_NodeID = "38" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "15" GM_NodeID = "15" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "16" GM_NodeID = "16" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "17" GM_NodeID = "23" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "18" GM_NodeID = "24" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "19" GM_NodeID = "25" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "20" GM_NodeID = "31" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "21" GM_NodeID = "32" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "22" GM_NodeID = "39" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "23" GM_NodeID = "40" Description="device id 和GM node id的对应关系"/>
+        <Node Dev_ID = "24" GM_NodeID = "41" Description="device id 和GM node id的对应关系"/>
+      </Device>
+</Devices>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<!--SYNCHRO_REPORT,VERSION_REPORT,TSR_CONTENT 在simulator中打在一个container-->
+<Msg_Settings>
+    <Msg Name="GPS1" Id="1001" Pack="!">
+      <Item Index="0" Format="6s" Name="Header" Description="Header"/>
+    </Msg>
+    
+    <Msg Name="GPS2" Id="1002" Pack="!">
+      <Item Index="0" Format="6s" Name="Header" Description="Header"/>
+    </Msg>
+    
+    <Msg Name="LOOP" Id="1003" Pack="!">
+      <Item Index="0" Format="B" Name="Header" Description="Header"/>
+      <Item Index="1" Format="B" Name="Addr" Description="Addr"/>
+      <Item Index="2" Format="B" Name="LoopId" Description="LoopId"/>
+    </Msg>
+    <Msg Name="LOOP" Id="1006" Pack="!">
+      <Item Index="0" Format="B" Name="Header" Description="Header"/>
+      <Item Index="1" Format="B" Name="Addr" Description="Addr"/>
+      <Item Index="2" Format="B" Name="LoopId" Description="LoopId"/>
+    </Msg>
+    <Msg Name="LOOP" Id="1007" Pack="!">
+      <Item Index="0" Format="B" Name="Header" Description="Header"/>
+      <Item Index="1" Format="B" Name="Addr" Description="Addr"/>
+      <Item Index="2" Format="B" Name="LoopId" Description="LoopId"/>
+    </Msg>
+    <Msg Name="LOOP" Id="1008" Pack="!">
+      <Item Index="0" Format="B" Name="Header" Description="Header"/>
+      <Item Index="1" Format="B" Name="Addr" Description="Addr"/>
+      <Item Index="2" Format="B" Name="LoopId" Description="LoopId"/>
+    </Msg>
+    
+    <Msg Name="ODM" Id="1004" Pack="!">
+      <Item Index="0" Format="B" Name="Header" Description="Header"/>
+      <Item Index="1" Format="H" Name="CycleNum" Description="CycleNum"/>
+      <Item Index="2" Format="H" Name="IntCount" Description="IntCount"/>
+      <!-- <Item Index="3" Format="B" Name="Direction" Description="Direction"/> -->
+    </Msg>
+    
+    <Msg Name="CycleCmd" Id="1005" Pack="!">
+      <Item Index="0" Format="B" Name="Header" Description="Header"/>
+    </Msg>
+   
+    
+    <Msg Name="SIM_CMD" Id="99" Pack="!">
+      <Item Index="0" Format="B" Name="ItfVer" Description="ItfVer"/>
+    </Msg>
+    
+</Msg_Settings>

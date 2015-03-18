@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Config Name="test1" Description="tes1">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="ATBdrivingModeUnsetRequested" colR="0.303449296791" colG="0.0514021754355" colB="0.100650028896" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="ATBselectedDrivingMode" colR="0.0453186122023" colG="0.417479018036" colB="0.527917625987" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="ATPLoophour" colR="0.61356143764" colG="0.968991685795" colB="0.379814959002" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="529.0"/>
+      <Data Name="ATPTime" colR="1.0" colG="0.5" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="132.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="test2" Description="test2">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="ATBdrivingModeUnsetRequested" colR="0.303449296791" colG="0.0514021754355" colB="0.100650028896" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="ATBselectedDrivingMode" colR="0.0453186122023" colG="0.417479018036" colB="0.527917625987" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="ATPLoophour" colR="0.61356143764" colG="0.968991685795" colB="0.379814959002" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="529.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="6419" Description="">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="EBforEvacuationWhileTrainLeavingStation" colR="0.0" colG="0.0" colB="1.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="1.0"/>
+      <Data Name="EvacuationWithTrainStopped" colR="0.0" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="ATPstatus.EBforEvacuationWithTrainStopped" colR="1.0" colG="0.5" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="TrainDockedInStation" colR="1.0" colG="0.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="test4" Description="haha">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="ApproachableSignalOverrun" colR="0.5" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="1.0"/>
+      <Data Name="AllTrainDoorsClosedAndLocked" colR="0.0" colG="1.0" colB="0.5" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="AllPSDclosedAndLocked" colR="0.5" colG="0.0" colB="1.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="AtHeadMinDownStreamLastLoop" colR="0.624448019912" colG="0.536419025385" colB="0.127658873144" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="ATBdrivingModeSetRequested" colR="1.0" colG="0.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="1.0"/>
+      <Data Name="ATBselectedDrivingMode" colR="0.0" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="ATOcontrolTimeValid" colR="0.0" colG="0.0" colB="1.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="AlignPSDzone_A" colR="0.0" colG="0.5" colB="1.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="1.0"/>
+      <Data Name="ATPTime" colR="1.0" colG="0.5" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="529.0"/>
+      <Data Name="AlignPSDzone_B" colR="1.0" colG="0.0" colB="0.5" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="test121321" Description="">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="ATPAppliedTsrLoopHour[12]" colR="0.0" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="1.0"/>
+      <Data Name="ATOcontrolTimeValid" colR="1.0" colG="0.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="1.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="1407" Description="">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="CBIVariantReportAvailable" colR="1.0" colG="0.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="CIvarReport.CCloophour" colR="0.0" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="536871000.0" Maximum="536871306.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="7215" Description="">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="DateSynchronizationReceived" colR="1.0" colG="0.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="DateSynchronisationReportAvailable[1]" colR="0.0" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="fig-6301" Description="">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="AllPSDclosedAndLocked" colR="1.0" colG="0.5" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="TrainFilteredStopped" colR="0.0" colG="0.5" colB="1.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="VitalInput.TrainParkingBrakeApplied" colR="0.0" colG="1.0" colB="0.5" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="TrainInterVPEZ_A" colR="0.5" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="OfflineOutput_AllTrainDoorsClosedAndLocked" colR="1.0" colG="0.0" colB="0.5" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="InhibitControlPSDstatus" colR="0.0" colG="1.0" colB="0.5" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="AlignPSDzone_A" colR="1.0" colG="0.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="AlignPSDzone_B" colR="0.0" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="6308" Description="">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="TrainFilteredStopped" colR="0.0" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="OfflineOutput_AllTrainDoorsClosedAndLocked" colR="1.0" colG="0.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="VitalInput.MovingWithoutTDCLprotectionInhibition" colR="1.0" colG="0.0" colB="0.5" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="EBforMovingWithoutTDCL" colR="0.0" colG="1.0" colB="0.5" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="NoDangerForMovingWithoutTDCL" colR="0.0" colG="0.5" colB="1.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="EnableDoorOpeningB" colR="1.0" colG="0.5" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="EnableDoorOpeningA" colR="0.0" colG="0.0" colB="1.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="1.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="tyyrtyrt" Description="">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="ATBselectedDrivingMode" colR="0.0453186122023" colG="0.417479018036" colB="0.527917625987" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="ATPLoophour" colR="0.61356143764" colG="0.968991685795" colB="0.379814959002" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="529.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="3209-step1!5" Description="">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="LocalizationFault" colR="0.0" colG="0.0" colB="1.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="TrainLocatedOnOtherATP" colR="1.0" colG="0.5" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="TrainLocatedOnBeacon" colR="1.0" colG="0.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="TrainRealignmentOnBeacon" colR="0.0" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+    </FrameLabel>
+  </Config>
+  <Config Name="1405" Description="">
+    <FrameLabel Name="iTC_ATP_UP">
+      <Data Name="CBIVariantReportAvailable" colR="0.0" colG="1.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="2.0"/>
+      <Data Name="CIvarReport.CCloophour" colR="1.0" colG="0.0" colB="0.0" LineStyle="-" lineWidth="1.5" Minimum="-1.0" Maximum="300.0"/>
+    </FrameLabel>
+  </Config>
+</Configuration>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--本文件用于配置beacon的故障类型-->
+<!--Beacon_Name:该值可不修改-->
+<!--Disable:为1时beacon消息不发送-->
+<!--Msg_Beacon_ID:不为""时beaconID需要修改为改设置的值，反之不修改-->
+<!--Use_Default_Msg:0为默认值，非零值则修改-->
+<!--Available:1可用，0不可用-->
+<!--Check_Word_1:check1，为""时自己计算（用公式），反之取该变量附的值-->
+<!--Check_Word_1:check2-->
+<Beacon_Msg_Setting>
+<!--    <Beacon_Msg Beacon_ID="1" Beacon_Name="VB05A" Disabled="1" Msg_Beacon_ID="2003" Use_Default_Msg="0" Available="0" Check_Word_1="0" Check_Word_2="0" deta_dis="0" /> -->
+<!--  <Beacon_Msg Beacon_ID="1249" Beacon_Name="VB05A" Disabled="1" Msg_Beacon_ID="2003" Use_Default_Msg="0" Available="0" Check_Word_1="0" Check_Word_2="0" deta_dis="0"/>  -->
+<!--      <Beacon_Msg Beacon_ID="99" Beacon_Name="VB05A" Disabled="1" Msg_Beacon_ID="2003" Use_Default_Msg="0" Available="0" Check_Word_1="0" Check_Word_2="0" deta_dis="0"/>     -->
+<!--      <Beacon_Msg Beacon_ID="2019" Beacon_Name="VB05A" Disabled="1" Msg_Beacon_ID="2003" Use_Default_Msg="0" Available="0" Check_Word_1="0" Check_Word_2="0" deta_dis="0"/>   -->
+</Beacon_Msg_Setting>

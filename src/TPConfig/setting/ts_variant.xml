@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，Log 为每周期记录到日志-->
+<Variables>
+  <Var Name="msgHead" Type="string"  IO="Input" Value="!IH" Description="queue msg head"/>
+  <Var Name="loophour" Type="int"  IO="Log" Value="0" Description="ts cycle"/>
+  <Var Name="disBeTwoAnte" Type="int" IO="Input" Value="113538" Description="distance between two antenna unit mm"/>
+  
+  <Var Name="train_pos_id" Type="int" IO="Input" Value="258" Description="train_pos msgid"/>
+  <Var Name="train_pos_type" Type="int" IO="Input" Value="15" Description="train_pos subtype"/>
+  
+  <Var Name="beacon_mes_id" Type="int" IO="Input" Value="513" Description="beacon_mes msgid"/>
+  <Var Name="beacon_mes_type" Type="int" IO="Input" Value="17" Description="beacon_mes subtype"/>
+</Variables>

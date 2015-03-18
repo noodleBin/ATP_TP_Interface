@@ -1,0 +1,8 @@
+说明：
+
+2011-12-23
+1）首先确保GM_SACEM_Mode.h中选择的是 #define  VCP_MODE
+
+2）上模块编译时，请添加预编译宏 -DBIG_END_MACHINE -D_6U -DRED_TEST_ATP -DRED_TEST_ATP_UP -w
+
+3）下模块编译时，请添加预编译宏 -DBIG_END_MACHINE -D_6U -DRED_TEST_ATP -DRED_TEST_ATP_DOWN -w

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，Log 为每周期记录到日志-->
+<Variables>
+  <Var Name="loophour" Type="int"  IO="Log" Value="0" Description="viom cycle"/>
+  <!--VIOM Vital TO ATP-->
+  <Var Name="VIOM1a_UP_BIT_Vital_ToATP" Type="int"  IO="Log" Value="0" Description="VIOM1a_UP_BIT_Vital"/>
+  <Var Name="VIOM1a_DOWN_BIT_Vital_ToATP" Type="int"  IO="Log" Value="0" Description="VIOM1a_DOWN_BIT_Vital"/>
+  <Var Name="VIOM1b_UP_BIT_Vital_ToATP" Type="int"  IO="Log" Value="0" Description="VIOM1b_UP_BIT_Vital"/>
+  <Var Name="VIOM1b_DOWN_BIT_Vital_ToATP" Type="int"  IO="Log" Value="0" Description="VIOM1b_DOWN_BIT_Vital"/>
+  <Var Name="VIOM2a_UP_BIT_Vital_ToATP" Type="int"  IO="Log" Value="0" Description="VIOM2a_UP_BIT_Vital"/>
+  <Var Name="VIOM2a_DOWN_BIT_Vital_ToATP" Type="int"  IO="Log" Value="0" Description="VIOM2a_DOWN_BIT_Vital"/>
+  <Var Name="VIOM2b_UP_BIT_Vital_ToATP" Type="int"  IO="Log" Value="0" Description="VIOM2b_UP_BIT_Vital"/>
+  <Var Name="VIOM2b_DOWN_BIT_Vital_ToATP" Type="int"  IO="Log" Value="0" Description="VIOM2b_DOWN_BIT_Vital"/>
+
+  <!--VIOM Vital TO ATP-->
+  <Var Name="VIOM1a_UP_BYTE_Vital_ToATP" Type="complex"  IO="Log" Value="0" Description="VIOM1a_UP_BIT_Vital"/>
+  <Var Name="VIOM1a_DOWN_BYTE_Vital_ToATP" Type="complex"  IO="Log" Value="0" Description="VIOM1a_DOWN_BIT_Vital"/>
+  <Var Name="VIOM1b_UP_BYTE_Vital_ToATP" Type="complex"  IO="Log" Value="0" Description="VIOM1b_UP_BIT_Vital"/>
+  <Var Name="VIOM1b_DOWN_BYTE_Vital_ToATP" Type="complex"  IO="Log" Value="0" Description="VIOM1b_DOWN_BIT_Vital"/>
+  <Var Name="VIOM2a_UP_BYTE_Vital_ToATP" Type="complex"  IO="Log" Value="0" Description="VIOM2a_UP_BIT_Vital"/>
+  <Var Name="VIOM2a_DOWN_BYTE_Vital_ToATP" Type="complex"  IO="Log" Value="0" Description="VIOM2a_DOWN_BIT_Vital"/>
+  <Var Name="VIOM2b_UP_BYTE_Vital_ToATP" Type="complex"  IO="Log" Value="0" Description="VIOM2b_UP_BIT_Vital"/>
+  <Var Name="VIOM2b_DOWN_BYTE_Vital_ToATP" Type="complex"  IO="Log" Value="0" Description="VIOM2b_DOWN_BIT_Vital"/>
+
+  <!--VIOM Vital FROM ATP-->
+  <Var Name="VIOM1_UP_BYTE_Vital_FromATP" Type="complex"  IO="Log" Value="0" Description="VIOM1_UP_BYTE_Vital_FromATP"/>
+  <Var Name="VIOM1_DOWN_BYTE_Vital_FromATP" Type="complex"  IO="Log" Value="0" Description="VIOM1_DOWN_BYTE_Vital_FromATP"/>
+  <Var Name="VIOM2_UP_BYTE_Vital_FromATP" Type="complex"  IO="Log" Value="0" Description="VIOM2_UP_BYTE_Vital_FromATP"/>
+  <Var Name="VIOM2_DOWN_BYTE_Vital_FromATP" Type="complex"  IO="Log" Value="0" Description="VIOM2_DOWN_BYTE_Vital_FromATP"/>
+  <Var Name="Vital_ATPLoophour1" Type="int"  IO="Log" Value="0" Description="Vital_ATPLoophour1"/>
+  <Var Name="Vital_ATPLoophour2" Type="int"  IO="Log" Value="0" Description="Vital_ATPLoophour2"/>
+
+  <Var Name="detaviomloophour" Type="int" IO="Input" Value="0" Description="deta viom loophour"/>
+  <Var Name="detaviomloophour_1A" Type="int" IO="Input" Value="0" Description="deta viom loophour"/>
+  <Var Name="detaviomloophour_1B" Type="int" IO="Input" Value="0" Description="deta viom loophour"/>
+  <Var Name="detaviomloophour_2A" Type="int" IO="Input" Value="0" Description="deta viom loophour"/>
+  <Var Name="detaviomloophour_2B" Type="int" IO="Input" Value="0" Description="deta viom loophour"/>
+  <Var Name="detaccloophour" Type="int" IO="Input" Value="0" Description="deta ccloophour"/>
+  <Var Name="detaccloophour_1A" Type="int" IO="Input" Value="0" Description="deta ccloophour"/>
+  <Var Name="detaccloophour_1B" Type="int" IO="Input" Value="0" Description="deta ccloophour"/>
+  <Var Name="detaccloophour_2A" Type="int" IO="Input" Value="0" Description="deta ccloophour"/>
+  <Var Name="detaccloophour_2B" Type="int" IO="Input" Value="0" Description="deta ccloophour"/>
+  <Var Name="SendMesENABLE" Type="int" IO="Input" Value="1" Description="是否发送数据"/>
+  <Var Name="SendMesENABLE_1A" Type="int" IO="Input" Value="1" Description="是否发送数据"/>
+  <Var Name="SendMesENABLE_1B" Type="int" IO="Input" Value="1" Description="是否发送数据"/>
+  <Var Name="SendMesENABLE_2A" Type="int" IO="Input" Value="1" Description="是否发送数据"/>
+  <Var Name="SendMesENABLE_2B" Type="int" IO="Input" Value="1" Description="是否发送数据"/>
+  <Var Name="CheckSumENABLE_1A" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <Var Name="CheckSumENABLE_1B" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <Var Name="CheckSumENABLE_2A" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <Var Name="CheckSumENABLE_2B" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <!--viom相异控制变量，Value:为16个数，0表示保持原值，1则取反，由左到右依次为1:64-->
+  <Var Name="vital-viom1-a_up" Type="string" IO="Input" Value="0000000000000000000000000000000000000000000000000000000000000000" Description="viom1a up vital"/>
+  <Var Name="vital-viom1-a_down" Type="string" IO="Input" Value="0000000000000000000000000000000000000000000000000000000000000000" Description="viom1a down vital"/>
+  <Var Name="vital-viom1-b_up" Type="string" IO="Input" Value="0000000000000000000000000000000000000000000000000000000000000000" Description="viom1b up vital"/>
+  <Var Name="vital-viom1-b_down" Type="string" IO="Input" Value="0000000000000000000000000000000000000000000000000000000000000000" Description="viom1b down vital"/>
+  <Var Name="vital-viom2-a_up" Type="string" IO="Input" Value="0000000000000000000000000000000000000000000000000000000000000000" Description="viom2a up vital"/>
+  <Var Name="vital-viom2-a_down" Type="string" IO="Input" Value="0000000000000000000000000000000000000000000000000000000000000000" Description="viom2a down vital"/>
+  <Var Name="vital-viom2-b_up" Type="string" IO="Input" Value="0000000000000000000000000000000000000000000000000000000000000000" Description="viom2b up vital"/>
+  <Var Name="vital-viom2-b_down" Type="string" IO="Input" Value="0000000000000000000000000000000000000000000000000000000000000000" Description="viom2b down vital"/>
+  <Var Name="viom_status" Type="int" IO="Input" Value="1" Description="viom_status"/>
+  <Var Name="other_cc_connected" Type="int" IO="Input" Value="1" Description="other_cc_connected"/>
+</Variables>

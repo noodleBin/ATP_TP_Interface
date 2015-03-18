@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<!--SYNCHRO_REPORT,VERSION_REPORT,TSR_CONTENT 在simulator中打在一个container-->
+<Msg_Settings>
+    <Msg Name="SYNCHRO_REPORT" Id="1" Pack="!">
+      <Item Index="0" Format="I" Name="SynchroDate" Description="SynchroDate"/>
+      <Item Index="1" Format="I" Name="CCloopHour" Description="CCloopHour"/>
+      <Item Index="2" Format="3B" Name="CheckSum_S1" Description="checksum 1"/>
+      <Item Index="5" Format="3B" Name="CheckSum_S2" Description="checksum 2"/>
+    </Msg>
+    
+    <Msg Name="VERSION_Authorization" Id="2" Pack="!">
+      <Item Index="0" Format="H" Name="ZC_Vital_Authorization" Description="ZCVitalAuthorization 1-16"/>
+      <Item Index="1" Format="H" Name="ZC_NoVital_Authorization" Description="ZCNoVitalAuthorization 1-16"/>
+      <Item Index="2" Format="I" Name="CCloopHour" Description="CCloopHour"/>
+      <Item Index="3" Format="3B" Name="CheckSum_S1" Description="checksum 1"/>
+      <Item Index="6" Format="3B" Name="CheckSum_S2" Description="checksum 2"/>
+    </Msg>
+
+    <Msg Name="TSR_Part_1" Id="3" Pack="!">
+      <Item Index="0" Format="B" Name="Number_Of_TSR" Description="Number_Of_TSR"/>
+    </Msg>  
+        
+    <Msg Name="TSR_Part_2" Id="4" Pack="!">
+      <Item Index="0" Format="B" Name="TSR_Speed_Value" Description="TSR_Speed_Value"/>
+      <Item Index="1" Format="H" Name="First_Block_ID_Of_TSR" Description="First_Block_ID_Of_TSR"/>
+      <Item Index="2" Format="H" Name="Start_Abscissa_On_First_Block_Of_TSR" Description="Start_Abscissa_On_First_Block_Of_TSR"/>
+      <Item Index="3" Format="B" Name="Number_Of_Intermediate_Blocks_Of_TSR" Description="Number_Of_Intermediate_Blocks_Of_TSR"/>
+    </Msg>  
+    
+    <Msg Name="TSR_Part_3" Id="5" Pack="!">
+      <Item Index="0" Format="H" Name="Intermediate_Block_ID_Of_TSR" Description="Intermediate_Block_ID_Of_TSR"/>
+    </Msg>  
+ 
+	<Msg Name="TSR_Part_4" Id="6" Pack="!">
+      <Item Index="0" Format="H" Name="Last_Block_ID_Of_TSR" Description="Last_Block_ID_Of_TSR"/>
+      <Item Index="1" Format="H" Name="End_Abscissa_On_Last_Block_Of_TSR" Description="End_Abscissa_On_Last_Block_Of_TSR"/>
+	</Msg>   
+
+	<Msg Name="TSR_Part_5" Id="7" Pack="!">
+      <Item Index="0" Format="I" Name="CC_Loop_Hour" Description="CC_Loop_Hour"/>
+      <Item Index="1" Format="3B" Name="CheckSum_S1" Description="checksum 1"/>
+      <Item Index="4" Format="3B" Name="CheckSum_S2" Description="checksum 2"/>
+	</Msg>      
+	
+    <Msg Name="CC_REPORT" Id="9222" Pack="!">
+      <Item Index="0" Format="H" Name="CC_Safety_Parameter_Version" Description="CC_Safety_Parameter_Version"/>
+      <Item Index="1" Format="H" Name="CC_Safety_Application_Version" Description="CC_Safety_Application_Version"/>
+      <Item Index="2" Format="H" Name="SGD_Version_ZC_1" Description="SGD_Version_For_ZC_1"/>
+      <Item Index="3" Format="H" Name="SGD_Version_ZC_2" Description="SGD_Version_For_ZC_2"/>
+      <Item Index="4" Format="H" Name="SGD_Version_ZC_3" Description="SGD_Version_For_ZC_3"/>
+      <Item Index="5" Format="H" Name="SGD_Version_ZC_4" Description="SGD_Version_For_ZC_4"/>
+      <Item Index="6" Format="H" Name="SGD_Version_ZC_5" Description="SGD_Version_For_ZC_5"/>
+      <Item Index="7" Format="H" Name="SGD_Version_ZC_6" Description="SGD_Version_For_ZC_6"/>
+      <Item Index="8" Format="H" Name="SGD_Version_ZC_7" Description="SGD_Version_For_ZC_7"/>
+      <Item Index="9" Format="H" Name="SGD_Version_ZC_8" Description="SGD_Version_For_ZC_8"/>
+      <Item Index="10" Format="H" Name="SGD_Version_ZC_9" Description="SGD_Version_For_ZC_9"/>
+      <Item Index="11" Format="H" Name="SGD_Version_ZC_10" Description="SGD_Version_For_ZC_10"/>
+      <Item Index="12" Format="H" Name="SGD_Version_ZC_11" Description="SGD_Version_For_ZC_11"/>
+      <Item Index="13" Format="H" Name="SGD_Version_ZC_12" Description="SGD_Version_For_ZC_12"/>
+      <Item Index="14" Format="H" Name="SGD_Version_ZC_13" Description="SGD_Version_For_ZC_13"/>
+      <Item Index="15" Format="H" Name="SGD_Version_ZC_14" Description="SGD_Version_For_ZC_14"/>
+      <Item Index="16" Format="H" Name="SGD_Version_ZC_15" Description="SGD_Version_For_ZC_15"/>
+      <Item Index="17" Format="H" Name="SGD_Version_ZC_16" Description="SGD_Version_For_ZC_16"/>
+      <Item Index="18" Format="H" Name="CC_Non_Safety_Parameter_Version" Description="CC_Non_Safety_Parameter_Version"/>
+      <Item Index="19" Format="H" Name="CC_Non_Safety_Application_Version" Description="CC_Non_Safety_Application_Version"/>
+      <Item Index="20" Format="H" Name="Static_Regulation_DataBase_Version" Description="Static_Regulation_DataBase_Version"/>
+      <Item Index="21" Format="H" Name="DMI_Parameter_Version" Description="DMI_Parameter_Version"/>
+      <Item Index="22" Format="H" Name="DMI_Application_Version" Description="DMI_Application_Version"/>
+      <Item Index="23" Format="I" Name="CC_Loop_Hour" Description="CC_Loop_Hour"/>            
+      <Item Index="24" Format="3B" Name="CheckSum_S1" Description="checksum 1"/>
+      <Item Index="27" Format="3B" Name="CheckSum_S2" Description="checksum 2"/>
+    </Msg>
+    <Msg Name="Simulator_Message" Id="99" Pack="!">
+        <Item Index="0" Format="B" Name="Command_type" Description="91启动命令，92周期更新命令，93运行结束命令"/>
+    </Msg>
+    <Msg Name="LC2ATPHead" Id="10241" Pack="!">
+        <Item Index="0" Format="I" Name="Loop_Hour" Description="Loop_Hour"/>
+        <Item Index="1" Format="H" Name="MesID" Description="MesID"/>
+    </Msg>   
+    <Msg Name="Status_REPORT" Id="258" Pack="!">
+      <Item Index="0" Format="B" Name="subType" Description="位置更新消息"/>
+      <Item Index="1" Format="i" Name="Coordinates_1" Description="本周期开始时的车辆位置 毫米"/>
+      <Item Index="2" Format="i" Name="Coordinates_2" Description="本周期结束时的车辆位置 毫米"/>
+    </Msg>  
+</Msg_Settings>

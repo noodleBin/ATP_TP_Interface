@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--本文件用于配置上传的文件路径以及文件名字-->
+<!-- File配置传送数据项，Name：配置数据文件名，Type：类型，End1，End2，All,Map* -->
+<!-- File配置传送数据项，Path：配置数据文件相对路径，Description：描述 -->
+<!--Map*:为地图类型，有Map0,1,2,3,4几种：[atp_up_path,atp_down_path,ccnv_path,tp_map_path,tp_txt_path]-->
+<!--Map*:该类型的数据的path主要通过地图库获得-->
+<Upload_File_Setting>
+  <Host Name = "ATP_UP">
+    <File Name = "FS_00001.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00001.bin" Description = "FS_00001.bin"/>
+    <File Name = "FS_00002.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00002.bin" Description = "FS_00002.bin"/>
+    <File Name = "FS_00003.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00003.bin" Description = "FS_00003.bin"/>
+    <File Name = "FS_00004.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00004.bin" Description = "FS_00004.bin"/>
+    <File Name = "FS_00005.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00005.bin" Description = "FS_00005.bin"/>
+    <File Name = "FS_00006.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00006.bin" Description = "FS_00006.bin"/>
+    <File Name = "FS_00007.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00007.bin" Description = "FS_00007.bin"/>
+    <File Name = "FS_00008.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00008.bin" Description = "FS_00008.bin"/>
+    <File Name = "FS_00009.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00009.bin" Description = "FS_00009.bin"/>
+    <File Name = "FS_00010.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00010.bin" Description = "FS_00010.bin"/>
+    <File Name = "FS_00011.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00011.bin" Description = "FS_00011.bin"/>
+    <File Name = "FS_00012.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00012.bin" Description = "FS_00012.bin"/>
+    <File Name = "FS_00013.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00013.bin" Description = "FS_00013.bin"/>
+    <File Name = "FS_00014.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00014.bin" Description = "FS_00014.bin"/>
+    <File Name = "FS_00015.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00015.bin" Description = "FS_00015.bin"/>
+    <File Name = "FS_00016.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00016.bin" Description = "FS_00016.bin"/>
+    <File Name = "FS_00017.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00017.bin" Description = "FS_00017.bin"/>
+    <File Name = "FS_00018.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00018.bin" Description = "FS_00018.bin"/>
+    <File Name = "FS_00019.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00019.bin" Description = "FS_00019.bin"/>
+    <File Name = "FS_00020.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00020.bin" Description = "FS_00020.bin"/>
+    <File Name = "FS_00021.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00021.bin" Description = "FS_00021.bin"/>
+    <File Name = "FS_00022.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00022.bin" Description = "FS_00022.bin"/> 
+    <File Name = "FS_00023.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00023.bin" Description = "FS_00023.bin"/>
+    <File Name = "FS_00024.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00024.bin" Description = "FS_00024.bin"/>
+    <File Name = "FS_00025.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00025.bin" Description = "FS_00025.bin"/>      
+    <File Name = "GM_CODE.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/GM_CODE.bin" Description = "GM_CODE.bin"/>
+    <File Name = "GM_GAPP.ini" Type = "All" Path = "/configfile/atp/NoVCP_mode/GM_GAPP.ini" Description = "GM_GAPP.ini"/>
+    <File Name = "SACEM_CNF.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/SACEM_CNF.bin" Description = "SACEM_CNF.bin"/>
+    <File Name = "SACEM_CODE.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/SACEM_CODE.bin" Description = "SACEM_CODE.bin"/>
+    <File Name = "SACEM_SIG.ini" Type = "All" Path = "/configfile/atp/NoVCP_mode/SACEM_SIG.ini" Description = "SACEM_SIG.ini"/>
+    <File Name = "dataplug.bin" Type = "End1" Path = "/configfile/atp/dataplug/end1/up/dataplug.bin" Description = "dataplug.bin"/>
+    <File Name = "dataplug.bin" Type = "End2" Path = "/configfile/atp/dataplug/end2/up/dataplug.bin" Description = "dataplug.bin"/>
+    <File Name = "atpmap.txt" Type = "Map0" Path = "" Description = "atpmap.txt"/>
+  </Host>
+  <Host Name = "ATP_DOWN">
+    <File Name = "FS_00001.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00001.bin" Description = "FS_00001.bin"/>
+    <File Name = "FS_00002.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00002.bin" Description = "FS_00002.bin"/>
+    <File Name = "FS_00003.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00003.bin" Description = "FS_00003.bin"/>
+    <File Name = "FS_00004.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00004.bin" Description = "FS_00004.bin"/>
+    <File Name = "FS_00005.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00005.bin" Description = "FS_00005.bin"/>
+    <File Name = "FS_00006.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00006.bin" Description = "FS_00006.bin"/>
+    <File Name = "FS_00007.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00007.bin" Description = "FS_00007.bin"/>
+    <File Name = "FS_00008.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00008.bin" Description = "FS_00008.bin"/>
+    <File Name = "FS_00009.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00009.bin" Description = "FS_00009.bin"/>
+    <File Name = "FS_00010.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00010.bin" Description = "FS_00010.bin"/>
+    <File Name = "FS_00011.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00011.bin" Description = "FS_00011.bin"/>
+    <File Name = "FS_00012.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00012.bin" Description = "FS_00012.bin"/>
+    <File Name = "FS_00013.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00013.bin" Description = "FS_00013.bin"/>
+    <File Name = "FS_00014.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00014.bin" Description = "FS_00014.bin"/>
+    <File Name = "FS_00015.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00015.bin" Description = "FS_00015.bin"/>
+    <File Name = "FS_00016.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00016.bin" Description = "FS_00016.bin"/>
+    <File Name = "FS_00017.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00017.bin" Description = "FS_00017.bin"/>
+    <File Name = "FS_00018.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00018.bin" Description = "FS_00018.bin"/>
+    <File Name = "FS_00019.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00019.bin" Description = "FS_00019.bin"/>
+    <File Name = "FS_00020.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00020.bin" Description = "FS_00020.bin"/>
+    <File Name = "FS_00021.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00021.bin" Description = "FS_00021.bin"/>
+    <File Name = "FS_00022.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00022.bin" Description = "FS_00022.bin"/> 
+    <File Name = "FS_00023.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00023.bin" Description = "FS_00023.bin"/>
+    <File Name = "FS_00024.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00024.bin" Description = "FS_00024.bin"/>
+    <File Name = "FS_00025.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/FS_00025.bin" Description = "FS_00025.bin"/>     
+    <File Name = "GM_CODE.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/GM_CODE.bin" Description = "GM_CODE.bin"/>
+    <File Name = "GM_GAPP.ini" Type = "All" Path = "/configfile/atp/NoVCP_mode/GM_GAPP.ini" Description = "GM_GAPP.ini"/>
+    <File Name = "SACEM_CNF.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/SACEM_CNF.bin" Description = "SACEM_CNF.bin"/>
+    <File Name = "SACEM_CODE.bin" Type = "All" Path = "/configfile/atp/NoVCP_mode/SACEM_CODE.bin" Description = "SACEM_CODE.bin"/>
+    <File Name = "SACEM_SIG.ini" Type = "All" Path = "/configfile/atp/NoVCP_mode/SACEM_SIG.ini" Description = "SACEM_SIG.ini"/>
+    <File Name = "dataplug.bin" Type = "End1" Path = "/configfile/atp/dataplug/end1/down/dataplug.bin" Description = "dataplug.bin"/>
+    <File Name = "dataplug.bin" Type = "End2" Path = "/configfile/atp/dataplug/end2/down/dataplug.bin" Description = "dataplug.bin"/>
+    <File Name = "atpmap.txt" Type = "Map1" Path = "" Description = "atpmap.txt"/>
+  </Host>
+  <Host Name = "SDTS">
+    <File Name = "GM_GAPP.ini" Type = "End1" Path = "/configfile/sdts/end1/GM_GAPP.ini" Description = "GM_GAPP.ini"/>
+    <File Name = "GM_GAPP.ini" Type = "End2" Path = "/configfile/sdts/end2/GM_GAPP.ini" Description = "GM_GAPP.ini"/>
+    <File Name = "GM_RMS.ini" Type = "End1" Path = "/configfile/sdts/end1/GM_RMS.ini" Description = "GM_RMS.ini"/>
+    <File Name = "GM_RMS.ini" Type = "End2" Path = "/configfile/sdts/end2/GM_RMS.ini" Description = "GM_RMS.ini"/>
+  </Host>
+  <Host Name = "CBK">
+    <File Name = "GM_GAPP.ini" Type = "All" Path = "/configfile/cbk/GM_GAPP.ini" Description = "GM_GAPP.ini"/>
+    <File Name = "GM_RMS.ini" Type = "All" Path = "/configfile/cbk/GM_RMS.ini" Description = "GM_RMS.ini"/>
+  </Host>    
+</Upload_File_Setting>

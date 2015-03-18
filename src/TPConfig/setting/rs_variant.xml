@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，具体待定-->
+<Variables>
+  <Var Name="cog_direction" Type="int"  IO="Log" Value="0" Description="direction:1:表示列车正向行驶时，齿轮正转，-1表示反转,，可不配置"/>
+  <Var Name="direction" Type="int"  IO="Log" Value="0" Description="direct:列车的运行方向，可不配置"/>
+  <Var Name="cog_distance" Type="float"  IO="Log" Value="2.55" Description="齿距 典型值2.55厘米"/>
+  <Var Name="S1" Type="int"  IO="Log" Value="3" Description="传感器状态 1表示通，2表示堵，3表示故障"/>
+  <Var Name="S2" Type="int"  IO="Log" Value="3" Description="传感器状态 1表示通，2表示堵，3表示故障"/>
+  <Var Name="S3" Type="int"  IO="Log" Value="3" Description="传感器状态 1表示通，2表示堵，3表示故障"/>
+  <Var Name="TimeCounter" Type="int"  IO="Log" Value="25" Description="用于控制读取cogcounter的时间，25表示2ms，20表示1.6ms,30表示2.4ms，正常情况为25"/>
+  <!-- 雷达相关变量 -->
+  <Var Name="Radar_Error" Type="int"  IO="Log" Value="0" Description="雷达的速度误差百分比"/>
+  <Var Name="Radar_Run_Direction" Type="int"  IO="Log" Value="1" Description="运行方向：1表示前进，0表示后退"/>
+  <Var Name="Radar_Run_Direction_Valid" Type="int"  IO="Log" Value="1" Description="运行方向有效性：1表示运行方向有效，0表示运行方向无效"/>
+  <Var Name="Radar_Run_Status" Type="int"  IO="Log" Value="6" Description="运行状态：110b：评估状态，高质量；100b：评估状态，低质量；001b：切断状态；000b：获取状态"/>
+  <Var Name="Radar_Run_Mode" Type="int"  IO="Log" Value="3" Description="运行模式：11b：DRS05模式；10b：DRS05单模40°；01b：DRS05单模50°；00b：故障模式"/>
+  <Var Name="Radar_RS485_Check" Type="int"  IO="Log" Value="1" Description="RS485数据CRC校验标志位：1表示通过，0表示未通过"/>
+  <Var Name="Delta_Radar_Speed" Type="int"  IO="Log" Value="0" Description="Radar速度的误差值，默认为0，单位为毫米/秒"/>
+  <Var Name="Delta_Radar_Speed_up_down" Type="int"  IO="Log" Value="0" Description="Radar速度上下模块的误差值，默认为0，单位为毫米/秒"/>
+  <Var Name="Delta_Radar_Impluse" Type="int"  IO="Log" Value="0" Description="RadarImpluse的误差值，默认为0，单位为毫米"/>
+ <Var Name="Delta_Radar_Impluse_up_down" Type="int"  IO="Log" Value="0" Description="RadarImpluse上下模块的误差值，默认为0，单位为毫米"/>
+
+  <Var Name="CBK_coordinates" Type="float"  IO="Log" Value="0" Description="无拐点：本周期开始时车辆位置 米"/>
+  <Var Name="CBK_acceleration" Type="float"  IO="Log" Value="0" Description="无拐点：本周的加速度 米/秒2"/>
+  <Var Name="CBK_speed" Type="float"  IO="Log" Value="0" Description="无拐点：本周期开始时的速度 米/秒"/>
+  <Var Name="CBK_speed_1" Type="float"  IO="Log" Value="0" Description="有拐点：本周期开始时的速度 米/秒"/>
+  <Var Name="CBK_coordinates_1" Type="float"  IO="Log" Value="0" Description="有拐点：本周期开始时车辆位置 米"/>
+  <Var Name="CBK_acceleration_1" Type="float"  IO="Log" Value="0" Description="有拐点：本周期开始时车辆加速度 m/s2"/>
+  <Var Name="CBK_coordinates_2" Type="float"  IO="Log" Value="0" Description="有拐点：加速产生变化的点的位置  m"/>
+  <Var Name="CBK_acceleration_2" Type="float"  IO="Log" Value="0" Description="有拐点：变化后的加速度  m/s2"/>
+  <Var Name="CBK_time" Type="int"  IO="Log" Value="0" Description="在周期内加速度发送变化的时刻 s"/>
+  <Var Name="loophour" Type="int"  IO="Log" Value="0" Description="loophour"/>
+  <Var Name="coordinates_1" Type="int"  IO="Log" Value="0" Description="本周期开始时的车辆位置 毫米"/>
+  <Var Name="coordinates_2" Type="int"  IO="Log" Value="0" Description="本周期结束时的车辆位置 毫米"/>
+  <Var Name="fault_type" Type="int"  IO="Log" Value="255" Description="发送给CBK故障类型：1:齿号无效，2:表示齿数齿号不匹配,3:表示传感器测试后的第8个齿不匹配，4:表示激活传感器故障,5:模拟车轮突然反向，6：模拟cbk发送固定序列的D1，D2，D3;7:up比down多转一个齿;8:down比up多转一个齿;9:up比down读信标晚一个2ms;10:down比up读信标晚两个2ms;255表示无故障,11模拟在每个周期的25中断时，速度超中断,12，模拟上模块门闩寄存器值不在范围内，13:模拟下模块门闩寄存器值不在范围内,14:模拟上下模块收到的radar的消息的状态时不一致的,15:模拟c1,c2,c3跳变"/>
+  <Var Name="IN_ANCS1" Type="int"  IO="Log" Value="1" Description="ANCS1"/>   
+  <Var Name="IN_ANCS2" Type="int"  IO="Log" Value="1" Description="ANCS2"/>    
+  <Var Name="IN_ACS1" Type="int"  IO="Log" Value="0" Description="ACS1"/>   
+  <Var Name="IN_ACS2" Type="int"  IO="Log" Value="0" Description="ACS2"/>    
+  <Var Name="IN_BM1" Type="int"  IO="Log" Value="0" Description="BM1"/>   
+  <Var Name="IN_BM2" Type="int"  IO="Log" Value="0" Description="BM2"/>   
+  <Var Name="IN_CBTC1" Type="int"  IO="Log" Value="0" Description="CBTC1"/>   
+  <Var Name="IN_CBTC2" Type="int"  IO="Log" Value="0" Description="CBTC2"/>    
+  <Var Name="IN_EDDNO1" Type="int"  IO="Log" Value="0" Description="EDDNO1"/>   
+  <Var Name="IN_EDDNO2" Type="int"  IO="Log" Value="0" Description="EDDNO2"/>     
+  <Var Name="IN_KSON1" Type="int"  IO="Log" Value="0" Description="KSON1"/>   
+  <Var Name="IN_KSON2" Type="int"  IO="Log" Value="0" Description="KSON2"/>   
+  <Var Name="IN_REV1" Type="int"  IO="Log" Value="0" Description="REV1"/>   
+  <Var Name="IN_REV2" Type="int"  IO="Log" Value="0" Description="REV2"/>   
+  <Var Name="IN_RM_PB1" Type="int"  IO="Log" Value="0" Description="RM_PB1"/>   
+  <Var Name="IN_RM_PB2" Type="int"  IO="Log" Value="0" Description="RM_PB2"/>  
+  <Var Name="IN_RMF1" Type="int"  IO="Log" Value="0" Description="RMF1"/>   
+  <Var Name="IN_RMF2" Type="int"  IO="Log" Value="0" Description="RMF2"/>    
+  <Var Name="IN_TDCL1" Type="int"  IO="Log" Value="1" Description="TDCL1"/>   
+  <Var Name="IN_TDCL2" Type="int"  IO="Log" Value="1" Description="TDCL2"/>  
+  <Var Name="IN_TI1" Type="int"  IO="Log" Value="1" Description="TI1"/>   
+  <Var Name="IN_TI2" Type="int"  IO="Log" Value="1" Description="TI2"/>  
+  <Var Name="IN_ZVBA11" Type="int"  IO="Log" Value="1" Description="ZVBA11"/>   
+  <Var Name="IN_ZVBA21" Type="int"  IO="Log" Value="1" Description="ZVBA21"/>
+  <Var Name="IN_ZVBA12" Type="int"  IO="Log" Value="1" Description="ZVBA12"/>   
+  <Var Name="IN_ZVBA22" Type="int"  IO="Log" Value="1" Description="ZVBA22"/> 
+  <Var Name="IN_EBNA1" Type="int"  IO="Log" Value="0" Description="EBNA1"/>   
+  <Var Name="IN_EBNA2" Type="int"  IO="Log" Value="0" Description="EBNA2"/> 
+  <Var Name="OUT_DE_A1" Type="int"  IO="Log" Value="0" Description="DE_A1"/>   
+  <Var Name="OUT_DE_A2" Type="int"  IO="Log" Value="0" Description="DE_A2"/>  
+  <Var Name="OUT_DE_B1" Type="int"  IO="Log" Value="0" Description="DE_B1"/>   
+  <Var Name="OUT_DE_B2" Type="int"  IO="Log" Value="0" Description="DE_B2"/>    
+  <Var Name="OUT_EBRD11" Type="int"  IO="Log" Value="0" Description="EBRD11"/>   
+  <Var Name="OUT_EBRD21" Type="int"  IO="Log" Value="0" Description="EBRD21"/>
+  <Var Name="OUT_EBRD12" Type="int"  IO="Log" Value="0" Description="EBRD12"/>   
+  <Var Name="OUT_EBRD22" Type="int"  IO="Log" Value="0" Description="EBRD22"/>   
+  <Var Name="OUT_EDDL1" Type="int"  IO="Log" Value="0" Description="EDDL1"/>   
+  <Var Name="OUT_EDDL2" Type="int"  IO="Log" Value="0" Description="EDDL2"/>    
+  <Var Name="OUT_FWD1" Type="int"  IO="Log" Value="0" Description="FWD1"/>   
+  <Var Name="OUT_FWD2" Type="int"  IO="Log" Value="0" Description="FWD2"/> 
+  <Var Name="OUT_HDC_A1" Type="int"  IO="Log" Value="0" Description="HDC_A1"/>   
+  <Var Name="OUT_HDC_A2" Type="int"  IO="Log" Value="0" Description="HDC_A2"/>   
+  <Var Name="OUT_HDC_B1" Type="int"  IO="Log" Value="0" Description="HDC_B1"/>   
+  <Var Name="OUT_HDC_B2" Type="int"  IO="Log" Value="0" Description="HDC_B2"/>     
+  <Var Name="OUT_REV1" Type="int"  IO="Log" Value="0" Description="REV1"/>   
+  <Var Name="OUT_REV2" Type="int"  IO="Log" Value="0" Description="REV2"/>  
+  <Var Name="OUT_ZVI1" Type="int"  IO="Log" Value="0" Description="ZVI1"/>   
+  <Var Name="OUT_ZVI2" Type="int"  IO="Log" Value="0" Description="ZVI2"/>  
+  <Var Name="OUT_ZVRD11" Type="int"  IO="Log" Value="0" Description="ZVRD11"/>   
+  <Var Name="OUT_ZVRD21" Type="int"  IO="Log" Value="0" Description="ZVRD21"/>
+  <Var Name="OUT_ZVRD12" Type="int"  IO="Log" Value="0" Description="ZVRD12"/>   
+  <Var Name="OUT_ZVRD22" Type="int"  IO="Log" Value="0" Description="ZVRD22"/> 
+  <Var Name="OUT_RM_ACT1" Type="int"  IO="Log" Value="0" Description="RM_ACT1"/>   
+  <Var Name="OUT_RM_ACT2" Type="int"  IO="Log" Value="0" Description="RM_ACT2"/> 
+  <Var Name="VIOM_IN" Type="complex"  IO="Log" Value="0" Description="VIOM采集到得车辆码位 信息组"/> 
+  <Var Name="VIOM_OUT" Type="complex"  IO="Log" Value="0" Description="VIOM输出到车辆码位 信息组"/>
+  <Var Name="End_Speed" Type="float" IO="Log" Value="0" Description="周期结束时的速度m/s"/>
+  <Var Name="Start_Speed" Type="float" IO="Log" Value="0" Description="周期开始时的速度m/s"/>
+  <Var Name="EB_accel" Type="int" IO="Log" Value="-1" Description="紧急制动时的加速度:m/s2"/>
+  <Var Name="DOC_A" Type="int" IO="Log" Value="0" Description="open the door"/>
+  <Var Name="DOC_B" Type="int" IO="Log" Value="0" Description="open the door"/>
+  <Var Name="DCC_A" Type="int" IO="Log" Value="0" Description="close the door"/>
+  <Var Name="DCC_B" Type="int" IO="Log" Value="0" Description="close the door"/>
+  <Var Name="BMR" Type="int" IO="Log" Value="1" Description="BM request"/>  
+  <Var Name="BM_PB" Type="int" IO="Log" Value="0" Description="BM button"/> 
+  <Var Name="RM_IND" Type="int" IO="Log" Value="0" Description="RM 模式"/>
+  <Var Name="MCS" Type="int" IO="Log" Value="0" Description="MCS 模式"/> 
+  <Var Name="EBRDEnable" Type="int" IO="Log" Value="1" Description="EBRDEnable:响应EB标识符，1相应EB,0不响应EB"/>
+  <Var Name="RSEBFlag" Type="int" IO="Log" Value="0" Description="RSEBFlag:RS施加EB标识符，1施加EB,0不施加EB"/>
+  <!--设备通信异常情况控制变量-->
+  <Var Name="CCNV_CRC_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：数据正常CRC计算错误，2：数据错误，CRC计算正常"/>
+  <Var Name="CCNV_UP_DOWN_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：只给up发数据，2：只给down发数据"/>
+  <Var Name="VIOM1a_CRC_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：数据正常CRC计算错误，2：数据错误，CRC计算正常"/>
+  <Var Name="VIOM1a_UP_DOWN_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：只给up发数据，2：只给down发数据"/>
+  <Var Name="VIOM1b_CRC_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：数据正常CRC计算错误，2：数据错误，CRC计算正常"/>
+  <Var Name="VIOM1b_UP_DOWN_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：只给up发数据，2：只给down发数据"/>
+  <Var Name="VIOM2a_CRC_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：数据正常CRC计算错误，2：数据错误，CRC计算正常"/>
+  <Var Name="VIOM2a_UP_DOWN_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：只给up发数据，2：只给down发数据"/>
+  <Var Name="VIOM2b_CRC_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：数据正常CRC计算错误，2：数据错误，CRC计算正常"/>
+  <Var Name="VIOM2b_UP_DOWN_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：只给up发数据，2：只给down发数据"/>
+  <Var Name="DATP_CRC_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：数据正常CRC计算错误，2：数据错误，CRC计算正常"/>
+  <Var Name="DATP_UP_DOWN_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：只给up发数据，2：只给down发数据"/>
+  <Var Name="ZC_CRC_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：数据正常CRC计算错误，2：数据错误，CRC计算正常"/>
+  <Var Name="ZC_UP_DOWN_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：只给up发数据，2：只给down发数据"/>
+  <Var Name="LC_CRC_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：数据正常CRC计算错误，2：数据错误，CRC计算正常"/>
+  <Var Name="LC_UP_DOWN_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：只给up发数据，2：只给down发数据"/>
+  <Var Name="CI_CRC_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：数据正常CRC计算错误，2：数据错误，CRC计算正常"/>
+  <Var Name="CI_UP_DOWN_CONTROL" Type="int" IO="Log" Value="0" Description="0:无异常，1：只给up发数据，2：只给down发数据"/>
+  <Var Name="VIOM1a_SEND_CONTROL" Type="int" IO="Log" Value="1" Description="0:不发数据，1：发数据"/>
+  <Var Name="VIOM1b_SEND_CONTROL" Type="int" IO="Log" Value="1" Description="0:不发数据，1：发数据"/>
+  <Var Name="VIOM2a_SEND_CONTROL" Type="int" IO="Log" Value="1" Description="0:不发数据，1：发数据"/>
+  <Var Name="VIOM2b_SEND_CONTROL" Type="int" IO="Log" Value="1" Description="0:不发数据，1：发数据"/>
+  <!--雷达相关变量-->
+  <Var Name="Impulse_Register" Type="int" IO="Log" Value="0" Description="Impulse_Register:当前脉冲计数值,1LB=4mm"/>
+  <Var Name="RS485_Frame Counter Register" Type="int" IO="Log" Value="0" Description="RS485 Frame Counter Register:当前的串口数据帧计数值"/>
+  <Var Name="Speed_Register" Type="int" IO="Log" Value="0" Description="Speed Register:当前的速度值，1LSB=(600 km/h)/65536≈2543μm/s"/>
+  <Var Name="Channel1_Radar_Movement_Register" Type="int" IO="Log" Value="0" Description="当前雷达位移计数值，1LSB=0.1m"/>
+  <Var Name="Channel2_Radar_Movement_Register" Type="int" IO="Log" Value="0" Description="当前雷达位移计数值，1LSB=0.1km"/>
+  <Var Name="Radar_Status_Register" Type="int" IO="Log" Value="0" Description="Radar Status Register"/>
+  <Var Name="Radar_CRC_Register" Type="int" IO="Log" Value="0" Description="Radar_Status_Register"/>
+  <!--控制ATP重启的变量-->
+  <Var Name="RESET_ATP_COMMAND" Type="int" IO="Log" Value="0" Description="0:不重启ATP，1：重启ATP"/>
+  <!--相关控制变量-->
+  <Var Name="RSRuleEnable" Type="int" IO="Log" Value="1" Description="RSRuleEnable:RS 规则是否可用，1：可用，0：不可用"/>
+</Variables>
+    

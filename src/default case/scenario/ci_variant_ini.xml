@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 本配置文件用于配置每个CBI所带的变量个数,这个配置文件要根据项目进行配置  -->
+<Ini_Config>
+  <CBI ID="1" VariantNum="100" Value="0"/>
+  <CBI ID="2" VariantNum="100" Value="0"/>
+  <CBI ID="3" VariantNum="100" Value="0"/>
+  <CBI ID="4" VariantNum="100" Value="0"/>
+  <CBI ID="5" VariantNum="100" Value="0"/>
+  <CBI ID="6" VariantNum="100" Value="0"/>
+</Ini_Config>

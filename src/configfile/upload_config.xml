@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--本文件用于配置上传的文件路径以及文件名字-->
+<!-- File配置传送数据项，Name：配置数据文件名，Type：类型，End1，End2，All,Map* -->
+<!-- File配置传送数据项，Path：配置数据文件相对路径，Description：描述 -->
+<!--Map*:为地图类型，有Map0,1,2,3,4几种：[atp_up_path,atp_down_path,ccnv_path,tp_map_path,tp_txt_path]-->
+<!--Map*:该类型的数据的path主要通过地图库获得-->
+<Upload_File_Setting>
+  <Host Name = "ATP_UP">
+    <File Name = "cfg.vle.md5" Type = "Map3" Path = "" Description = "cfg.vle.md5"/>
+    <File Name = "dataplug.bin" Type = "End1" Path = "/configfile/atp/dataplug/end1/up/dataplug.bin" Description = "dataplug.bin"/>
+    <File Name = "dataplug.bin" Type = "End2" Path = "/configfile/atp/dataplug/end2/up/dataplug.bin" Description = "dataplug.bin"/>
+    <File Name = "data.vle.md5" Type = "Map0" Path = "" Description = "data.vle.md5"/>
+  </Host>
+  <Host Name = "ATP_DOWN">
+    <File Name = "cfg.vle.md5" Type = "Map4" Path = "" Description = "cfg.vle.md5"/>
+    <File Name = "dataplug.bin" Type = "End1" Path = "/configfile/atp/dataplug/end1/down/dataplug.bin" Description = "dataplug.bin"/>
+    <File Name = "dataplug.bin" Type = "End2" Path = "/configfile/atp/dataplug/end2/down/dataplug.bin" Description = "dataplug.bin"/>
+    <File Name = "data.vle.md5" Type = "Map1" Path = "" Description = "data.vle.md5"/>
+  </Host>
+  <Host Name = "SDTS">
+    <File Name = "GM_GAPP.ini" Type = "End1" Path = "/configfile/sdts/end1/GM_GAPP.ini" Description = "GM_GAPP.ini"/>
+    <File Name = "GM_GAPP.ini" Type = "End2" Path = "/configfile/sdts/end2/GM_GAPP.ini" Description = "GM_GAPP.ini"/>
+    <File Name = "GM_RMS.ini" Type = "End1" Path = "/configfile/sdts/end1/GM_RMS.ini" Description = "GM_RMS.ini"/>
+    <File Name = "GM_RMS.ini" Type = "End2" Path = "/configfile/sdts/end2/GM_RMS.ini" Description = "GM_RMS.ini"/>
+  </Host>
+  <Host Name = "CBK">
+    <File Name = "GM_GAPP.ini" Type = "All" Path = "/configfile/cbk/GM_GAPP.ini" Description = "GM_GAPP.ini"/>
+    <File Name = "GM_RMS.ini" Type = "All" Path = "/configfile/cbk/GM_RMS.ini" Description = "GM_RMS.ini"/>
+  </Host>    
+</Upload_File_Setting>

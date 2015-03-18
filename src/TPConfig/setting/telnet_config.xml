@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--本文件用于配置telnet的相关数据-->
+<Telnets>
+  <telnet Name="ATP_UP" hostName="up" ip="192.100.140.18" port="0" password="" savePath="atp_up.txt" Description="ATP_UP handle"/>
+  <telnet Name="ATP_DOWN" hostName="down" ip="192.100.140.16" port="0" password="" savePath="atp_down.txt" Description="ATP_DOWN handle"/>
+  <telnet Name="SDTS" hostName="dvcom1" ip="192.100.140.12" port="0" password="" savePath="sdts.txt" Description="SDTS handle"/>
+  <telnet Name="CBK" hostName="dvcom2" ip="192.100.140.14" port="0" password="" savePath="cbk.txt" Description="CBK handle"/>
+</Telnets>
+   

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，具体待定-->
+<Variables>
+  <Var Name="while_flag" Type="int"  IO="Output" Value="1" Description="current position"/>
+  <Var Name="cur_position" Type="string"  IO="Print" Value="0" Description="current position"/>
+  <Var Name="next_position" Type="float" IO="Print" Value="0"Description="next position"/>
+  <Var Name="cur_speed" Type="float" IO="Print" Value="0" Description="current speed"/>
+  <Var Name="cur_accel" Type="complex" IO="Output" Value="0" Description="current accelerate"/>
+</Variables>

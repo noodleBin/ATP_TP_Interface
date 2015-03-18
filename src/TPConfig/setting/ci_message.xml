@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<!--Co_Config_REPORT,Fault_Config_REPORT,Without_Spinodal_REPORT,With_Spinodal_REPORT,Status_REPORT-->
+<!--VIOM_IN_REPORT,VIOM_OUT_REPORT,Simulator_Mes-->
+<!--direct:1表示坐标由小到大（正向），-1表示坐标由大到小（反向）-->
+<!--其中单位为毫米-->
+<Msg_Settings>
+    <Msg Name="CC2CIVariantRequest" Id="4" Pack="!">
+      <Item Index="0" Format="B" Name="Message_Identifier" Description="Message Identifier"/>
+      <Item Index="1" Format="I" Name="CCLoopHour" Description="CC Loop Hour"/>
+      <Item Index="2" Format="3B" Name="CheckSum_S1" Description="checksum 1"/>
+      <Item Index="5" Format="3B" Name="CheckSum_S2" Description="checksum 2"/>
+    </Msg>
+
+    <Msg Name="CI2CCVariantRequest" Id="15363" Pack="!">
+      <Item Index="0" Format="B" Name="Message_Identifier" Description="Message Identifier"/>
+      <Item Index="1" Format="I" Name="CILoopHour" Description="CC Loop Hour"/>
+      <Item Index="2" Format="3B" Name="CheckSum_S1" Description="checksum 1"/>
+      <Item Index="5" Format="3B" Name="CheckSum_S2" Description="checksum 2"/>
+    </Msg>
+    
+    <Msg Name="Coordinate_REPORT" Id="258" Pack="!">
+      <Item Index="0" Format="B" Name="subtype" Description="位置更新消息"/>
+      <Item Index="1" Format="i" Name="coordinates_1" Description="本周期开始时的车辆位置 毫米"/>
+      <Item Index="2" Format="i" Name="coordinates_2" Description="本周期结束时的车辆位置 毫米"/>
+    </Msg>    
+    
+    <Msg Name="Simulator_Mes" Id="99" Pack="!">
+      <Item Index="0" Format="B" Name="Command_type" Description="91启动命令，92周期更新命令，93运行结束命令"/>
+    </Msg>  
+
+</Msg_Settings>

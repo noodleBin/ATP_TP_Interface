@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，Log 为每周期记录到日志-->
+<Variables>
+  <Var Name="RSspeed" Type="int" IO="Input" Value="0" Description="根据本周期起始坐标和结束坐标计算得到的本周期列车速度,单位为毫米每秒，同时作为ccnv_rule的判断条件"/>
+  <Var Name="loophour" Type="int" IO="Input" Value="1" Description="本地loophour，每周期自增1，同时作为ccnv_rule的判断条件"/>
+  <Var Name="Command_type" Type="int" IO="Log" Value="100" Description="91启动命令，92周期更新命令，93运行结束命令"/>
+  <Var Name="subType" Type="int" IO="Log" Value="241" Description="扩展用"/>
+  <Var Name="Coordinates_1" Type="int" IO="Log" Value="0" Description="周期起始坐标"/>
+  <Var Name="Coordinates_2" Type="int" IO="Log" Value="0" Description="周期结束坐标"/>
+  <Var Name="SelectedFrontEnd" Type="int"  IO="Log" Value="1" Description="SelectedFrontEnd"/>
+  <Var Name="OdometerRef1SpeedUnderThreshold" Type="int" IO="Log" Value="0" Description="OdometerRef1SpeedUnderThreshold"/>
+  <Var Name="OdometerRef1Available" Type="int" IO="Log" Value="0" Description="OdometerRef1Available"/>
+  <Var Name="OdometerRef2SpeedUnderThreshold" Type="int" IO="Log" Value="0" Description="OdometerRef2SpeedUnderThreshold"/>
+  <Var Name="OdometerRef2Available" Type="int" IO="Log" Value="0" Description="OdometerRef2Available"/>
+  <Var Name="EmergencyBrakingNotRequestedToAtp" Type="int" IO="Log" Value="1" Description="EmergencyBrakingNotRequested"/>
+  <Var Name="VitalParkingBrakingNotRequested" Type="int" IO="Log" Value="1" Description="VitalParkingBrakingNotRequest"/>
+  <Var Name="MasterCCcore" Type="int" IO="Log" Value="1" Description="MasterCCcore"/>
+  <Var Name="RouteSetNotNeeded" Type="int" IO="Log" Value="0" Description="RouteSetNotNeeded"/>
+  <!-- 191基线修改： start -->
+  <Var Name="TrainInCorrectlyDockedZone" Type="int" IO="Log" Value="0" Description="Train in correctly docked zone"/>
+  <!-- 191基线修改： end -->
+  <Var Name="PSDplatformAoperation.Id" Type="int" IO="Log" Value="0" Description="PSDplatformAoperation.Id"/>
+  <Var Name="PSDplatformAoperation.ClosingOrder" Type="int" IO="Log" Value="0" Description="PSDplatformAoperation.ClosingOrder"/>
+  <Var Name="PSDplatformAoperation.OpeningOrder" Type="int" IO="Log" Value="0" Description="PSDplatformAoperation.OpeningOrder"/>
+  <Var Name="PSDplatformBoperation.Id" Type="int" IO="Log" Value="0" Description="PSDplatformBoperation.Id"/>
+  <Var Name="PSDplatformBoperation.ClosingOrder" Type="int" IO="Log" Value="0" Description="PSDplatformBoperation.ClosingOrder"/>
+  <Var Name="PSDplatformBoperation.OpeningOrder" Type="int" IO="Log" Value="0" Description="PSDplatformBoperation.OpeningOrder"/>
+  <!-- 191基线修改： start -->
+<!--   <Var Name="ATBselectedDrivingMode" Type="int" IO="Log" Value="0" Description="ATBselectedDrivingMode"/> -->
+<!--   <Var Name="ATBdrivingModeSetRequested" Type="int" IO="Log" Value="0" Description="ATBdrivingModeSetRequested"/> -->
+<!--   <Var Name="ATBdrivingModeUnsetRequested" Type="int" IO="Log" Value="0" Description="ATBdrivingModeUnsetRequested"/> -->
+<!--   <Var Name="RebootRequest" Type="int" IO="Log" Value="0" Description="RebootRequest"/> -->
+  <Var Name="NVID1" Type="int" IO="Log" Value="0" Description="NVID[1:8]"/>
+  <Var Name="NVID2" Type="int" IO="Log" Value="0" Description="NVID[9:16]"/>
+  <Var Name="NVID3" Type="int" IO="Log" Value="0" Description="NVID[17:24]"/>
+  <Var Name="NVID4" Type="int" IO="Log" Value="0" Description="NVID[25:32]"/>
+  <Var Name="NVID5" Type="int" IO="Log" Value="0" Description="NVID[33:40]"/>
+  <Var Name="Cancel_signal" Type="int" IO="Log" Value="0" Description="Cancel signal"/>
+  <Var Name="Overlap_release" Type="int" IO="Log" Value="0" Description="Overlap release"/>
+  <Var Name="Communicate_with_PSD" Type="int" IO="Log" Value="0" Description="Communicate with PSD"/>
+  <Var Name="Variant_request_CBI_id[0]" Type="int" IO="Log" Value="0" Description="Variant request CBI id[0]"/>
+  <Var Name="Variant_request_CBI_id[1]" Type="int" IO="Log" Value="0" Description="Variant request CBI id[1]"/>
+  <!-- 191基线修改： end -->
+  <Var Name="NTPtimeToAtp" Type="int" IO="Log" Value="0" Description="NTPtime to atp"/>
+  <Var Name="CC_SSID" Type="int" IO="Log" Value="0" Description="CC所在车头编号"/>
+  <Var Name="CC_Train_Type" Type="int" IO="Log" Value="0" Description="列车类型"/>
+  <Var Name="CC_core_id" Type="int" IO="Log" Value="0" Description="CC_core_id"/>
+  <Var Name="CC_Inner_IP_blue" Type="int" IO="Log" Value="0" Description="CC对内的蓝网IP地址"/>
+  <Var Name="CC_Inner_IP_red" Type="int" IO="Log" Value="0" Description="CC对内的红网IP地址"/>
+  <Var Name="CC_Outer_IP_blue" Type="int" IO="Log" Value="0" Description="CC对外的蓝网IP地址"/>
+  <Var Name="CC_Outer_IP_red" Type="int" IO="Log" Value="0" Description="CC对外的红网IP地址"/>
+  <Var Name="CC_DLU_IP_blue" Type="int" IO="Log" Value="0" Description="DLU蓝网IP地址"/>
+  <Var Name="CC_DLU_IP_red" Type="int" IO="Log" Value="0" Description="DLU红网IP地址"/>
+  <Var Name="LoopHour" Type="int" IO="Log" Value="0" Description="ATP的LoopHour，接收到的消息变量"/>
+  <Var Name="LatestTimeOtherCore" Type="int" IO="Log" Value="0" Description="LatestTimeOtherCore"/>
+  <Var Name="NTPtimeFromAtp" Type="int" IO="Log" Value="0" Description="NTPtimeFromAtp"/>
+  <Var Name="BlockModeEOAavailable" Type="int" IO="Log" Value="0" Description="BlockModeEOAavailable"/>
+  <Var Name="TractionAuthorisedSenseEnd1" Type="int" IO="Log" Value="0" Description="TractionAuthorisedSenseEnd1"/>
+  <Var Name="TractionAuthorisedSenseEnd2" Type="int" IO="Log" Value="0" Description="TractionAuthorisedSenseEnd2"/>
+  <Var Name="ATBdrivingMode" Type="int" IO="Log" Value="0" Description="ATBdrivingMode"/>
+  <Var Name="BeaconCount" Type="int" IO="Log" Value="0" Description="BeaconCount"/>
+  <Var Name="BeaconID" Type="int" IO="Log" Value="0" Description="BeaconID"/>
+  <Var Name="BlockModeVariants" Type="int" IO="Log" Value="0" Description="BlockModeVariants"/>
+  <Var Name="BeaconDefaultMessage" Type="int" IO="Log" Value="0" Description="BeaconDefaultMessage"/>
+  <Var Name="BlockModeVariantAvailable" Type="int" IO="Log" Value="0" Description="BlockModeVariantAvailable"/>
+  <Var Name="MissedBMbeacon" Type="int" IO="Log" Value="0" Description="MissedBMbeacon"/>
+  <Var Name="DoorOpeningEnabledSideA" Type="int" IO="Log" Value="0" Description="DoorOpeningEnabledSideA"/>
+  <Var Name="DoorOpeningEnabledSideB" Type="int" IO="Log" Value="0" Description="DoorOpeningEnabledSideB"/>
+  <Var Name="PSDStateSideA" Type="int" IO="Log" Value="0" Description="PSDStateSideA"/>
+  <Var Name="PSDStateSideB" Type="int" IO="Log" Value="0" Description="PSDStateSideB"/>
+  <Var Name="FilteredStop" Type="int" IO="Log" Value="0" Description="FilteredStop"/>
+  <Var Name="MaxCalibration" Type="int" IO="Log" Value="0" Description="MaxCalibration"/>
+  <Var Name="MinCalibration" Type="int" IO="Log" Value="0" Description="MinCalibration"/>
+  <Var Name="KinematicsValid" Type="int" IO="Log" Value="0" Description="KinematicsValid"/>
+  <Var Name="OdemeterValid" Type="int" IO="Log" Value="0" Description="OdemeterValid"/>
+  <Var Name="PermanentLockedAxle" Type="int" IO="Log" Value="0" Description="PermanentLockedAxle"/>
+  <Var Name="RouteExclusivityNotGuaranted" Type="int" IO="Log" Value="0" Description="RouteExclusivityNotGuaranted"/>
+  <Var Name="TrainLocated" Type="int" IO="Log" Value="0" Description="TrainLocated"/>
+  <Var Name="TrainEnd2Orientation" Type="int" IO="Log" Value="0" Description="TrainEnd2Orientation"/>
+  <Var Name="DeltaLocation" Type="int" IO="Log" Value="0" Description="DeltaLocation"/>
+  <Var Name="TrainEnd2BlockID" Type="int" IO="Log" Value="0" Description="TrainEnd2BlockID"/>
+  <Var Name="TrainEnd2Abscissa" Type="int" IO="Log" Value="0" Description="TrainEnd2Abscissa"/>
+  <Var Name="ParkingBrakingNotRequested" Type="int" IO="Log" Value="0" Description="ParkingBrakingNotRequested"/>
+  <Var Name="EmergencyBrakingNotRequestedFromAtp" Type="int" IO="Log" Value="1" Description="EmergencyBrakingNotRequested"/>
+  <Var Name="EBforRollbackOverspeed" Type="int" IO="Log" Value="0" Description="EBforRollbackOverspeed"/>
+  <Var Name="EBforReverseOverspeed" Type="int" IO="Log" Value="0" Description="EBforReverseOverspeed"/>
+  <Var Name="EBforTrainDoorsUnlocked" Type="int" IO="Log" Value="0" Description="EBforTrainDoorsUnlocked"/>
+  <Var Name="EBforRMOverspeed" Type="int" IO="Log" Value="0" Description="EBforRMOverspeed"/>
+  <Var Name="EBforTrainEvacuation" Type="int" IO="Log" Value="0" Description="EBforTrainEvacuation"/>
+  <Var Name="EBforPSDUnlocked" Type="int" IO="Log" Value="0" Description="EBforPSDUnlocked"/>
+  <Var Name="EBforMoralTime" Type="int" IO="Log" Value="0" Description="EBforMoralTime"/>
+  <Var Name="EBforOverRunningApproachableSpeedLimit" Type="int" IO="Log" Value="0" Description="EBforOverRunningApproachableSpeedLimit"/>
+  <Var Name="EBforNoManSupervision" Type="int" IO="Log" Value="0" Description="EBforNoManSupervision"/>
+  <Var Name="NoVitalSpeedLimitExceed" Type="int" IO="Log" Value="0" Description="NoVitalSpeedLimitExceed"/>
+  <Var Name="EBforApproachableSignalOverrun" Type="int" IO="Log" Value="0" Description="EBforApproachableSignalOverrun"/>
+  <Var Name="UnrecoverableRollbackOverSpeed" Type="int" IO="Log" Value="0" Description="UnrecoverableRollbackOverSpeed"/> 
+  <Var Name="CCNVRuleEnable" Type="int" IO="Log" Value="1" Description="CCNVRuleEnable:ccnv 规则是否可用，1：可用，0：不可用"/>    
+  <Var Name="SendMesENABLE" Type="int" IO="Log" Value="1" Description="是否发送数据"/>
+  <Var Name="VIOM1EnableOut" Type="int" IO="Log" Value="65535" Description="VIOM1输出使能，默认容许输出0XFFFF"/>
+  <Var Name="VIOM2EnableOut" Type="int" IO="Log" Value="65535" Description="VIOM2输出使能，默认容许输出0XFFFF"/>
+  <Var Name="VIOM3EnableOut" Type="int" IO="Log" Value="65535" Description="VIOM3输出使能，默认容许输出0XFFFF"/>
+  <Var Name="VIOM4EnableOut" Type="int" IO="Log" Value="65535" Description="VIOM4输出使能，默认容许输出0XFFFF"/>
+  <Var Name="ModifyNTPTimeEnable" Type="int" IO="Log" Value="0" Description="是否可以修改ccnv给atp的NTPTime，0不可已修改，1可以修改"/>
+  <Var Name="DeltaNTPtimeToAtp" Type="int" IO="Log" Value="0" Description="NTPtimeToAtp的delta值，默认为0"/>
+  <Var Name="NTPError" Type="int" IO="Log" Value="0" Description="NTPError为1时，设置NTPTime=-1"/>
+</Variables>

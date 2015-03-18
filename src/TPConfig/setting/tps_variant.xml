@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，具体待定-->
+<Variables>
+  <Var Name="queMsgHead" Type="string"  IO="Input" Value="!IH" Description="queue msg head"/>
+  <Var Name="loadDevice" Type="string"  IO="Input" Value="rs" Description="load device"/>
+  <Var Name="defDeviceId" Type="int"  IO="Input" Value="1" Description="default device id"/>
+  <Var Name="rs2cbkMsgId" Type="int"  IO="Input" Value="257" Description="rs to cbk msg id"/>
+  <Var Name="ts2cbkMsgId" Type="int"  IO="Input" Value="513" Description="ts to cbk beacon message"/>
+  <Var Name="viom1A2atp" Type="int"  IO="Input" Value="5889" Description="viom1a to atp message"/>
+  <Var Name="viom1B2atp" Type="int"  IO="Input" Value="5890" Description="viom1b to atp message"/>
+  <Var Name="viom2A2atp" Type="int"  IO="Input" Value="5891" Description="viom2a to atp message"/>
+  <Var Name="viom2B2atp" Type="int"  IO="Input" Value="5892" Description="viom2b to atp message"/>
+  <Var Name="ccnv2atp" Type="int"  IO="Input" Value="5121" Description="ccnv to atp message"/>
+  <Var Name="rs2atp" Type="int"  IO="Input" Value="300" Description="rs to atp control message"/>
+  <Var Name="resetAtpCommand" Type="int"  IO="Input" Value="260" Description="reset atp control message"/>
+  <Var Name="StartCommand" Type="int"  IO="Input" Value="261" Description="reset atp control message"/>
+  <Var Name="cileft2atp" Type="int"  IO="Input" Value="15361" Description="ci left to atp message"/>
+  <Var Name="ciright2atp" Type="int"  IO="Input" Value="15362" Description="ci right to atp message"/>
+  <Var Name="Lc2AtpMesID" Type="int" IO="Input" Value="10241" Description="Lc2AtpMesID"/>
+  <Var Name="ci2ccVariantReport" Type="int"  IO="Input" Value="15363" Description="ci to cc variant report message"/>
+  <Var Name="ci2ccVariantRequest" Type="int"  IO="Input" Value="15364" Description="ci to cc variant request message"/>
+  <Var Name="datp2atp" Type="int"  IO="Input" Value="1793" Description="ccnv to atp message"/>
+  <Var Name="cmdCog" Type="int"  IO="Input" Value="90" Description="simulator cmd cogNumber"/>
+  <Var Name="cmdMsgId" Type="int"  IO="Input" Value="99" Description="simulator cmd msgid"/>
+  <Var Name="cmdStart" Type="int"  IO="Input" Value="91" Description="simulator cmd start"/>
+  <Var Name="cmdUpcycle" Type="int"  IO="Input" Value="92" Description="simulator cmd upcycle"/>
+  <Var Name="cmdRepeate" Type="int"  IO="Input" Value="95" Description="simulator cmd loop"/>
+  <Var Name="cmdEnd" Type="int"  IO="Input" Value="93" Description="simulator cmd end"/>
+  
+  <Var Name="manualStop" Type="int"  IO="Input" Value="80" Description="simulator cmd end"/>
+  <Var Name="autoRun" Type="int"  IO="Input" Value="81" Description="simulator cmd end"/>
+  <Var Name="cmdIniloophour" Type="int"  IO="Input" Value="94" Description="simulator cmd initialize loophour"/>
+  <Var Name="rmsHead" Type="int"  IO="Input" Value="1001" Description="msgid of rms"/>
+  <Var Name="sigHead" Type="int"  IO="Input" Value="1002" Description="msgid of sig"/>
+  <Var Name="tps2sdtsMesId" Type="int"  IO="Input" Value="1003" Description="msgid of sig"/>
+  <Var Name="tps2sdtsMesNum" Type="int"  IO="Input" Value="6" Description="msgid of sig"/>
+  <Var Name="rs2hmiMesId" Type="int"  IO="Input" Value="293" Description="msgid of rs to hmi"/>
+</Variables>

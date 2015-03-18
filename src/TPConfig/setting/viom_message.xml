@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<Msg_Settings>
+    <Msg Name="VIOM1A_to_ATP" Id="5889" Pack="!">
+      <Item Index="0" Format="Q" Name="viom1a_vdi_vital_64" Description="viom1a output vital data"/>
+      <Item Index="1" Format="B" Name="viom1a_status" Description="viom1a_status"/>
+      <Item Index="2" Format="B" Name="viom1a_other_cc_contected" Description="viom1a_other_cc_contected"/>
+      <Item Index="3" Format="I" Name="viom1a_loophour" Description="viom1a loop hour"/>
+      <Item Index="4" Format="I" Name="viom1a_cc_loophour" Description="viom1a cc loop hour"/>
+      <Item Index="5" Format="3B" Name="viom1a_checksum1" Description="viom1a checksum 1"/>
+      <Item Index="8" Format="3B" Name="viom1a_checksum2" Description="viom1a checksum 2"/>
+    </Msg>
+
+    <Msg Name="VIOM1B_to_ATP" Id="5890" Pack="!">
+      <Item Index="0" Format="Q" Name="viom1b_vdi_vital_64" Description="viom1a output vital data"/>
+      <Item Index="1" Format="B" Name="viom1b_status" Description="viom1a_status"/>
+      <Item Index="2" Format="B" Name="viom1b_other_cc_contected" Description="viom1a_other_cc_contected"/>
+      <Item Index="3" Format="I" Name="viom1b_loophour" Description="viom1a loop hour"/>
+      <Item Index="4" Format="I" Name="viom1b_cc_loophour" Description="viom1a cc loop hour"/>
+      <Item Index="5" Format="3B" Name="viom1b_checksum1" Description="viom1a checksum 1"/>
+      <Item Index="8" Format="3B" Name="viom1b_checksum2" Description="viom1a checksum 2"/>
+    </Msg>
+
+    <Msg Name="VIOM2A_to_ATP" Id="5891" Pack="!">
+      <Item Index="0" Format="Q" Name="viom2a_vdi_vital_16" Description="viom1a output vital data"/>
+      <Item Index="1" Format="B" Name="viom2a_status" Description="viom1a_status"/>
+      <Item Index="2" Format="B" Name="viom2a_other_cc_contected" Description="viom1a_other_cc_contected"/>
+      <Item Index="3" Format="I" Name="viom2a_loophour" Description="viom1a loop hour"/>
+      <Item Index="4" Format="I" Name="viom2a_cc_loophour" Description="viom1a cc loop hour"/>
+      <Item Index="5" Format="3B" Name="viom2a_checksum1" Description="viom1a checksum 1"/>
+      <Item Index="8" Format="3B" Name="viom2a_checksum2" Description="viom1a checksum 2"/>
+    </Msg>
+ 
+    <Msg Name="VIOM2B_to_ATP" Id="5892" Pack="!">
+      <Item Index="0" Format="Q" Name="viom2b_vdi_vital_64" Description="viom1a output vital data"/>
+      <Item Index="1" Format="B" Name="viom2b_status" Description="viom1a_status"/>
+      <Item Index="2" Format="B" Name="viom2b_other_cc_contected" Description="viom1a_other_cc_contected"/>
+      <Item Index="3" Format="I" Name="viom2b_loophour" Description="viom1a loop hour"/>
+      <Item Index="4" Format="I" Name="viom2b_cc_loophour" Description="viom1a cc loop hour"/>
+      <Item Index="5" Format="3B" Name="viom2b_checksum1" Description="viom1a checksum 1"/>
+      <Item Index="8" Format="3B" Name="viom2b_checksum2" Description="viom1a checksum 2"/>
+    </Msg>
+   
+    <Msg Name="ATP_Vital_to_VIOM" Id="9219" Pack="!">
+      <Item Index="0" Format="B" Name="subType" Description="subType:VIOM1:1,VIOM2:2"/>
+      <Item Index="1" Format="3B" Name="Vital_data" Description="viom vital data"/>
+      <Item Index="4" Format="I" Name="atp_loophour" Description="viom atp loop hour"/>
+      <Item Index="5" Format="I" Name="loophour" Description="viom loop hour"/>
+      <Item Index="6" Format="I" Name="traceUP" Description="viom trace UP"/>
+      <Item Index="7" Format="I" Name="DTUP" Description="viom trace UP"/>
+      <Item Index="8" Format="I" Name="traceDOWN" Description="viom trace DOWN"/>
+      <Item Index="9" Format="I" Name="DTDOWN" Description="viom trace DOWN"/>
+      <Item Index="10" Format="B" Name="safe_time_checked+Mastercore" Description="viom1 safe time vaild + Mastercore"/>
+      <Item Index="11" Format="3B" Name="checksum1" Description="checksum1"/>
+      <Item Index="14" Format="3B" Name="checksum2" Description="checksum2"/>
+    </Msg>
+    <Msg Name="VIOM_Vital_to_RS" Id="5893" Pack="!">
+      <Item Index="0" Format="B" Name="subType" Description="subType"/>
+      <Item Index="1" Format="10B" Name="viom_vital" Description="viom vital data"/>
+    </Msg>
+    
+    <Msg Name="RS_to_VIOM" Id="259" Pack="!">
+      <Item Index="0" Format="B" Name="subType" Description="subType"/>
+      <Item Index="1" Format="64B" Name="viom1_vdi_16" Description="viom1 vital data "/>
+      <Item Index="65" Format="64B" Name="viom2_vdi_16" Description="viom2 vital data "/>
+    </Msg>
+    
+    <Msg Name="RS_Location" Id="258" Pack="!">
+      <Item Index="0" Format="B" Name="subType" Description="subType"/>
+      <Item Index="1" Format="i" Name="coordinates_1" Description="start location"/>
+      <Item Index="2" Format="i" Name="coordinates_2" Description="end location"/>
+    </Msg>
+    
+    <Msg Name="Simulator_Mes" Id="99" Pack="!">
+      <Item Index="0" Format="B" Name="Command_type" Description="start 91 ,cycle update 92,stop 93 "/>
+    </Msg>
+
+    <Msg Name="HMI2VIOM" Id="51234" Pack="!">
+      <Item Index="0" Format="32B" Name="VIOMdata" Description="VIOM info from HMI"/>
+    </Msg>    
+</Msg_Settings>

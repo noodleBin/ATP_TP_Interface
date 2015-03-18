@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<Msg_Settings>
+    <Msg Name="AA" Id="2" Pack="!">
+      <Item Index="0" Format="H" Name="a" Description="ex"/>
+      <Item Index="1" Format="H" Name="b" Description="ex"/>
+      <Item Index="2" Format="f" Name="c" Description="ex"/>
+    </Msg>
+    <Msg Name="BB" Id="3" Pack="!">
+      <Item Index="0" Format="H" Name="a" Description="ex"/>
+      <Item Index="1" Format="H" Name="b" Description="ex"/>
+      <Item Index="2" Format="f" Name="c" Description="ex"/>
+    </Msg>
+</Msg_Settings>

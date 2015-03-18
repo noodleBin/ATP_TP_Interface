@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--配置rs发送给viom的信息中变量和码位的对应关系-->
+<!--rs->viom的信息有16个，分别对应码位0-15，当码位为-1表示无该变量的码位-->
+<!--viom->rs的信息有10个，分别对应码位0-9，当码位为-1表示无该变量的码位-->
+<!--属性中的Index即为码位信息(变量在viom端口中的位置)-->
+<VIOM_Settings>
+    <VIOM_IN>
+      <Item Index="-1" Name="IN_ANCS1"   VIOM = "0" Description="ANCS1"/>
+      <Item Index="-1" Name="IN_ANCS2"   VIOM = "1" Description="ANCS2"/>
+      <Item Index="-1" Name="IN_ACS1"   VIOM = "0" Description="ACS1"/>
+      <Item Index="-1" Name="IN_ACS2"   VIOM = "1" Description="ACS2"/>
+      <Item Index="7"  Name="IN_BM1"    VIOM = "0" Description="BM1"/>
+      <Item Index="7"  Name="IN_BM2"    VIOM = "1" Description="BM2"/>
+      <Item Index="10" Name="IN_CBTC1"  VIOM = "0" Description="CBTC1"/>
+      <Item Index="10" Name="IN_CBTC2"  VIOM = "1" Description="CBTC2"/>
+      <Item Index="-1" Name="IN_EDDNO1" VIOM = "0" Description="EDDNO1"/>
+      <Item Index="-1" Name="IN_EDDNO2" VIOM = "1" Description="EDDNO2"/>
+      <Item Index="6"  Name="IN_KSON1"  VIOM = "0" Description="KSON1"/>
+      <Item Index="6"  Name="IN_KSON2"  VIOM = "1" Description="KSON2"/>
+      <Item Index="2"  Name="IN_REV1"   VIOM = "0" Description="REV1"/>
+      <Item Index="2"  Name="IN_REV2"   VIOM = "1" Description="REV2"/>
+      <Item Index="0"  Name="IN_RM_PB1" VIOM = "0" Description="RM_PB1"/>
+      <Item Index="0"  Name="IN_RM_PB2" VIOM = "1" Description="RM_PB2"/>
+      <Item Index="1"  Name="IN_RMF1"   VIOM = "0" Description="RMF1"/>
+      <Item Index="1"  Name="IN_RMF2"   VIOM = "1" Description="RMF2"/>
+      <Item Index="5"  Name="IN_TDCL1"  VIOM = "0" Description="TDCL1"/>
+      <Item Index="5"  Name="IN_TDCL2"  VIOM = "1" Description="TDCL2"/>
+      <Item Index="11" Name="IN_TI1"    VIOM = "0" Description="TI1"/>
+      <Item Index="11" Name="IN_TI2"    VIOM = "1" Description="TI2"/>
+      <Item Index="4"  Name="IN_ZVBA11"  VIOM = "0" Description="ZVBA11"/>
+      <Item Index="8"  Name="IN_ZVBA21"  VIOM = "0" Description="ZVBA21"/>
+	  <Item Index="4"  Name="IN_ZVBA12"  VIOM = "1" Description="ZVBA12"/>
+      <Item Index="8"  Name="IN_ZVBA22"  VIOM = "1" Description="ZVBA22"/>
+      <Item Index="-1"  Name="IN_EBNA1"  VIOM = "0" Description="EBNA1"/>
+      <Item Index="-1"  Name="IN_EBNA2"  VIOM = "1" Description="EBNA2"/>
+    </VIOM_IN>
+    <VIOM_OUT>
+      <Item Index="3"  Name="OUT_DE_A1"  VIOM = "0" Description="DE_A1"/>
+      <Item Index="3"  Name="OUT_DE_A2"  VIOM = "1" Description="DE_A2"/>
+      <Item Index="4"  Name="OUT_DE_B1"  VIOM = "0" Description="DE_B1"/>
+      <Item Index="4"  Name="OUT_DE_B2"  VIOM = "1" Description="DE_B2"/>
+      <Item Index="0"  Name="OUT_EBRD11"  VIOM = "0" Description="EBRD11"/>
+      <Item Index="0"  Name="OUT_EBRD12"  VIOM = "1" Description="EBRD12"/>
+      <Item Index="1"  Name="OUT_EBRD21"  VIOM = "0" Description="EBRD21"/>
+      <Item Index="1"  Name="OUT_EBRD22"  VIOM = "1" Description="EBRD22"/>
+      <Item Index="-1" Name="OUT_EDDL1" VIOM = "0" Description="EDDL1"/>
+      <Item Index="-1" Name="OUT_EDDL2"  VIOM = "1" Description="EDDL2"/>
+      <Item Index="9"  Name="OUT_FWD1"   VIOM = "0" Description="FWD1"/>
+      <Item Index="9"  Name="OUT_FWD2"   VIOM = "1" Description="FWD2"/>
+      <Item Index="-1" Name="OUT_HDC_A1" VIOM = "0" Description="HDC_A1"/>
+      <Item Index="-1" Name="OUT_HDC_A2" VIOM = "1" Description="HDC_A2"/>
+      <Item Index="-1" Name="OUT_HDC_B1" VIOM = "0" Description="HDC_B1"/>
+      <Item Index="-1" Name="OUT_HDC_B2" VIOM = "1" Description="HDC_B2"/>
+      <Item Index="-1" Name="OUT_REV1"   VIOM = "0" Description="REV1"/>
+      <Item Index="-1" Name="OUT_REV2"   VIOM = "1" Description="REV2"/>
+      <Item Index="7"  Name="OUT_ZVI1"   VIOM = "0" Description="ZVI1"/>
+      <Item Index="7"  Name="OUT_ZVI2"   VIOM = "1" Description="ZVI2"/>
+      <Item Index="2"  Name="OUT_ZVRD11"  VIOM = "0" Description="ZVRD11"/>
+      <Item Index="8"  Name="OUT_ZVRD21"  VIOM = "0" Description="ZVRD21"/>
+	  <Item Index="2"  Name="OUT_ZVRD12"  VIOM = "1" Description="ZVRD12"/>
+      <Item Index="8"  Name="OUT_ZVRD22"  VIOM = "1" Description="ZVRD22"/>
+      <Item Index="-1"  Name="OUT_RM_ACT1"  VIOM = "0" Description="OUT_RM_ACT1"/>
+      <Item Index="-1"  Name="OUT_RM_ACT2"  VIOM = "1" Description="OUT_RM_ACT2"/>
+    </VIOM_OUT>
+
+</VIOM_Settings>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<ORDER>
+<ENUMERATE id="1000000" type="Bool">
+<DATA  id="1000001" code="0" label="ATP_FALSE" />
+<DATA  id="1000002" code="1" label="ATP_TRUE" />
+</ENUMERATE>
+<ENUMERATE id="1000003" type="EOA_ZC_TYPE">
+<DATA  id="1000004" code="0" label="EOA_ZC_1" />
+<DATA  id="1000005" code="1" label="EOA_ZC_2" />
+<DATA  id="1000006" code="2" label="EOA_ZC_3" />
+<DATA  id="1000007" code="3" label="EOA_ZC_4" />
+</ENUMERATE>
+<ENUMERATE id="1000008" type="CAB_ID">
+<DATA  id="1000009" code="0" label="CAB_ID_UNKNOWN" />
+<DATA  id="1000010" code="1" label="CAB_ID_1" />
+<DATA  id="1000011" code="2" label="CAB_ID_2" />
+</ENUMERATE>
+<ENUMERATE id="1000012" type="PSD_STATE">
+<DATA  id="1000013" code="0" label="PSD_UNKOWN" />
+<DATA  id="1000014" code="1" label="PSD_OPEN" />
+<DATA  id="1000015" code="2" label="PSD_CLOSED" />
+</ENUMERATE>
+<ENUMERATE id="1000016" type="ODOMETER_STATE">
+<DATA  id="1000017" code="0" label="NOT_INITIALIZED" />
+<DATA  id="1000018" code="1" label="INVALID" />
+<DATA  id="1000019" code="2" label="WAITING" />
+<DATA  id="1000020" code="3" label="INITIALIZED" />
+</ENUMERATE>
+<ENUMERATE id="1000021" type="SLIDING_STATE">
+<DATA  id="1000022" code="0" label="SLIDE_COASTING" />
+<DATA  id="1000023" code="1" label="BRAKING" />
+<DATA  id="1000024" code="2" label="SLIDING" />
+<DATA  id="1000025" code="3" label="SLIDE_SKIDDING" />
+</ENUMERATE>
+<ENUMERATE id="1000026" type="SLIPPING_STATE">
+<DATA  id="1000027" code="0" label="SLIP_COASTING" />
+<DATA  id="1000028" code="1" label="MOTORING" />
+<DATA  id="1000029" code="2" label="SLIPPING" />
+<DATA  id="1000030" code="3" label="SLIP_SKIDDING" />
+</ENUMERATE>
+<ENUMERATE id="1000031" type="LOC_STATE">
+<DATA  id="1000032" code="0" label="NOT_LOCALIZED" />
+<DATA  id="1000033" code="1" label="MOVING_INIT" />
+<DATA  id="1000034" code="2" label="LOCALIZED_NOT_CONFIRMED" />
+<DATA  id="1000035" code="3" label="LOCALIZED_CONFIRMED" />
+</ENUMERATE>
+<ENUMERATE id="1000036" type="DIR">
+<DATA  id="1000037" code="0" label="UP" />
+<DATA  id="1000038" code="1" label="DOWN" />
+<DATA  id="1000039" code="2" label="BOTH" />
+<DATA  id="1000040" code="3" label="NONE_DIRECTION" />
+</ENUMERATE>
+<ENUMERATE id="1000041" type="SIDE">
+<DATA  id="1000042" code="0" label="LEFT" />
+<DATA  id="1000043" code="1" label="RIGHT" />
+<DATA  id="1000044" code="2" label="BOTH_SIDES" />
+<DATA  id="1000045" code="3" label="NONE_SIDE" />
+</ENUMERATE>
+<ENUMERATE id="1000046" type="SGL_ATP">
+<DATA  id="1000047" code="0" label="NONE" />
+<DATA  id="1000048" code="1" label="BMCP" />
+<DATA  id="1000049" code="2" label="CLOSED_TRACK_END" />
+<DATA  id="1000050" code="3" label="HAZAR_EVAC_ZONE" />
+<DATA  id="1000051" code="4" label="NEW_BLOCK" />
+<DATA  id="1000052" code="5" label="OPEN_TRACK_END" />
+<DATA  id="1000053" code="6" label="OVERLAP_END" />
+<DATA  id="1000054" code="7" label="OVERLAP_RELEASE_ZONE" />
+<DATA  id="1000055" code="8" label="PROTECTION_ZONE" />
+<DATA  id="1000056" code="9" label="PSD_ZONE" />
+<DATA  id="1000057" code="10" label="PSR" />
+<DATA  id="1000058" code="11" label="SIGNAL" />
+<DATA  id="1000059" code="12" label="SLEEP_ZONE" />
+<DATA  id="1000060" code="13" label="SMI_ZONE" />
+<DATA  id="1000061" code="14" label="VITAL_ZONE" />
+<DATA  id="1000062" code="15" label="VPEZ" />
+</ENUMERATE>
+<ENUMERATE id="1000063" type="VSL_TYPE">
+<DATA  id="1000064" code="0" label="VSL_NONE" />
+<DATA  id="1000065" code="1" label="VSL_ZC_EOA" />
+<DATA  id="1000066" code="2" label="VSL_PSR" />
+<DATA  id="1000067" code="3" label="VSL_TSR" />
+<DATA  id="1000068" code="4" label="VSL_PROTECTION_ZONE" />
+<DATA  id="1000069" code="5" label="VSL_PSD" />
+<DATA  id="1000070" code="6" label="VSL_SIGNAL" />
+<DATA  id="1000071" code="7" label="VSL_OVERLAP_END" />
+<DATA  id="1000072" code="8" label="VSL_OPEN_TRACK_END" />
+<DATA  id="1000073" code="9" label="VSL_CLOSE_TRACK_END" />
+<DATA  id="1000074" code="10" label="VSL_UNCONTROLLED_POINT" />
+<DATA  id="1000075" code="11" label="VSL_UNAUTHORIZED_ZC" />
+<DATA  id="1000076" code="12" label="VSL_TRAIN_MAX_SPEED" />
+<DATA  id="1000077" code="13" label="VSL_NOT_CONNECTTED_CONVERGENCE" />
+<DATA  id="1000078" code="14" label="VSL_END_OF_VISIBILITY" />
+<DATA  id="1000079" code="15" label="VSL_TRACK_MAP_FRONTIER" />
+<DATA  id="1000080" code="16" label="VSL_BSR" />
+</ENUMERATE>
+<ENUMERATE id="1000081" type="PSD_MANAGE">
+<DATA  id="1000082" code="0" label="ORDER_NOACTION" />
+<DATA  id="1000083" code="1" label="ORDER_OPEN," />
+<DATA  id="1000084" code="2" label="ORDER_CLOSE" />
+</ENUMERATE>
+<ENUMERATE id="1000085" type="MONITORING_MODE">
+<DATA  id="1000086" code="0" label="OTHERS" />
+<DATA  id="1000087" code="1" label="RMF" />
+<DATA  id="1000088" code="2" label="RMR" />
+</ENUMERATE>
+<ENUMERATE id="1000089" type="SENSOR_STATUS">
+<DATA  id="1000090" code="0" label="SENSOR_UNKNOWN" />
+<DATA  id="1000091" code="1" label="SENSOR_WRONG" />
+<DATA  id="1000092" code="2" label="SENSOR_BLOCKED" />
+<DATA  id="1000093" code="3" label="SENSOR_CONDUCT" />
+</ENUMERATE>
+<ENUMERATE id="1000094" type="TEST_RESULT">
+<DATA  id="1000095" code="0" label="TEST_FLOATING" />
+<DATA  id="1000096" code="1" label="TEST_INCONSISTENT" />
+<DATA  id="1000097" code="2" label="TEST_STOPPING" />
+<DATA  id="1000098" code="3" label="TEST_IMMOBILE" />
+</ENUMERATE>
+<ENUMERATE id="1000099" type="LOC_FAULT_TYPE">
+<DATA  id="1000100" code="0" label="LOCFAULT_NONE" />
+<DATA  id="1000101" code="1" label="LOCFAULT_INVALID_KINEMATIC" />
+<DATA  id="1000102" code="2" label="LOCFAULT_LOC_PERMANENT_FAILURE" />
+<DATA  id="1000103" code="3" label="LOCFAULT_BEACON_VALIDITY_DIST_EXCESS" />
+<DATA  id="1000104" code="4" label="LOCFAULT_INVERSE_LOCATION" />
+<DATA  id="1000105" code="5" label="LOCFAULT_LOCATION_MAX_UNCERTAINTY" />
+<DATA  id="1000106" code="6" label="LOCFAULT_OUT_OF_TRACK_MAP" />
+<DATA  id="1000107" code="7" label="LOCFAULT_POINT_CROSSED" />
+<DATA  id="1000108" code="8" label="LOCFAULT_TRAIN_NOT_INTEGRITY" />
+<DATA  id="1000109" code="9" label="LOCFAULT_END1_COUPLED" />
+<DATA  id="1000110" code="10" label="LOCFAULT_END2_COUPLED" />
+<DATA  id="1000111" code="11" label="LOCFAULT_SEARCH_LOOP_EXCESS" />
+<DATA  id="1000112" code="12" label="LOCFAULT_LOCATION_UNTRAVELABLE" />
+<DATA  id="1000113" code="13" label="LOCFAULT_CBTC_WITHOUT_KNOWN_PATH" />
+<DATA  id="1000114" code="14" label="LOCFAULT_MEMLOC_VALIDITY_DIST_EXCESS" />
+<DATA  id="1000115" code="15" label="LOCFAULT_REALIGNMENT_FAILED" />
+<DATA  id="1000116" code="16" label="LOCFAULT_COUPLE_CHANGED" />
+</ENUMERATE>
+<ENUMERATE id="1000117" type="CC_CORE_ID">
+<DATA  id="1000118" code="0" label="END_UNKNOWN" />
+<DATA  id="1000119" code="1" label="END_1" />
+<DATA  id="1000120" code="2" label="END_2" />
+</ENUMERATE>
+<ENUMERATE id="1000121" type="ENUM_CPU_ID">
+<DATA  id="1000122" code="0" label="ID_UNKNOWN" />
+<DATA  id="1000123" code="1" label="ID_1" />
+<DATA  id="1000124" code="2" label="ID_2" />
+</ENUMERATE>
+<ENUMERATE id="1000125" type="FLASH_STATUS">
+<DATA  id="1000126" code="0" label="NO_OPERATION" />
+<DATA  id="1000127" code="1" label="WRITING" />
+<DATA  id="1000128" code="2" label="WRITED" />
+<DATA  id="1000129" code="3" label="CLEARING" />
+<DATA  id="1000130" code="4" label="CLEARED" />
+<DATA  id="1000131" code="5" label="FAULT" />
+</ENUMERATE>
+<ENUMERATE id="1000132" type="SWAP_CBK_STATUS">
+<DATA  id="1000133" code="0" label="SWAP_CBK_NO_ERROR" />
+<DATA  id="1000134" code="1" label="SWAP_CBK_WAIT_OVERTIME" />
+<DATA  id="1000135" code="2" label="SWAP_CBK_WRITE_OVERTIME" />
+</ENUMERATE>
+<ENUMERATE id="1000136" type="EXCHANGE_OUTPUT_STATUS">
+<DATA  id="1000137" code="0" label="EXCHANGE_VITAL_OUTPUT_NO_ERROR" />
+<DATA  id="1000138" code="1" label="PROCESSING_BEFORE_TIME_OUT" />
+<DATA  id="1000139" code="2" label="EXCHANGE_WRITE_TIME_OUT" />
+</ENUMERATE>
+<ENUMERATE id="1000140" type="CALI_STATE">
+<DATA  id="1000141" code="0" label="CALI_WAITING" />
+<DATA  id="1000142" code="1" label="CALI_MEASURING" />
+<DATA  id="1000143" code="2" label="CALI_VALIDATING" />
+<DATA  id="1000144" code="3" label="CALI_COMPLETED" />
+</ENUMERATE>
+<ENUMERATE id="1000145" type="CBI_CLASS">
+<DATA  id="1000146" code="0" label="CLASS_A" />
+<DATA  id="1000147" code="1" label="CLASS_B" />
+<DATA  id="1000148" code="2" label="CLASS_C" />
+</ENUMERATE>
+<ENUMERATE id="1000149" type="LOCREPORT_DIRECTION">
+<DATA  id="1000150" code="0" label="LOCREPORT_DIRECTION_UNKNOWN" />
+<DATA  id="1000151" code="1" label="LOCREPORT_DIRECTION_DOWN" />
+<DATA  id="1000152" code="2" label="LOCREPORT_DIRECTION_UP" />
+</ENUMERATE>
+<ENUMERATE id="1000153" type="COUPLED_TYPE">
+<DATA  id="1000154" code="-1" label="TRAIN_COUPLED_UNKNOWN" />
+<DATA  id="1000155" code="0" label="TRAIN_NO_COUPLED" />
+<DATA  id="1000156" code="1" label="TRAIN_COUPLED_END1" />
+<DATA  id="1000157" code="2" label="TRAIN_COUPLED_END2" />
+</ENUMERATE>
+<ERRORMSG id="9000000" framelabel="iTC_ATP_UP">
+<ERRORPARAM id="9000001" len="4" />
+<ERRORPARAM id="9000002" len="4" />
+<ERRORPARAM id="9000003" len="4" />
+<ERRORPARAM id="9000004" len="4" />
+</ERRORMSG>
+<ERRORMSG id="9000005" framelabel="iTC_ATP_DOWN">
+<ERRORPARAM id="9000006" len="4" />
+<ERRORPARAM id="9000007" len="4" />
+<ERRORPARAM id="9000008" len="4" />
+<ERRORPARAM id="9000009" len="4" />
+</ERRORMSG>
+</ORDER>

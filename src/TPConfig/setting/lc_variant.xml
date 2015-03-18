@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备变量定义，包含该模拟设备的配置参数，重要的运行参数，应用消息中的关键值等-->
+<!--变量的类型 int float  string complex-->
+<!--Name是变量关键字-->
+<!--complex类型的变量忽略value中赋值-->
+<!--IO设置了变量的行为，Log 为每周期记录到日志-->
+<Variables>
+  <Var Name="loophour" Type="int"  IO="Log" Value="1" Description="lc cycle"/>
+  <Var Name="qMsgHead" Type="string"  IO="Input" Value="!IH" Description="queue msg head"/>
+  <Var Name="cycMsgId" Type="int"  IO="Input" Value="99" Description="msg id of cycle message"/>
+  <Var Name="cycUpdateCmd" Type="int"  IO="Input" Value="92" Description="command of cycle update"/>
+  <Var Name="cycEndCmd" Type="int"  IO="Input" Value="93" Description="command of cycle end"/>
+  <Var Name="loophourSetCmd" Type="int"  IO="Input" Value="94" Description="msg id of cycle message"/>
+  <Var Name="rsPosMsgId" Type="int"  IO="Input" Value="258" Description="rs postion message id"/>
+  <Var Name="ccVerMsgId" Type="int"  IO="Input" Value="9222" Description="cc version report message id"/>
+  <Var Name="CCloopHour" Type="int" IO="Log" Value="0" Description="CCloopHour"/>
+  <Var Name="CCloopHour_CC" Type="int" IO="Log" Value="0" Description="CCloopHour"/>
+  <Var Name="dataSyncMsgId" Type="int" IO="Log" Value="1" Description="data sync message id"/>
+  <Var Name="verAutMsgId" Type="int" IO="Log" Value="2" Description="version Authorization message id"/>
+  
+  <Var Name="dataSyncMsgId_SACEM" Type="int" IO="Input" Value="45" Description="data sync message id for sacem"/>
+  <Var Name="verAutMsgId_SACEM" Type="int" IO="Input" Value="58" Description="version Authorization message id"/>
+  <Var Name="tsrMsgId_SACEM" Type="int" IO="Input" Value="136" Description="TSR message id"/>
+  <Var Name="ccVerMsgId_SACEM" Type="int" IO="Input" Value="101" Description="cc version report message id"/>
+  
+  <Var Name="ZC1_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC1_Vital_Authorization"/>
+  <Var Name="ZC2_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC2_Vital_Authorization"/>
+  <Var Name="ZC3_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC3_Vital_Authorization"/>
+  <Var Name="ZC4_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC4_Vital_Authorization"/>
+  <Var Name="ZC5_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC5_Vital_Authorization"/>
+  <Var Name="ZC6_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC6_Vital_Authorization"/>
+  <Var Name="ZC7_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC7_Vital_Authorization"/>
+  <Var Name="ZC8_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC8_Vital_Authorization"/>
+  <Var Name="ZC9_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC9_Vital_Authorization"/>
+  <Var Name="ZC10_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC10_Vital_Authorization"/>
+  <Var Name="ZC11_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC11_Vital_Authorization"/>
+  <Var Name="ZC12_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC12_Vital_Authorization"/>
+  <Var Name="ZC13_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC13_Vital_Authorization"/>
+  <Var Name="ZC14_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC14_Vital_Authorization"/>
+  <Var Name="ZC15_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC15_Vital_Authorization"/>
+  <Var Name="ZC16_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC16_Vital_Authorization"/>
+  <Var Name="ZC1_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC1_Vital_Authorization"/>
+  <Var Name="ZC2_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC2_Vital_Authorization"/>
+  <Var Name="ZC3_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC3_Vital_Authorization"/>
+  <Var Name="ZC4_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC4_Vital_Authorization"/>
+  <Var Name="ZC5_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC5_Vital_Authorization"/>
+  <Var Name="ZC6_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC6_Vital_Authorization"/>
+  <Var Name="ZC7_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC7_Vital_Authorization"/>
+  <Var Name="ZC8_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC8_Vital_Authorization"/>
+  <Var Name="ZC9_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC9_Vital_Authorization"/>
+  <Var Name="ZC10_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC10_Vital_Authorization"/>
+  <Var Name="ZC11_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC11_Vital_Authorization"/>
+  <Var Name="ZC12_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC12_Vital_Authorization"/>
+  <Var Name="ZC13_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC13_Vital_Authorization"/>
+  <Var Name="ZC14_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC14_Vital_Authorization"/>
+  <Var Name="ZC15_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC15_Vital_Authorization"/>
+  <Var Name="ZC16_NO_Vital_Authorization" Type="int" IO="Log" Value="1" Description="ZC16_Vital_Authorization"/>
+  <Var Name="SynchroDate" Type="int" IO="Log" Value="0" Description="SynchroDate"/>  
+  <Var Name="TsrList" Type="string" IO="Input" Value="" Description="tsr index list which default LC tsrs need to send"/>
+  <Var Name="TsrList1" Type="string" IO="Input" Value="" Description="tsr index list which LC1 tsrs need to send,只有在非空的时候才应用，否则都采用TsrList"/>
+  <Var Name="TsrList2" Type="string" IO="Input" Value="" Description="tsr index list which LC2 tsrs need to send,只有在非空的时候才应用，否则都采用TsrList"/>
+  <Var Name="Lc2AtpMesID" Type="int" IO="Input" Value="10241" Description="Lc2AtpMesID"/>
+  <Var Name="ResponseEND" Type="int" IO="Input" Value="1" Description="ModifyLCList没有该LCID的时候1：发送本端，2：发送远端"/>
+  <Var Name="ModifyResponseEND" Type="int"  IO="Log" Value="1" Description="ModifyLCList有该LCID的时候用来判断相应远端还是本端，1：本端，2远端"/>
+  <Var Name="detaccloophour_DataSync" Type="int" IO="Input" Value="0" Description="deta ccloophour"/>
+  <Var Name="detaccloophour_VerCCAuth" Type="int" IO="Input" Value="0" Description="deta ccloophour"/>
+  <Var Name="detaccloophour_Tsr" Type="int" IO="Input" Value="0" Description="deta ccloophour"/>
+  <Var Name="SendMesENABLE" Type="int" IO="Input" Value="1" Description="是否发送数据:1:发送，0:不发送"/>
+  <Var Name="CheckSumENABLE_DataSync" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <Var Name="CheckSumENABLE_VerCCAuth" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <Var Name="CheckSumENABLE_Tsr" Type="int" IO="Input" Value="1" Description="是否计算checksum，1：计算，0：不计算"/>
+  <Var Name="SendTSRMesENABLE" Type="int" IO="Input" Value="0" Description="是否发送TSR消息:1:发送，0:不发送,默认不发送"/>
+  <Var Name="LCSendMessageDelay" Type="int" IO="Input" Value="50" Description="发送两个不同LC消息的时间间隔，单位为100ms"/>
+  <Var Name="SendLClist" Type="string" IO="Input" Value="1" Description="发送lc的消息的id列表"/>
+  <Var Name="SendLCMsgRepeatlyFlag" Type="int" IO="Input" Value="0" Description="是否连续发送（每个周期发送）LC消息:1:发送，0:不发送,默认不发送"/>
+  <Var Name="ModifyLCList" Type="string"  IO="Log" Value="1,2" Description="用于控制修改CBI的checksum信息"/>
+</Variables>

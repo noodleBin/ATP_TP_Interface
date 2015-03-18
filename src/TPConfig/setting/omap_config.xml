@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--本文件用于配置omap的相关数据-->
+<Omaps IP_Address_ID="7">
+  <Omap Name="iTC_ATP_UP"   ID="9"  Type="Real time" FrameLength="12288"  savePath="atp_up.omap"   Description="ATP_UP OMAP Handle">    	
+  </Omap>
+  <Omap Name="iTC_ATP_DOWN" ID="11" Type="Real time" FrameLength="12288"  savePath="atp_down.omap" Description="ATP_DOWN handle">	  
+  </Omap>
+</Omaps>

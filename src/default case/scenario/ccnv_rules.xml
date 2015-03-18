@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--CCNV规则库-->
+<!-- RSspeed 单位为毫米每秒 -->
+<Rules>
+	<Rule id="loophourexp2" operator="AND" type="exp">
+	   <lexp type="exp" value="==">
+	       <lexp type="Variant" value="CCNVRuleEnable"/>
+	       <rexp type="Const" value="1"/>
+       </lexp>
+       <rexp type="exp" value="==">
+            <lexp type="Variant" value="loophour"/>
+            <rexp type="Const" value="1"/>
+       </rexp> 
+		<Reaction name="OdometerRef1SpeedUnderThreshold" value="0" delay="0"/>
+		<Reaction name="OdometerRef1Available" value="0" delay="0"/>
+		<Reaction name="OdometerRef2SpeedUnderThreshold" value="0" delay="0"/>
+		<Reaction name="OdometerRef2Available" value="0" delay="0"/>
+	</Rule>
+
+	<Rule id="loophourexp1" operator="AND" type="exp">
+	   <lexp type="exp" value="==">
+           <lexp type="Variant" value="CCNVRuleEnable"/>
+           <rexp type="Const" value="1"/>
+       </lexp>
+       <rexp type="exp" value="==">
+	        <lexp type="Variant" value="loophour"/>
+	        <rexp type="Const" value="2"/>
+       </rexp> 
+		<Reaction name="OdometerRef1SpeedUnderThreshold" value="1" delay="0"/>
+		<Reaction name="OdometerRef1Available" value="1" delay="0"/>
+		<Reaction name="OdometerRef2SpeedUnderThreshold" value="1" delay="0"/>
+		<Reaction name="OdometerRef2Available" value="1" delay="0"/>
+	</Rule>
+
+	<Rule id="speedexp1" operator="AND" type="exp">
+	   <lexp type="exp" value="==">
+           <lexp type="Variant" value="CCNVRuleEnable"/>
+           <rexp type="Const" value="1"/>
+       </lexp>
+       <rexp type="exp" value="AND">
+			<lexp type="exp" value="GE">
+				<lexp type="Variant" value="loophour"/>
+				<rexp type="Const" value="3"/>
+			</lexp>
+			<rexp type="exp" value="LE">
+				<lexp type="Variant" value="RSspeed"/>
+				<rexp type="Const" value="278"/>
+			</rexp>
+		</rexp>
+		<Reaction name="OdometerRef1SpeedUnderThreshold" value="1" delay="0"/>
+		<Reaction name="OdometerRef2SpeedUnderThreshold" value="1" delay="0"/>
+	</Rule>
+
+	<Rule id="speedexp2" operator="AND" type="exp">
+	    <lexp type="exp" value="==">
+           <lexp type="Variant" value="CCNVRuleEnable"/>
+           <rexp type="Const" value="1"/>
+        </lexp>
+        <rexp type='exp' value="AND">
+			<lexp type="exp" value="GE">
+				<lexp type="Variant" value="loophour"/>
+				<rexp type="Const" value="3"/>
+			</lexp>
+			<rexp type="exp" value="GE">
+				<lexp type="Variant" value="RSspeed"/>
+				<rexp type="Const" value="278"/>
+			</rexp>
+		</rexp>	
+		<Reaction name="OdometerRef1SpeedUnderThreshold" value="0" delay="0"/>
+		<Reaction name="OdometerRef2SpeedUnderThreshold" value="0" delay="0"/>
+	</Rule>
+</Rules>

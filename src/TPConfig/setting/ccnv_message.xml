@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<!-- Item Format：I是UINT32， 16I是UINT32的数组，其他表示参考Pythonv2.6.6 documentation -->
+<Msg_Settings>
+	<Msg Name="Simulator_Message" Id="99" Pack="!">
+		<Item Index="0" Format="B" Name="Command_type" Description="91启动命令，92周期更新命令，93运行结束命令"/>
+	</Msg>
+    <Msg Name="Status_REPORT" Id="258" Pack="!">
+      <Item Index="0" Format="B" Name="subType" Description="位置更新消息"/>
+      <Item Index="1" Format="i" Name="Coordinates_1" Description="本周期开始时的车辆位置 毫米"/>
+      <Item Index="2" Format="i" Name="Coordinates_2" Description="本周期结束时的车辆位置 毫米"/>
+    </Msg> 
+
+    <Msg Name="CCNV_NOVITAL_REQ" Id="5121" Pack="!">
+        <Item Index="0" Format="B" Name="FEOOO" Description="组合位"></Item>
+        <Item Index="1" Format="B" Name="OEVMR" Description="组合位"></Item>
+        <Item Index="2" Format="I" Name="PSDplatformAoperation.Id" Description="PSDplatformAoperation.Id"></Item>
+        <Item Index="3" Format="I" Name="PSDplatformBoperation.Id" Description="PSDplatformBoperation.Id"></Item>
+        <Item Index="4" Format="B" Name="PPPP" Description="组合位"></Item>
+        <Item Index="5" Format="i" Name="NTPtimeToAtp" Description="NTPtime"></Item>
+        <Item Index="6" Format="H" Name="VIOM1EnableOutput" Description="VIOM1的输出使能"></Item>
+        <Item Index="7" Format="H" Name="VIOM2EnableOutput" Description="VIOM2的输出使能"></Item>
+        <Item Index="8" Format="H" Name="VIOM3EnableOutput" Description="VIOM3的输出使能"></Item>
+        <Item Index="9" Format="H" Name="VIOM4EnableOutput" Description="VIOM4的输出使能"></Item>   
+        <Item Index="10" Format="5B" Name="NVID" Description="NVDI[1:40]"></Item>
+        <Item Index="15" Format="B" Name="COC" Description="组合位"></Item>
+        <Item Index="16" Format="B" Name="Variant_request_CBI_id[0]" Description="Variant_request_CBI_id[0]"></Item>
+        <Item Index="17" Format="B" Name="Variant_request_CBI_id[1]" Description="Variant_request_CBI_id[1]"></Item>  
+    </Msg>
+	
+	<Msg Name="HMI2CCNV_NOVITAL_REQ" Id="51235" Pack="!">
+        <Item Index="0" Format="I" Name="SelectedFrontEnd" Description="SelectedFrontEnd"></Item>
+        <Item Index="1" Format="I" Name="OdometerRef1SpeedUnderThreshold" Description="OdemeterRef1SpeedUnderThreshold"/>
+        <Item Index="2" Format="I" Name="OdometerRef1Available" Description="OdometerRef1Available"></Item>
+        <Item Index="3" Format="I" Name="OdometerRef2SpeedUnderThreshold" Description="OdometerRef2SpeedUnderThreshold"></Item>
+        <Item Index="4" Format="I" Name="OdometerRef2Available" Description="OdometerRef2Available"></Item>
+        <Item Index="5" Format="I" Name="EmergencyBrakingNotRequestedToAtp" Description="EmergencyBrakingNotRequested"></Item>
+        <Item Index="6" Format="I" Name="VitalParkingBrakingNotRequested" Description="VitalParkingBrakingNotRequest"></Item>
+        <Item Index="7" Format="I" Name="MasterCCcore" Description="MasterCCcore"></Item>
+        <Item Index="8" Format="I" Name="RouteSetNotNeeded" Description="RouteSetNotNeeded"></Item>
+        <Item Index="9" Format="I" Name="PSDplatformAoperation.Id" Description="PSDplatformAoperation.Id"></Item>
+        <Item Index="10" Format="I" Name="PSDplatformAoperation.ClosingOrder" Description="PSDplatformAoperation.ClosingOrder"></Item>
+        <Item Index="11" Format="I" Name="PSDplatformAoperation.OpeningOrder" Description="PSDplatformAoperation.OpeningOrder"/>
+        <Item Index="12" Format="I" Name="PSDplatformBoperation.Id" Description="PSDplatformBoperation.Id"></Item>
+        <Item Index="13" Format="I" Name="PSDplatformBoperation.ClosingOrder" Description="PSDplatformBoperation.ClosingOrder"></Item>
+        <Item Index="14" Format="I" Name="PSDplatformBoperation.OpeningOrder" Description="PSDplatformBoperation.OpeningOrder"></Item>
+        <Item Index="15" Format="I" Name="ATBselectedDrivingMode" Description="ATBselectedDrivingMode"></Item>
+        <Item Index="16" Format="I" Name="ATBdrivingModeSetRequested" Description="ATBdrivingModeSetRequested"></Item>
+        <Item Index="17" Format="I" Name="ATBdrivingModeUnsetRequested" Description="ATBdrivingModeUnsetRequested"></Item>
+        <Item Index="18" Format="I" Name="RebootRequest" Description="RebootRequest"></Item>
+        <Item Index="19" Format="I" Name="NTPtimeToAtp" Description="NTPtime"></Item>   
+    </Msg>
+    
+	<Msg Name="CCNV_INITIAL_REPORT" Id="1" Pack="!">
+	    <Item Index="0" Format="B" Name="subtype" Description="subtype"/>
+		<Item Index="0" Format="I" Name="CC_SSID" Description="CC_SSID"/>
+		<Item Index="1" Format="I" Name="CC_Train_Type" Description="CC_Train_Type"></Item>
+		<Item Index="2" Format="I" Name="CC_core_id" Description="CC_core_id"/>
+		<Item Index="3" Format="I" Name="CC_Inner_IP_blue" Description="CC_Inner_IP_blue"/>
+		<Item Index="4" Format="I" Name="CC_Inner_IP_red" Description="CC_Inner_IP_red"/>
+		<Item Index="5" Format="I" Name="CC_Outer_IP_blue" Description="CC_Outer_IP_blue"/>
+		<Item Index="6" Format="I" Name="CC_Outer_IP_red" Description="CC_Outer_IP_red"/>
+		<Item Index="7" Format="I" Name="CC_DLU_IP_blue" Description="CC_DLU_IP_blue"/>
+		<Item Index="8" Format="I" Name="CC_DLU_IP_red" Description="CC_DLU_IP_red"/>
+	</Msg>
+	<Msg Name="ST_NOVITAL_REPORT" Id="2" Pack="!">
+	    <Item Index="0" Format="B" Name="subtype" Description="subtype"/>
+		<Item Index="1" Format="I" Name="LoopHour" Description="LoopHour"/>
+		<Item Index="2" Format="I" Name="LatestTimeOtherCore" Description="LatestTimeOtherCore"/>
+		<Item Index="3" Format="I" Name="NTPtimeFromAtp" Description="NTPtime"/>
+		<Item Index="4" Format="B" Name="BTTA" Description="组合码"/>
+		<Item Index="5" Format="I" Name="BeaconCount" Description="BeaconCount"/>
+		<Item Index="6" Format="I" Name="BeaconID" Description="BeaconID"/>
+		<Item Index="7" Format="H" Name="BlockModeVariants" Description="BlockModeVariants"/>
+		<Item Index="8" Format="B" Name="BBMDD" Description="组合码"/>
+        <Item Index="9" Format="B" Name="PSDStateSideAB" Description="PSDStateSideAB"/>
+		<Item Index="10" Format="B" Name="FKOPRT" Description="组合码"/>
+		<Item Index="11" Format="I" Name="MaxCalibration" Description="MaxCalibration"/>
+		<Item Index="12" Format="I" Name="MinCalibration" Description="MinCalibration"/>
+		<Item Index="13" Format="B" Name="TPEE" Description="组合码"/>
+		<Item Index="14" Format="I" Name="DeltaLocation" Description="DeltaLocation"/>
+		<Item Index="15" Format="I" Name="TrainEnd2BlockID" Description="TrainEnd2BlockID"/>
+		<Item Index="16" Format="I" Name="TrainEnd2Abscissa" Description="TrainEnd2Abscissa"/>
+		<Item Index="17" Format="B" Name="EEEEEEEE" Description="组合码"/>
+		<Item Index="18" Format="B" Name="EUNDO" Description="组合码"/>
+		<Item Index="19" Format="B" Name="SS" Description="组合码"/>
+	</Msg>
+</Msg_Settings>

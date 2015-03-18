@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<!--Location_REPORT,EOA_REPORT,Coordinate_REPORT,Variant_REPORT 在simulator中打在一个container-->
+<!--根据最新的191文档，修改平台的相关接口配置-->
+<Msg_Settings>
+    <Msg Name="Location_Report" Id="9221" Pack="!">
+      <Item Index="0" Format="H" Name="TrainID" Description="Train ID"/>
+      <Item Index="1" Format="B" Name="HCID" Description="Train unit head cab ID"/>
+      <Item Index="2" Format="B" Name="HCO" Description="Train unit head cab orientation"/>
+      <Item Index="3" Format="H" Name="HLBID" Description="Train unit head location block ID"/>
+      <Item Index="4" Format="H" Name="HLMAbs" Description="Train unit head cab min abscissa on the block"/>
+      <Item Index="5" Format="B" Name="HCS" Description="Train unit head coupled status"/>
+      <Item Index="6" Format="B" Name="TCID" Description="Train unit tail cab ID"/>
+      <Item Index="7" Format="B" Name="TCO" Description="Train unit tail cab orientation"/>
+      <Item Index="8" Format="H" Name="TLBID" Description="Train unit tail location block ID"/>
+      <Item Index="9" Format="H" Name="TLMAbs" Description="Train unit tail location min abscissa on the block"/>
+      <Item Index="10" Format="B" Name="TCS" Description="Train unit tail coupled status"/>
+      <Item Index="11" Format="B" Name="LocaError" Description="Train unit location error"/>
+      <Item Index="12" Format="B" Name="LocaStatus" Description="Train unit location status"/>
+      <Item Index="13" Format="B" Name="ConfLoca" Description="Train unit confirmed localization"/>
+      <Item Index="14" Format="B" Name="ImmStatus" Description="Train unit immobility status"/>
+      <Item Index="15" Format="B" Name="RSNNS" Description="Train unit Route_Set_Not_Needed status"/>
+      <Item Index="16" Format="B" Name="CorrDocking" Description="Train unit Correct_Docking"/>
+      <Item Index="17" Format="B" Name="Trainspeed" Description="Train unit speed"/>
+      <Item Index="18" Format="B" Name="MoniMode" Description="Train unit monitoring mode"/>
+      <Item Index="19" Format="B" Name="SigOverride" Description="Signals_Override"/>
+      <!-- 191基线添加变量 ：ATCControlledTrain-->
+      <Item Index="20" Format="B" Name="ATCControlledTrain" Description="ATC_Controlled_Train"/>
+      <Item Index="21" Format="H" Name="ZC_Vital_Author" Description="ZC_Vital_Authorization"/>
+	  <!-- 191基线添加变量：Boolean -->
+      <Item Index="22" Format="H" Name="Boolean" Description="Boolean1:16"/>
+      <Item Index="23" Format="I" Name="CC_loophour" Description="CC_loophour"/>
+      <Item Index="24" Format="I" Name="Synchordate" Description="Synchor_date"/>
+      <Item Index="25" Format="3B" Name="checksum1" Description="Vital checksum S1"/>
+      <Item Index="28" Format="3B" Name="checksum2" Description="Vital checksum S2"/>
+    </Msg>
+    
+    <Msg Name="EOA_REPORT" Id="20" Pack="!">
+      <Item Index="0" Format="B" Name="EOAMesID" Description="Message Identifier"/>
+      <Item Index="1" Format="B" Name="EOAMesLen" Description="Message length in bytes"/>
+      <Item Index="2" Format="B" Name="TrainFE" Description="Train front end"/>
+      <Item Index="3" Format="B" Name="EOAtype" Description="EOA_type"/>
+      <Item Index="4" Format="H" Name="EOABID" Description="EOA location block ID"/>
+      <Item Index="5" Format="H" Name="EOAAbs" Description="EOA location abscissa"/>
+      <Item Index="6" Format="B" Name="WOSEOAtype" Description="without_Spacing_EOA_Type"/>
+      <Item Index="7" Format="H" Name="WOSEOABID" Description="without_Spacing_block_ID"/>
+      <Item Index="8" Format="h" Name="WOSEOAAbs" Description="Without_Spacing_EOA_Abscissa"/>
+      <Item Index="9" Format="I" Name="CC_loophour" Description="CC_loophour"/>
+      <Item Index="10" Format="I" Name="ZCLHEOAV" Description="ZCloophour_EOA_Var"/>
+      <Item Index="11" Format="I" Name="ZCLHEOA" Description="ZCloophour_EOA"/>
+      <Item Index="12" Format="I" Name="ZCLHWOSEOA" Description="ZCloophour_EOA_Withoutspacing"/>
+      <Item Index="13" Format="3B" Name="EOACheckS1" Description="Vital checksum S1"/>
+      <Item Index="16" Format="3B" Name="EOACheckS2" Description="Vital checksum S1"/>
+    </Msg>
+    
+    <Msg Name="Coordinate_REPORT" Id="258" Pack="!">
+      <Item Index="0" Format="B" Name="subtype" Description="位置更新消息"/>
+      <Item Index="1" Format="i" Name="coordinates_1" Description="本周期开始时的车辆位置 毫米"/>
+      <Item Index="2" Format="i" Name="coordinates_2" Description="本周期结束时的车辆位置 毫米"/>
+    </Msg> 
+
+    <Msg Name="Simulator_Mes" Id="99" Pack="!">
+      <Item Index="0" Format="B" Name="Command_type" Description="start 91 ,cycle update 92,stop 93 "/>
+    </Msg>        
+    <!--Variant_REPORT是可变消息，其格式在代码中处理-->  
+</Msg_Settings>
